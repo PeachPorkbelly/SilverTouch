@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "649181783420",
+    "project_id": "silvertouch-6ac86",
+    "storage_bucket": "silvertouch-6ac86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649181783420:android:a1bd2ee74db86217a470f9",
+        "android_client_info": {
+          "package_name": "com.example.silvertouch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649181783420-nsfis13lsout53qu8esa40h7unbnkpim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4-8bgKhVgi2KeKGhLsVM-d4-PPI0Ay2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649181783420-nsfis13lsout53qu8esa40h7unbnkpim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
