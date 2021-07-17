@@ -294,7 +294,6 @@ public class MainActivity extends AppCompatActivity {
         return stringToday.format(today);
     }
 
-
     public void MissionStart(int missionNum, int missionOrder){
 
         if (missionNum==0){
