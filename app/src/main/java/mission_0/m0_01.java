@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,17 @@ import static mission_0.m0_00.M0;
 public class m0_01 extends AppCompatActivity {
 
     Intent i;
+    FrameLayout fl;
+    ImageView initialize;
+    ImageView connecting;
+    ImageView ld_off_1;
+    ImageView ld_off_2;
+    ImageView ld_off_3;
+
+    ImageView ld_on_1;
+    ImageView ld_on_2;
+    ImageView ld_on_3;
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,8 +39,21 @@ public class m0_01 extends AppCompatActivity {
         /*
         반투명 레이아웃
          */
-        FrameLayout fl = (FrameLayout)findViewById(R.id.m0_01_transparent_layout);
+        fl = (FrameLayout)findViewById(R.id.m0_01_transparent_layout);
 
+        /*
+        로딩 이미지 파일들
+         */
+        initialize = (ImageView)findViewById(R.id.m0_00_initialize);
+        connecting = (ImageView)findViewById(R.id.m0_00_connecting);
+
+        ld_off_1 = (ImageView)findViewById(R.id.m0_00_loading_off1);
+        ld_off_2 = (ImageView)findViewById(R.id.m0_00_loading_off2);
+        ld_off_3 = (ImageView)findViewById(R.id.m0_00_loading_off3);
+
+        ld_on_1 = (ImageView)findViewById(R.id.m0_00_loading_on1);
+        ld_on_2 = (ImageView)findViewById(R.id.m0_00_loading_on2);
+        ld_on_3 = (ImageView)findViewById(R.id.m0_00_loading_on3);
 
         /*
         버튼들
@@ -50,10 +75,7 @@ public class m0_01 extends AppCompatActivity {
        실행할 코드들
        */
 
-        /*
-        반투명 레이아웃 숨김
-         */
-        fl.setVisibility(View.INVISIBLE);
+        set_initialPage();
 
         /*
         몇번째 미션인지 표시
@@ -86,6 +108,41 @@ public class m0_01 extends AppCompatActivity {
             }
         });
 
+        //hint
+        hint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"힌트입니다",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //jumin
+        jumin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fl.setVisibility(View.VISIBLE);
+            }
+        });
+
+    }
+
+
+    /*
+    jumin 버튼이 눌리기 전에 보여지면 안되는 이미지들 모두 Invisible 시키는 함수
+     */
+    public void set_initialPage(){
+        /*
+        VIsible/Invisible
+         */
+        fl.setVisibility(View.INVISIBLE);
+        initialize.setVisibility(View.INVISIBLE);
+        connecting.setVisibility(View.INVISIBLE);
+        ld_off_1.setVisibility(View.INVISIBLE);
+        ld_off_2.setVisibility(View.INVISIBLE);
+        ld_off_3.setVisibility(View.INVISIBLE);
+        ld_on_1.setVisibility(View.INVISIBLE);
+        ld_on_2.setVisibility(View.INVISIBLE);
+        ld_on_3.setVisibility(View.INVISIBLE);
 
     }
 }

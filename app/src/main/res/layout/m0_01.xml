@@ -72,6 +72,69 @@
         android:layout_marginLeft="305dp"
         android:background="#66000000">
 
+        <ImageView
+            android:id="@+id/m0_00_initialize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/m0_00_test_cho" />
+
+        <ImageView
+            android:id="@+id/m0_00_connecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/m0_00_test2" />
+
+        <ImageView
+            android:id="@+id/m0_00_loading_off1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="140dp"
+            app:srcCompat="@drawable/m0_loading_off" />
+
+
+        <ImageView
+            android:id="@+id/m0_00_loading_off2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="230dp"
+            app:srcCompat="@drawable/m0_loading_off" />
+
+        <ImageView
+            android:id="@+id/m0_00_loading_off3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="320dp"
+            app:srcCompat="@drawable/m0_loading_off" />
+
+        <ImageView
+            android:id="@+id/m0_00_loading_on1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="140dp"
+            app:srcCompat="@drawable/m0_loading_on" />
+
+
+        <ImageView
+            android:id="@+id/m0_00_loading_on2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="230dp"
+            app:srcCompat="@drawable/m0_loading_on" />
+
+        <ImageView
+            android:id="@+id/m0_00_loading_on3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="320dp"
+            app:srcCompat="@drawable/m0_loading_on" />
+
+
     </FrameLayout>
 
     <ImageButton
@@ -85,6 +148,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/misson_exit" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
