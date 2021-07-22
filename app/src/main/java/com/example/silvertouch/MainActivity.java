@@ -4,19 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
 
-import com.example.silvertouch.SavedInfo;
+import inssa_test.InsiderTest;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -68,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
     //초기화 버튼
     Button reset;
 
+    //인싸테스트 버튼
+    ImageButton insider_Button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         empty_graph = (ImageView)findViewById(R.id.main_emptyGraph);
         graph1 = (ImageView)findViewById(R.id.main_graph1);
         graph2 = (ImageView)findViewById(R.id.main_graph2);
-        graph3 = (ImageView)findViewById(R.id.main_graph3);;
+        graph3 = (ImageView)findViewById(R.id.main_graph3);
 
         reset = (Button)findViewById(R.id.reset);
 
@@ -100,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
         저장되어있는 날짜를 불러와서 today에 저장한다
         */
         today = si.getDate(getApplicationContext());
+
+        insider_Button = (ImageButton) findViewById(R.id.inssatest);
 
 
 
@@ -276,6 +279,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 MissionStart(Mission3,3);
+            }
+        });
+
+        // 인싸테스트 버튼 ClickListener
+        insider_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(), InsiderTest.class);
+                startActivity(intent);
             }
         });
     }

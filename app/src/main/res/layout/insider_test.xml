@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/insider_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="몇번째 문제" />
+
+    <TextView
+        android:id="@+id/insider_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문제영역" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/insider_choice_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageButton
+            android:id="@+id/insider_choice_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageButton
+            android:id="@+id/insider_choice_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageButton
+            android:id="@+id/insider_choice_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+    </LinearLayout>
+
+</LinearLayout>

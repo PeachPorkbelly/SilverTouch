@@ -18,6 +18,9 @@
             </intent-filter>
         </activity>
 
+        <!--인싸테스트-->
+        <activity android:name="inssa_test.InsiderTest"></activity>
+
         <!--미션들 -->
         <activity android:name="mission.mission_0"></activity>
         <activity android:name="mission.mission_1"></activity>
