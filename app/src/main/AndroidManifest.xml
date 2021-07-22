@@ -24,7 +24,8 @@
         <activity android:name="mission.mission_2"></activity>
 
         <activity android:name="mission_0.m0_00"></activity>
-
+        <activity android:name="mission_0.m0_01"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 

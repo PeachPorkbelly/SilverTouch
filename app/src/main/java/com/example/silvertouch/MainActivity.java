@@ -102,10 +102,13 @@ public class MainActivity extends AppCompatActivity {
         today = si.getDate(getApplicationContext());
 
 
+
         /*
         저장된 today가 null이면(앱을 처음 실행) 오늘 날짜를 DATE라는 키의 value로 저장한다 + 랜덤 넘버 3개 저장(중복 없이)
         저장된 today가 오늘의 날짜와 다르면(하루가 지남) 오늘 날짜를 DATE라는 키의 value로 업데이트 한다 + 랜덤 넘버 3개 저장
          */
+
+
         if (today==""){
             si.setDate(getApplicationContext(),getToday());
 
@@ -139,9 +142,9 @@ public class MainActivity extends AppCompatActivity {
              */
 
             si.setCompNum(getApplicationContext(),0); //완료 미션 개수 0개로 초기화
-            si.setMissionState(getApplicationContext(),"MISSION1",false); //미션 완료 상태 초기화
-            si.setMissionState(getApplicationContext(),"MISSION2",false);
-            si.setMissionState(getApplicationContext(),"MISSION3",false);
+            si.setMissionState(getApplicationContext(),"M1_STATE",false); //미션 완료 상태 초기화
+            si.setMissionState(getApplicationContext(),"M2_STATE",false);
+            si.setMissionState(getApplicationContext(),"M3_STATE",false);
 
         }
 

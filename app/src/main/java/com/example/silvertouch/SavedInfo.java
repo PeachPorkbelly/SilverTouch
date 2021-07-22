@@ -29,6 +29,7 @@ public class SavedInfo {
     //}
 
 
+
     /*
     미션 몇개 완료되었는지 저장하는 함수
      */
