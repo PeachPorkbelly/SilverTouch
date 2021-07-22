@@ -7,13 +7,13 @@
 
 
     <TextView
-        android:id="@+id/insider_order"
+        android:id="@+id/insider_order_mode_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="몇번째 문제" />
 
     <TextView
-        android:id="@+id/insider_question"
+        android:id="@+id/insider_question_mode_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="문제영역" />
@@ -24,28 +24,28 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ImageButton
-            android:id="@+id/insider_choice_1"
+            android:id="@+id/insider_choice_1_mode_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <ImageButton
-            android:id="@+id/insider_choice_2"
+            android:id="@+id/insider_choice_2_mode_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <ImageButton
-            android:id="@+id/insider_choice_3"
+            android:id="@+id/insider_choice_3_mode_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <ImageButton
-            android:id="@+id/insider_choice_4"
+            android:id="@+id/insider_choice_4_mode_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

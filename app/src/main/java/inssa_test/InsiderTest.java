@@ -16,8 +16,8 @@ import java.util.Random;
 
 public class InsiderTest extends AppCompatActivity {
 
-    private ArrayList<InsiderQuestion> insiderQuestionList = new ArrayList<InsiderQuestion>();  // 문제들 리스트, 추후에 랜덤으로 문제 배열 설정
-    private ArrayList<InsiderQuestion> insiderQuestionAllList = new ArrayList<InsiderQuestion>();             // 모든 문제들 리스트
+    private ArrayList<InsiderQuestion> insiderQuestionList = new ArrayList<InsiderQuestion>();            // 문제들 리스트, 추후에 랜덤으로 문제 배열 설정
+    private ArrayList<InsiderQuestion> insiderQuestionAllList = new ArrayList<InsiderQuestion>();         // 모든 문제들 리스트
     InsiderQuestion nowQuestion;                                                            // 현재 문제 저장 변수
     int questionIndex, answerCount;                                                         // questionIndex --> 몇번째 문제인지 저장하는 변수(0 부터 시작), answerCount --> 맞춘 정답 갯수
     ImageButton choiceButton1, choiceButton2, choiceButton3, choiceButton4;                 // 객관식 문제 보기
@@ -32,11 +32,16 @@ public class InsiderTest extends AppCompatActivity {
         // answer --> 정답
         // 생성자 단에서 데이터 넣고, 문제 불러올때 getter 메소드 사용
 
+        public static final int MODE_CHOICE_4 = 0;
+        public static final int MODE_CHOICE_2 = 1;
+
         private String questionStr;
         private Drawable choice1, choice2, choice3, choice4;
         private int answer;
+        private int mode;
 
-        // Insider question 생성자
+
+        // Insider question 생성자 (4지선다)
         public InsiderQuestion(String questionStr, Drawable choice1, Drawable choice2, Drawable choice3, Drawable choice4, int answer){
             this.questionStr = questionStr;
             this.choice1 = choice1;
@@ -44,6 +49,15 @@ public class InsiderTest extends AppCompatActivity {
             this.choice3 = choice3;
             this.choice4 = choice4;
             this.answer = answer;
+            this.mode = MODE_CHOICE_4;
+        }
+
+        // Insider question 생성자 (2지선다) Overloading
+        public InsiderQuestion(String questionStr, Drawable choice1, Drawable choice2, int answer){
+            this.questionStr = questionStr;
+            this.choice1 = choice1;
+            this.choice2 = choice2;
+            this.mode = MODE_CHOICE_2;
         }
         
         // getter 메소드
@@ -71,7 +85,9 @@ public class InsiderTest extends AppCompatActivity {
             return answer;
         }
 
-
+        public int getMode(){
+            return mode;
+        }
 
     }
 
@@ -110,6 +126,7 @@ public class InsiderTest extends AppCompatActivity {
             setQuestion(questionIndex, insiderQuestionList.get(questionIndex)); // 다음 문제 넘어가는 메소드
         } else{
             /* 틀렸을 경우 조치하는 메소드*/
+
         }
     }
 
@@ -127,13 +144,7 @@ public class InsiderTest extends AppCompatActivity {
         }
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.insider_test);
-
-        answerCount = 0;    // 맞춘 정답 갯수 변수 초기화
-        questionIndex = 0;  // 문제 번호 변수 초기화
+    public void first_run(){
 
         // 인싸테스트 문제 추가 -----
         addQuestion("다음 중 뒤로가기 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_back),
@@ -186,16 +197,30 @@ public class InsiderTest extends AppCompatActivity {
                 ContextCompat.getDrawable(this, R.drawable.insider_flashlight),
                 ContextCompat.getDrawable(this, R.drawable.insider_settings), 3);
 
+    }
+
+    /* Main Code */
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.insider_test_choice_4);
+
+        answerCount = 0;    // 맞춘 정답 갯수 변수 초기화
+        questionIndex = 0;  // 문제 번호 변수 초기화
+
+        // 문제 ALL 리스트에 추가
+        first_run();
+
         // 랜덤으로 10개 문제 뽑기
         randomQuestionSelect();
 
         // xml 연결
-        questionNumberView = (TextView) findViewById(R.id.insider_order);
-        questionStrView = (TextView) findViewById(R.id.insider_question);
-        choiceButton1 = (ImageButton) findViewById(R.id.insider_choice_1);
-        choiceButton2 = (ImageButton) findViewById(R.id.insider_choice_2);
-        choiceButton3 = (ImageButton) findViewById(R.id.insider_choice_3);
-        choiceButton4 = (ImageButton) findViewById(R.id.insider_choice_4);
+        questionNumberView = (TextView) findViewById(R.id.insider_order_mode_4);
+        questionStrView = (TextView) findViewById(R.id.insider_question_mode_4);
+        choiceButton1 = (ImageButton) findViewById(R.id.insider_choice_1_mode_4);
+        choiceButton2 = (ImageButton) findViewById(R.id.insider_choice_2_mode_4);
+        choiceButton3 = (ImageButton) findViewById(R.id.insider_choice_3_mode_4);
+        choiceButton4 = (ImageButton) findViewById(R.id.insider_choice_4_mode_4);
 
         // 이미지 버튼 작동
         choiceButton1.setOnClickListener(new View.OnClickListener() {
