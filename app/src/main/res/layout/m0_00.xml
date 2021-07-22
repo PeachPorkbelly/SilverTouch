@@ -13,8 +13,8 @@
 
         <ImageButton
             android:id="@+id/mission_exit"
-            android:layout_width="64px"
-            android:layout_height="64px"
+            android:layout_width="23.7dp"
+            android:layout_height="23.7dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="13dp"
             android:background="@android:color/transparent"

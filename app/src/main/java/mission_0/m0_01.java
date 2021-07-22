@@ -1,7 +1,9 @@
 package mission_0;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -14,11 +16,18 @@ import static mission_0.m0_00.M0;
 
 public class m0_01 extends AppCompatActivity {
 
+    Intent i;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.m0_01);
+
+        /*
+        반투명 레이아웃
+         */
+        FrameLayout fl = (FrameLayout)findViewById(R.id.m0_01_transparent_layout);
 
 
         /*
@@ -26,6 +35,7 @@ public class m0_01 extends AppCompatActivity {
          */
         ImageButton jumin = (ImageButton)findViewById(R.id.m0_01_jumin);
         ImageButton hint = (ImageButton)findViewById(R.id.m0_01_hint);
+        ImageButton exit = (ImageButton)findViewById(R.id.m0_01_exit);
 
 
         /*
@@ -35,6 +45,15 @@ public class m0_01 extends AppCompatActivity {
         ImageView m2 = (ImageView)findViewById(R.id.m0_01_mission_order_2);
         ImageView m3 = (ImageView)findViewById(R.id.m0_01_mission_order_3);
 
+
+        /*
+       실행할 코드들
+       */
+
+        /*
+        반투명 레이아웃 숨김
+         */
+        fl.setVisibility(View.INVISIBLE);
 
         /*
         몇번째 미션인지 표시
@@ -57,6 +76,16 @@ public class m0_01 extends AppCompatActivity {
         /*
         버튼 누르면 할 일들들
          */
+
+        //exit
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                i = new Intent(getApplicationContext(),com.example.silvertouch.MainActivity.class);
+                startActivity(i);
+            }
+        });
+
 
     }
 }
