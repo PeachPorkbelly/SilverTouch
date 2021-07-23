@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/m0_02_background_guide">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="284px"
+        android:layout_marginTop="268px">
+
+        <ImageView
+            android:id="@+id/m0_02_mission_order_1"
+            android:layout_width="90.2dp"
+            android:layout_height="25.5dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/misson_contents_1" />
+
+        <ImageView
+            android:id="@+id/m0_02_mission_order_2"
+            android:layout_width="90.2dp"
+            android:layout_height="25.5dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/misson_contents_2" />
+
+        <ImageView
+            android:id="@+id/m0_02_mission_order_3"
+            android:layout_width="90.2dp"
+            android:layout_height="25.5dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/misson_contents_3" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/m0_02_hint"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="720px"
+        android:layout_marginLeft="196px"
+        android:layout_width="158.5dp"
+        android:layout_height="53dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/mission_hint"
+        android:background="@android:color/transparent"/>
+
+
+    <ImageButton
+        android:id="@+id/m0_02_exit"
+        android:layout_width="23.7dp"
+        android:layout_height="23.7dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="55dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_exit" />
+
+    <ImageButton
+        android:id="@+id/m0_02_chobon"
+        android:layout_width="87dp"
+        android:layout_height="46.54dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="1400px"
+        android:layout_marginTop="420px"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/m0_02_chobon"
+        tools:layout_editor_absoluteX="507dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <ImageButton
+        android:id="@+id/m0_02_home"
+        android:layout_width="48dp"
+        android:layout_height="47.6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/m0_home"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="976px"
+        android:layout_marginTop="892px" />
+
+    <ImageButton
+        android:id="@+id/m0_02_previous"
+        android:layout_width="48dp"
+        android:layout_height="47.6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="1130px"
+        android:layout_marginTop="892px"
+        app:srcCompat="@drawable/m0_previous"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,6 +18,10 @@ public class m0_00 extends AppCompatActivity {
     ImageButton hangjeong;
     Intent intent;
 
+
+    /*
+    주민등록 초본 떼는 프로그램
+     */
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

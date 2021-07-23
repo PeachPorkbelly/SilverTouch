@@ -2,6 +2,7 @@ package mission_0;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
@@ -13,22 +14,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.silvertouch.R;
 
+
 import static mission_0.m0_00.M0;
 
 public class m0_01 extends AppCompatActivity {
 
     Intent i;
     FrameLayout fl;
-    ImageView initialize;
-    ImageView connecting;
-    ImageView ld_off_1;
-    ImageView ld_off_2;
-    ImageView ld_off_3;
 
-    ImageView ld_on_1;
-    ImageView ld_on_2;
-    ImageView ld_on_3;
+    ImageView initialize, connecting;
+    ImageView ld_off_1,ld_off_2,ld_off_3;
+    ImageView ld_on_1,ld_on_2,ld_on_3;
+    ImageView m1, m2, m3;
 
+    ImageButton jumin, exit, hint;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -58,41 +57,25 @@ public class m0_01 extends AppCompatActivity {
         /*
         버튼들
          */
-        ImageButton jumin = (ImageButton)findViewById(R.id.m0_01_jumin);
-        ImageButton hint = (ImageButton)findViewById(R.id.m0_01_hint);
-        ImageButton exit = (ImageButton)findViewById(R.id.m0_01_exit);
+        jumin = (ImageButton)findViewById(R.id.m0_01_jumin);
+        hint = (ImageButton)findViewById(R.id.m0_01_hint);
+        exit = (ImageButton)findViewById(R.id.m0_01_exit);
 
 
         /*
         미션 순서에 대한 정보를 담은 이미지 뷰
          */
-        ImageView m1 = (ImageView)findViewById(R.id.m0_01_mission_order_1);
-        ImageView m2 = (ImageView)findViewById(R.id.m0_01_mission_order_2);
-        ImageView m3 = (ImageView)findViewById(R.id.m0_01_mission_order_3);
+        m1 = (ImageView)findViewById(R.id.m0_01_mission_order_1);
+        m2 = (ImageView)findViewById(R.id.m0_01_mission_order_2);
+        m3 = (ImageView)findViewById(R.id.m0_01_mission_order_3);
 
 
         /*
-       실행할 코드들
+       초기화면
        */
-
         set_initialPage();
+        set_missionOrder(M0, m1, m2, m3);
 
-        /*
-        몇번째 미션인지 표시
-         */
-        if (M0==1){
-            m1.setVisibility(View.VISIBLE);
-            m2.setVisibility(View.INVISIBLE);
-            m3.setVisibility(View.INVISIBLE);
-        }else if (M0==2){
-            m1.setVisibility(View.INVISIBLE);
-            m2.setVisibility(View.VISIBLE);
-            m3.setVisibility(View.INVISIBLE);
-        }else if (M0==3){
-            m1.setVisibility(View.INVISIBLE);
-            m2.setVisibility(View.INVISIBLE);
-            m3.setVisibility(View.VISIBLE);
-        }
 
 
         /*
@@ -120,11 +103,116 @@ public class m0_01 extends AppCompatActivity {
         jumin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fl.setVisibility(View.VISIBLE);
-            }
-        });
 
-    }
+
+                fl.setVisibility(View.VISIBLE);
+                initialize.setVisibility(View.VISIBLE);
+
+                Handler handler = new Handler();
+
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        i = new Intent(getApplicationContext(),m0_02.class);
+                        startActivity(i);
+                    }
+                },2000);
+
+
+
+
+
+                //ld_on_1.setVisibility(View.VISIBLE);
+
+
+
+
+                /*
+
+                Handler handler = new Handler();
+
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        connecting.setVisibility(View.VISIBLE);
+                        ld_off_1.setVisibility(View.VISIBLE);
+                        ld_off_2.setVisibility(View.VISIBLE);
+                        ld_off_3.setVisibility(View.VISIBLE);
+                    }
+                },500);
+
+                Handler handler1 = new Handler();
+
+                handler1.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        ld_on_1.setVisibility(View.VISIBLE);
+                    }
+                },500);
+
+                try {
+                    handler1.wait((long) 5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                Handler handler2 = new Handler();
+
+                handler2.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        ld_on_2.setVisibility(View.VISIBLE);
+                    }
+                },500);
+
+                Handler handler3 = new Handler();
+
+                handler3.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        ld_on_3.setVisibility(View.VISIBLE);
+                    }
+                },500);
+
+                 */
+
+
+
+
+                /*
+                Timer timer0 = new Timer();
+                Timer timer1 = new Timer();
+
+                TimerTask timerTask0 = new TimerTask() {
+                    @Override
+                    public void run() {
+                        connecting.setVisibility(View.VISIBLE);
+                        ld_off_1.setVisibility(View.VISIBLE);
+                        ld_off_2.setVisibility(View.VISIBLE);
+                        ld_off_3.setVisibility(View.VISIBLE);
+                    }
+                };
+
+                timer0.schedule(timerTask0,500);
+
+                TimerTask timerTask1 = new TimerTask() {
+                    @Override
+                    public void run() {
+                        ld_on_1.setVisibility(View.VISIBLE);
+                    }
+                };
+                timer1.schedule(timerTask1,500);
+
+                 */
+
+
+
+            } //onClick
+        }); //setOnClickListener
+
+    }//onCreate
+
+
 
 
     /*
@@ -144,5 +232,22 @@ public class m0_01 extends AppCompatActivity {
         ld_on_2.setVisibility(View.INVISIBLE);
         ld_on_3.setVisibility(View.INVISIBLE);
 
+
+        }
+
+    public void set_missionOrder(int missionOrder, ImageView m1, ImageView m2, ImageView m3) {
+        if (missionOrder == 1) {
+            m1.setVisibility(View.VISIBLE);
+            m2.setVisibility(View.INVISIBLE);
+            m3.setVisibility(View.INVISIBLE);
+        } else if (missionOrder == 2) {
+            m1.setVisibility(View.INVISIBLE);
+            m2.setVisibility(View.VISIBLE);
+            m3.setVisibility(View.INVISIBLE);
+        } else if (missionOrder == 3) {
+            m1.setVisibility(View.INVISIBLE);
+            m2.setVisibility(View.INVISIBLE);
+            m3.setVisibility(View.VISIBLE);
+        }
     }
 }
