@@ -2,6 +2,7 @@ package mission_0;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -12,14 +13,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.silvertouch.R;
 
+import mission.MissionMethods;
+
 import static mission_0.m0_00.M0;
 
 
 public class m0_02 extends AppCompatActivity {
 
-    m0_01 m0_01 = new m0_01(); //set_missionOrder 불러오려고
+    MissionMethods missionMethods = new MissionMethods();
     ImageView m1, m2, m3; //미션 순서 나타내는 이미지들
+    ImageView waiting_page; //서버에 접속중 기다리는 이미지
     ImageButton chobon, deungbon, exit, hint; //등본은 나중에 추가해야함
+    ImageButton previous, home; //이전페이지와 처음페이지로 가는 버튼들
     Intent i;
 
     @Override
@@ -34,37 +39,40 @@ public class m0_02 extends AppCompatActivity {
         m1 = (ImageView)findViewById(R.id.m0_02_mission_order_1);
         m2 = (ImageView)findViewById(R.id.m0_02_mission_order_2);
         m3 = (ImageView)findViewById(R.id.m0_02_mission_order_3);
-
+        waiting_page = (ImageView)findViewById(R.id.m0_02_waiting);
+        chobon = (ImageButton)findViewById(R.id.m0_02_chobon);
+        exit = (ImageButton)findViewById(R.id.m0_02_exit);
+        hint = (ImageButton)findViewById(R.id.m0_02_hint);
+        previous = (ImageButton)findViewById(R.id.m0_02_previous);
+        home = (ImageButton)findViewById(R.id.m0_02_home);
 
         /*
         몇번째 미션인지 알려줌
          */
-        m0_01.set_missionOrder(M0,m1,m2,m3);
-
+        missionMethods.set_missionOrder(M0,m1,m2,m3);
+        waiting_page.setVisibility(View.INVISIBLE);
         /*
         주민등록(초본)버튼
          */
         chobon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                waiting_page.setVisibility(View.VISIBLE);
 
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        i = new Intent(getApplicationContext(),m0_00.class);
+                        startActivity(i);
+                    }
+                },1000);
             }
         });
 
 
         /*
-        종료버튼
-         */
-        exit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                i = new Intent(getApplicationContext(),com.example.silvertouch.MainActivity.class);
-                startActivity(i);
-            }
-        });
-
-        /*
-        힌트버튼
+        힌트버튼, 나중에 다이얼로그 받아서 함수로 따로 빼두기
          */
         hint.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +80,14 @@ public class m0_02 extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"힌트입니다",Toast.LENGTH_SHORT).show();
             }
         });
+
+        /*
+        전페이지와 처음페이지로 돌아감, 종료
+         */
+        missionMethods.M0_gotoPrevious(previous,m0_01.class,this);
+        missionMethods.M0_gotoFirstPage(home,m0_00.class,this);
+        missionMethods.set_Exit(exit,this);
+
 
 
     }

@@ -6,6 +6,7 @@ import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import mission.MissionMethods;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +18,8 @@ public class m0_00 extends AppCompatActivity {
     public static int M0;
     ImageButton hangjeong;
     Intent intent;
-
+    ImageButton exit;
+    MissionMethods missionMethods = new MissionMethods();
 
     /*
     주민등록 초본 떼는 프로그램
@@ -32,24 +34,15 @@ public class m0_00 extends AppCompatActivity {
         ImageView missionOrder2 = (ImageView)findViewById(R.id.missionOrder_2);
         ImageView missionOrder3 = (ImageView)findViewById(R.id.missionOrder_3);
         hangjeong = (ImageButton)findViewById(R.id.m0_00_hangjeong);
-
+        exit = (ImageButton)findViewById(R.id.m0_00_exit);
         int missionOrder = getIntent().getIntExtra("missionOrder",0);
 
         M0 = missionOrder;
 
-        if (missionOrder==1){
-            missionOrder1.setVisibility(View.VISIBLE);
-            missionOrder2.setVisibility(View.INVISIBLE);
-            missionOrder3.setVisibility(View.INVISIBLE);
-        }else if (missionOrder==2){
-            missionOrder1.setVisibility(View.INVISIBLE);
-            missionOrder2.setVisibility(View.VISIBLE);
-            missionOrder3.setVisibility(View.INVISIBLE);
-        }else if (missionOrder==3){
-            missionOrder1.setVisibility(View.INVISIBLE);
-            missionOrder2.setVisibility(View.INVISIBLE);
-            missionOrder3.setVisibility(View.VISIBLE);
-        }
+        //몇번째 미션인지
+        missionMethods.set_missionOrder(M0,missionOrder1,missionOrder2,missionOrder3);
+        //종료버튼
+        missionMethods.set_Exit(exit,this);
 
         hangjeong.setOnClickListener(new View.OnClickListener() {
             @Override

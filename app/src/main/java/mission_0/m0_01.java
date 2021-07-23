@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.silvertouch.R;
-
+import mission.MissionMethods;
 
 import static mission_0.m0_00.M0;
 
@@ -28,6 +28,8 @@ public class m0_01 extends AppCompatActivity {
     ImageView m1, m2, m3;
 
     ImageButton jumin, exit, hint;
+
+    MissionMethods missionMethods = new MissionMethods();
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -74,22 +76,16 @@ public class m0_01 extends AppCompatActivity {
        초기화면
        */
         set_initialPage();
-        set_missionOrder(M0, m1, m2, m3);
+        missionMethods.set_missionOrder(M0,m1,m2,m3);
 
 
 
         /*
         버튼 누르면 할 일들들
          */
-
         //exit
-        exit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                i = new Intent(getApplicationContext(),com.example.silvertouch.MainActivity.class);
-                startActivity(i);
-            }
-        });
+        missionMethods.set_Exit(exit,this);
+
 
         //hint
         hint.setOnClickListener(new View.OnClickListener() {
@@ -117,10 +113,6 @@ public class m0_01 extends AppCompatActivity {
                         startActivity(i);
                     }
                 },2000);
-
-
-
-
 
                 //ld_on_1.setVisibility(View.VISIBLE);
 
@@ -232,22 +224,5 @@ public class m0_01 extends AppCompatActivity {
         ld_on_2.setVisibility(View.INVISIBLE);
         ld_on_3.setVisibility(View.INVISIBLE);
 
-
-        }
-
-    public void set_missionOrder(int missionOrder, ImageView m1, ImageView m2, ImageView m3) {
-        if (missionOrder == 1) {
-            m1.setVisibility(View.VISIBLE);
-            m2.setVisibility(View.INVISIBLE);
-            m3.setVisibility(View.INVISIBLE);
-        } else if (missionOrder == 2) {
-            m1.setVisibility(View.INVISIBLE);
-            m2.setVisibility(View.VISIBLE);
-            m3.setVisibility(View.INVISIBLE);
-        } else if (missionOrder == 3) {
-            m1.setVisibility(View.INVISIBLE);
-            m2.setVisibility(View.INVISIBLE);
-            m3.setVisibility(View.VISIBLE);
-        }
     }
 }
