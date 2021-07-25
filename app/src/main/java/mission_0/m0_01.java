@@ -1,6 +1,7 @@
 package mission_0;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -11,8 +12,11 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.example.silvertouch.R;
+
+
 import mission.MissionMethods;
 
 import static mission_0.m0_00.M0;
@@ -21,6 +25,7 @@ public class m0_01 extends AppCompatActivity {
 
     Intent i;
     FrameLayout fl;
+
 
     ImageView initialize, connecting;
     ImageView ld_off_1,ld_off_2,ld_off_3;
@@ -107,6 +112,45 @@ public class m0_01 extends AppCompatActivity {
                 fl.setVisibility(View.VISIBLE);
                 initialize.setVisibility(View.VISIBLE);
 
+                /*
+                통신중입니다, 로딩 동그라미 나오는 코드
+                */
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        connecting.setVisibility(View.VISIBLE);
+                        ld_off_1.setVisibility(View.VISIBLE);
+                        ld_off_2.setVisibility(View.VISIBLE);
+                        ld_off_3.setVisibility(View.VISIBLE);
+
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                ld_off_1.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.m0_loading_on));
+                            }
+                        }, 500);
+
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                ld_off_2.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.m0_loading_on));
+                            }
+                        }, 1000);
+
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                ld_off_3.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.m0_loading_on));
+                                i = new Intent(getApplicationContext(),m0_02.class);
+                                startActivity(i);
+                            }
+                        }, 1500);
+                    }
+                }, 1000);
+
+
+
+                /*
                 Handler handler = new Handler();
 
                 handler.postDelayed(new Runnable() {
@@ -115,7 +159,7 @@ public class m0_01 extends AppCompatActivity {
                         i = new Intent(getApplicationContext(),m0_02.class);
                         startActivity(i);
                     }
-                },2000);
+                },2000); */
 
                 //ld_on_1.setVisibility(View.VISIBLE);
 
