@@ -25,7 +25,7 @@ import static inssa_test.InsiderTestStart.wrongCount;
 public class InsiderTestChoice2 extends Fragment {
     View view;
     TextView questionNumberView, questionStrView;
-    ImageButton choiceButton1, choiceButton2;
+    ImageButton choiceButton1, choiceButton2, exitTest;
 
     public InsiderTestChoice2(){
         /* 생성자 */
@@ -86,6 +86,7 @@ public class InsiderTestChoice2 extends Fragment {
         questionStrView = (TextView) view.findViewById(R.id.insider_question_mode_2);
         choiceButton1 = (ImageButton) view.findViewById(R.id.insider_choice_1_mode_2);
         choiceButton2 = (ImageButton) view.findViewById(R.id.insider_choice_2_mode_2);
+        exitTest = (ImageButton) view.findViewById(R.id.exitButton_mode_2);
 
         // 문제 설정
         setQuestion();
@@ -102,6 +103,13 @@ public class InsiderTestChoice2 extends Fragment {
             @Override
             public void onClick(View view) {
                 choiceBtnClicked(2);
+            }
+        });
+
+        exitTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().finish();
             }
         });
 

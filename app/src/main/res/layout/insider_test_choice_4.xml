@@ -6,6 +6,13 @@
     android:orientation="vertical">
 
 
+    <ImageButton
+        android:id="@+id/exitButton_mode_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/misson_exit" />
+
     <TextView
         android:id="@+id/insider_order_mode_4"
         android:layout_width="match_parent"

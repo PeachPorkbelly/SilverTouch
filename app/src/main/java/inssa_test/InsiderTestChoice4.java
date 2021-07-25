@@ -27,7 +27,7 @@ import static inssa_test.InsiderTestStart.insiderQuestionList;
 public class InsiderTestChoice4 extends Fragment {
     View view;
     TextView questionNumberView, questionStrView;
-    ImageButton choiceButton1, choiceButton2, choiceButton3, choiceButton4;
+    ImageButton choiceButton1, choiceButton2, choiceButton3, choiceButton4, exitTest;
 
 
     public InsiderTestChoice4(){
@@ -93,6 +93,7 @@ public class InsiderTestChoice4 extends Fragment {
         choiceButton2 = (ImageButton) view.findViewById(R.id.insider_choice_2_mode_4);
         choiceButton3 = (ImageButton) view.findViewById(R.id.insider_choice_3_mode_4);
         choiceButton4 = (ImageButton) view.findViewById(R.id.insider_choice_4_mode_4);
+        exitTest = (ImageButton) view.findViewById(R.id.exitButton_mode_4);
         
         // 문제 설정
         setQuestion();
@@ -127,6 +128,13 @@ public class InsiderTestChoice4 extends Fragment {
             public void onClick(View v) {
                 choiceBtnClicked(4);
 
+            }
+        });
+
+        exitTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().finish();
             }
         });
 

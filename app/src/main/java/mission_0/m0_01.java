@@ -100,6 +100,9 @@ public class m0_01 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                /* 맨첨에 장비초기화중입니다.그 다음에 로딩창
+                 로딩창 회색동그라미 3개 동시에 있고 동그라미 3개 0.5초마다 바꿈
+                  그 다음 Intent로 M0_02로 넘어감 */
 
                 fl.setVisibility(View.VISIBLE);
                 initialize.setVisibility(View.VISIBLE);
