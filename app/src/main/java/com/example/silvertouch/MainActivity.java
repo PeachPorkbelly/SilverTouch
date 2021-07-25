@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
 
-import inssa_test.InsiderTest;
+import inssa_test.InsiderTestStart;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -286,7 +286,7 @@ public class MainActivity extends AppCompatActivity {
         insider_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(getApplicationContext(), InsiderTest.class);
+                intent = new Intent(getApplicationContext(), InsiderTestStart.class);
                 startActivity(intent);
             }
         });

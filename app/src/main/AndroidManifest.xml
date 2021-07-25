@@ -10,30 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SilverTouch">
 
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 인싸테스트 -->
+        <activity android:name="inssa_test.InsiderTestStart" />
 
-        <!--인싸테스트-->
-        <activity android:name="inssa_test.InsiderTest"></activity>
-
-        <!--미션들 -->
-        <activity android:name="mission.mission_0"></activity>
-        <activity android:name="mission.mission_1"></activity>
-        <activity android:name="mission.mission_2"></activity>
-
-        <activity android:name="mission_0.m0_00"></activity>
-        <activity android:name="mission_0.m0_01"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name="mission_0.m0_02"
-            android:screenOrientation="landscape"></activity>
-
+        <!-- 미션들 -->
+        <activity android:name="mission.mission_0" />
+        <activity android:name="mission.mission_1" />
+        <activity android:name="mission.mission_2" />
+        <activity android:name="mission_0.m0_00" />
+        <activity
+            android:name="mission_0.m0_01"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="mission_0.m0_02"
+            android:screenOrientation="landscape" />
     </application>
-
-
 
 </manifest>
