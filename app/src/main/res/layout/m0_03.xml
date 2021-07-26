@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/m0_03_background">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="284px"
+        android:layout_marginTop="268px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/m0_03_mission_order_1"
+            android:layout_width="90.2dp"
+            android:layout_height="25.5dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/misson_contents_1" />
+
+        <ImageView
+            android:id="@+id/m0_03_mission_order_2"
+            android:layout_width="90.2dp"
+            android:layout_height="25.5dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/misson_contents_2" />
+
+        <ImageView
+            android:id="@+id/m0_03_mission_order_3"
+            android:layout_width="90.2dp"
+            android:layout_height="25.5dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/misson_contents_3" />
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/m0_03_hint"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="720px"
+        android:layout_marginLeft="196px"
+        android:layout_width="158.5dp"
+        android:layout_height="53dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/mission_hint"
+        android:background="@android:color/transparent"/>
+
+
+    <ImageButton
+        android:id="@+id/m0_03_exit"
+        android:layout_width="23.7dp"
+        android:layout_height="23.7dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="55dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_exit" />
+
+    <ImageButton
+        android:id="@+id/m0_03_home"
+        android:layout_width="48dp"
+        android:layout_height="47.6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/m0_home"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="906px"
+        android:layout_marginTop="892px" />
+
+    <ImageButton
+        android:id="@+id/m0_03_previous"
+        android:layout_width="48dp"
+        android:layout_height="47.6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="1060px"
+        android:layout_marginTop="892px"
+        app:srcCompat="@drawable/m0_previous"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_1"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="580dp"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_1" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_2"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/m0_03_btn_1"
+        app:layout_constraintStart_toEndOf="@+id/m0_03_btn_1"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_2" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_3"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/m0_03_btn_2"
+        app:layout_constraintStart_toEndOf="@+id/m0_03_btn_2"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_3" />
+
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_4"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/m0_03_btn_1"
+        app:layout_constraintTop_toBottomOf="@+id/m0_03_btn_1"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_4" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_5"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/m0_03_btn_4"
+        app:layout_constraintTop_toBottomOf="@+id/m0_03_btn_2"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_5" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_6"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/m0_03_btn_5"
+        app:layout_constraintTop_toBottomOf="@+id/m0_03_btn_3"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_6" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_7"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/m0_03_btn_4"
+        app:layout_constraintTop_toBottomOf="@+id/m0_03_btn_4"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_7" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_8"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/m0_03_btn_7"
+        app:layout_constraintTop_toBottomOf="@+id/m0_03_btn_5"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_8" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_9"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/m0_03_btn_8"
+        app:layout_constraintTop_toBottomOf="@+id/m0_03_btn_6"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_9" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_del"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/m0_03_btn_7"
+        app:layout_constraintTop_toBottomOf="@+id/m0_03_btn_7"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_del" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_0"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/m0_03_btn_del"
+        app:layout_constraintTop_toBottomOf="@+id/m0_03_btn_8"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_0" />
+
+    <ImageButton
+        android:id="@+id/m0_03_btn_edit"
+        android:layout_width="49dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/m0_03_btn_0"
+        app:layout_constraintTop_toBottomOf="@+id/m0_03_btn_9"
+        app:srcCompat="@drawable/misson_hangjeong_btn_number_edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

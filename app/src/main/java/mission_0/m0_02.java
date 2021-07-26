@@ -51,6 +51,7 @@ public class m0_02 extends AppCompatActivity {
          */
         missionMethods.set_missionOrder(M0,m1,m2,m3);
         waiting_page.setVisibility(View.INVISIBLE);
+
         /*
         주민등록(초본)버튼
          */
@@ -63,7 +64,7 @@ public class m0_02 extends AppCompatActivity {
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        i = new Intent(getApplicationContext(),m0_00.class);
+                        i = new Intent(getApplicationContext(),m0_03.class);
                         startActivity(i);
                     }
                 },1000);

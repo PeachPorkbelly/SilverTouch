@@ -31,6 +31,11 @@
         <activity
             android:name="mission_0.m0_02"
             android:screenOrientation="landscape" />
+        <activity android:name="mission_0.m0_03"
+            android:screenOrientation="landscape"></activity>
+
+
+
     </application>
 
 </manifest>
