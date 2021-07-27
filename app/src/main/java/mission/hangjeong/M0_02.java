@@ -1,4 +1,4 @@
-package mission_0;
+package mission.hangjeong;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,10 +15,10 @@ import com.example.silvertouch.R;
 
 import mission.MissionMethods;
 
-import static mission_0.m0_00.M0;
+import static mission.hangjeong.M0_00.M0;
 
 
-public class m0_02 extends AppCompatActivity {
+public class M0_02 extends AppCompatActivity {
 
     MissionMethods missionMethods = new MissionMethods();
     ImageView m1, m2, m3; //미션 순서 나타내는 이미지들
@@ -31,7 +31,7 @@ public class m0_02 extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.m0_02);
+        setContentView(R.layout.mission_hangjeong_m0_02);
 
         /*
         변수들 아이디와 연결해주는 부분
@@ -51,6 +51,7 @@ public class m0_02 extends AppCompatActivity {
          */
         missionMethods.set_missionOrder(M0,m1,m2,m3);
         waiting_page.setVisibility(View.INVISIBLE);
+
         /*
         주민등록(초본)버튼
          */
@@ -63,7 +64,7 @@ public class m0_02 extends AppCompatActivity {
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        i = new Intent(getApplicationContext(),m0_00.class);
+                        i = new Intent(getApplicationContext(), M0_03.class);
                         startActivity(i);
                     }
                 },1000);
@@ -84,8 +85,8 @@ public class m0_02 extends AppCompatActivity {
         /*
         전페이지와 처음페이지로 돌아감, 종료
          */
-        missionMethods.M0_gotoPrevious(previous,m0_01.class,this);
-        missionMethods.M0_gotoFirstPage(home,m0_00.class,this);
+        missionMethods.goto_thisClass(previous,M0_01.class,this);
+        missionMethods.goto_thisClass(home,M0_00.class,this);
         missionMethods.set_Exit(exit,this);
 
 

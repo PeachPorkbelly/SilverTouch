@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/m0_02_background_guide">
+    android:background="@drawable/mission_hangjeong_m0_02_bg">
 
 
     <FrameLayout
@@ -72,7 +72,7 @@
         android:layout_marginTop="420px"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/m0_02_chobon"
+        app:srcCompat="@drawable/mission_hangjeong_m0_02_chobon"
         tools:layout_editor_absoluteX="507dp"
         tools:layout_editor_absoluteY="155dp" />
 
@@ -82,10 +82,10 @@
         android:layout_height="47.6dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/m0_home"
+        app:srcCompat="@drawable/mission_hangjeong_home"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        android:layout_marginLeft="976px"
+        android:layout_marginLeft="906px"
         android:layout_marginTop="892px" />
 
     <ImageButton
@@ -94,11 +94,11 @@
         android:layout_height="47.6dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="1130px"
+        android:layout_marginLeft="1060px"
         android:layout_marginTop="892px"
-        app:srcCompat="@drawable/m0_previous"
         android:scaleType="fitCenter"
-        android:background="@android:color/transparent" />
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/mission_hangjeong_previous"/>
 
     <ImageView
         android:id="@+id/m0_02_waiting"

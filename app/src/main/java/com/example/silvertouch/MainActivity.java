@@ -312,7 +312,7 @@ public class MainActivity extends AppCompatActivity {
     public void MissionStart(int missionNum, int missionOrder){
 
         if (missionNum==0){
-            intent = new Intent(getApplicationContext(),mission_0.m0_00.class);
+            intent = new Intent(getApplicationContext(),mission.hangjeong.M0_00.class);
             intent.putExtra("missionOrder",missionOrder);
             startActivity(intent);
         }else if(missionNum==1){

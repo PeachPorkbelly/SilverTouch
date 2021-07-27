@@ -1,7 +1,6 @@
-package mission_0;
+package mission.hangjeong;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -16,12 +15,11 @@ import androidx.core.content.ContextCompat;
 
 import com.example.silvertouch.R;
 
-
 import mission.MissionMethods;
 
-import static mission_0.m0_00.M0;
+import static mission.hangjeong.M0_00.M0;
 
-public class m0_01 extends AppCompatActivity {
+public class M0_01 extends AppCompatActivity {
 
     Intent i;
     FrameLayout fl;
@@ -40,7 +38,7 @@ public class m0_01 extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.m0_01);
+        setContentView(R.layout.mission_hangjeong_m0_01);
 
         /*
         반투명 레이아웃
@@ -126,131 +124,32 @@ public class m0_01 extends AppCompatActivity {
                         new Handler().postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                ld_off_1.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.m0_loading_on));
+                                ld_off_1.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.mission_hangjeong_loadingon));
                             }
                         }, 500);
 
                         new Handler().postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                ld_off_2.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.m0_loading_on));
+                                ld_off_2.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.mission_hangjeong_loadingon));
                             }
                         }, 1000);
 
                         new Handler().postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                ld_off_3.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.m0_loading_on));
-                                i = new Intent(getApplicationContext(),m0_02.class);
+                                ld_off_3.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.mission_hangjeong_loadingon));
+                                i = new Intent(getApplicationContext(), M0_02.class);
                                 startActivity(i);
                             }
                         }, 1500);
                     }
                 }, 1000);
 
-
-
-                /*
-                Handler handler = new Handler();
-
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        i = new Intent(getApplicationContext(),m0_02.class);
-                        startActivity(i);
-                    }
-                },2000); */
-
-                //ld_on_1.setVisibility(View.VISIBLE);
-
-
-
-
-                /*
-
-                Handler handler = new Handler();
-
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        connecting.setVisibility(View.VISIBLE);
-                        ld_off_1.setVisibility(View.VISIBLE);
-                        ld_off_2.setVisibility(View.VISIBLE);
-                        ld_off_3.setVisibility(View.VISIBLE);
-                    }
-                },500);
-
-                Handler handler1 = new Handler();
-
-                handler1.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        ld_on_1.setVisibility(View.VISIBLE);
-                    }
-                },500);
-
-                try {
-                    handler1.wait((long) 5000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                Handler handler2 = new Handler();
-
-                handler2.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        ld_on_2.setVisibility(View.VISIBLE);
-                    }
-                },500);
-
-                Handler handler3 = new Handler();
-
-                handler3.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        ld_on_3.setVisibility(View.VISIBLE);
-                    }
-                },500);
-
-                 */
-
-
-
-
-                /*
-                Timer timer0 = new Timer();
-                Timer timer1 = new Timer();
-
-                TimerTask timerTask0 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        connecting.setVisibility(View.VISIBLE);
-                        ld_off_1.setVisibility(View.VISIBLE);
-                        ld_off_2.setVisibility(View.VISIBLE);
-                        ld_off_3.setVisibility(View.VISIBLE);
-                    }
-                };
-
-                timer0.schedule(timerTask0,500);
-
-                TimerTask timerTask1 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        ld_on_1.setVisibility(View.VISIBLE);
-                    }
-                };
-                timer1.schedule(timerTask1,500);
-
-                 */
-
-
-
             } //onClick
         }); //setOnClickListener
 
     }//onCreate
-
 
 
 
