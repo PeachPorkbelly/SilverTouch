@@ -17,7 +17,6 @@
         액션바와 타이틀바 없앰앰-->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-
         <item name="android:windowFullscreen">true</item>
 
 

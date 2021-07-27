@@ -10,10 +10,10 @@
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="284px"
-        android:layout_marginTop="268px">
+        android:layout_marginTop="268px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/m0_02_mission_order_1"
@@ -37,25 +37,25 @@
             app:srcCompat="@drawable/misson_contents_3" />
     </FrameLayout>
 
+
     <ImageButton
         android:id="@+id/m0_02_hint"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="720px"
-        android:layout_marginLeft="196px"
         android:layout_width="158.5dp"
         android:layout_height="53dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="272dp"
+        android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/mission_hint"
-        android:background="@android:color/transparent"/>
-
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mission_hint" />
 
     <ImageButton
         android:id="@+id/m0_02_exit"
         android:layout_width="23.7dp"
         android:layout_height="23.7dp"
-        android:layout_marginLeft="137dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="40dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -66,39 +66,37 @@
         android:id="@+id/m0_02_chobon"
         android:layout_width="87dp"
         android:layout_height="46.54dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="1400px"
-        android:layout_marginTop="420px"
+        android:layout_marginLeft="536dp"
+        android:layout_marginTop="144dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/mission_hangjeong_m0_02_chobon"
-        tools:layout_editor_absoluteX="507dp"
-        tools:layout_editor_absoluteY="155dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mission_hangjeong_m0_02_chobon" />
 
     <ImageButton
         android:id="@+id/m0_02_home"
         android:layout_width="48dp"
         android:layout_height="47.6dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mission_hangjeong_home"
+        android:layout_marginLeft="312dp"
+        android:layout_marginTop="332dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        android:layout_marginLeft="906px"
-        android:layout_marginTop="892px" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mission_hangjeong_home" />
 
     <ImageButton
         android:id="@+id/m0_02_previous"
         android:layout_width="48dp"
         android:layout_height="47.6dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="1060px"
-        android:layout_marginTop="892px"
-        android:scaleType="fitCenter"
+        android:layout_marginStart="8dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/mission_hangjeong_previous"/>
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/m0_02_home"
+        app:layout_constraintTop_toTopOf="@+id/m0_02_home"
+        app:srcCompat="@drawable/mission_hangjeong_previous" />
 
     <ImageView
         android:id="@+id/m0_02_waiting"
@@ -107,6 +105,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/m0_02_waiting" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

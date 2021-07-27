@@ -56,7 +56,7 @@ public class InsiderTestEnd extends Fragment {
 
         // 이미지 토스트 부분
         ImageView iv = new ImageView(container.getContext());
-        iv.setImageResource(R.drawable.m0_confirm);
+        iv.setImageResource(R.drawable.mission_hangjeong_confirm);
 
         Toast toast = Toast.makeText(container.getContext(), "InsiderTestEnd",Toast.LENGTH_SHORT);
         toast.setView(iv);

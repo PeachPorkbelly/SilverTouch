@@ -3,7 +3,9 @@ package com.example.silvertouch;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -69,10 +71,14 @@ public class MainActivity extends AppCompatActivity {
     //인싸테스트 버튼
     ImageButton insider_Button;
 
+    //카드 만들기 버튼//
+    ImageButton btn_card;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         /*
 
@@ -103,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
         today = si.getDate(getApplicationContext());
 
         insider_Button = (ImageButton) findViewById(R.id.inssatest);
+        btn_card = (ImageButton)findViewById(R.id.cardmaking);
 
 
 
@@ -255,6 +262,15 @@ public class MainActivity extends AppCompatActivity {
                 si.setMissionState(getApplicationContext(),"M2_STATE",false);
                 si.setMissionState(getApplicationContext(),"M3_STATE",false);
                 si.setCompNum(getApplicationContext(),0);
+            }
+        });
+
+        /*test*/
+        btn_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(),mission.hangjeong.vector_test.class);
+                startActivity(intent);
             }
         });
 

@@ -10,10 +10,10 @@
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="284px"
-        android:layout_marginTop="268px">
+        android:layout_marginTop="268px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/m0_01_mission_order_1"
@@ -40,37 +40,50 @@
 
     <ImageButton
         android:id="@+id/m0_01_jumin"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="110.5dp"
-        android:layout_marginLeft="368.5dp"
         android:layout_width="87dp"
         android:layout_height="46.54dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="116dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mission_hangjeong_jumin" />
 
     <ImageButton
         android:id="@+id/m0_01_hint"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="259dp"
-        android:layout_marginLeft="70dp"
         android:layout_width="158.5dp"
         android:layout_height="53dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="259dp"
+        android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/mission_hint"
-        android:background="@android:color/transparent"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mission_hint" />
+
+
+    <ImageButton
+        android:id="@+id/m0_01_exit"
+        android:layout_width="23.7dp"
+        android:layout_height="23.7dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="55dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_exit" />
 
     <FrameLayout
         android:id="@+id/m0_01_transparent_layout"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_width="487dp"
         android:layout_height="362dp"
-        android:layout_marginTop="14dp"
         android:layout_marginLeft="305dp"
-        android:background="#66000000">
+        android:layout_marginTop="14dp"
+        android:background="#66000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/m0_00_initialize"
@@ -88,8 +101,8 @@
             android:id="@+id/m0_00_loading_off1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
             android:layout_marginLeft="140dp"
+            android:layout_marginTop="220dp"
             app:srcCompat="@drawable/mission_hangjeong_loadingoff" />
 
 
@@ -97,24 +110,24 @@
             android:id="@+id/m0_00_loading_off2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
             android:layout_marginLeft="230dp"
+            android:layout_marginTop="220dp"
             app:srcCompat="@drawable/mission_hangjeong_loadingoff" />
 
         <ImageView
             android:id="@+id/m0_00_loading_off3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
             android:layout_marginLeft="320dp"
+            android:layout_marginTop="220dp"
             app:srcCompat="@drawable/mission_hangjeong_loadingoff" />
 
         <ImageView
             android:id="@+id/m0_00_loading_on1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
             android:layout_marginLeft="140dp"
+            android:layout_marginTop="220dp"
             app:srcCompat="@drawable/mission_hangjeong_loadingon" />
 
 
@@ -122,34 +135,27 @@
             android:id="@+id/m0_00_loading_on2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
             android:layout_marginLeft="230dp"
+            android:layout_marginTop="220dp"
             app:srcCompat="@drawable/mission_hangjeong_loadingon" />
 
         <ImageView
             android:id="@+id/m0_00_loading_on3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
             android:layout_marginLeft="320dp"
+            android:layout_marginTop="220dp"
             app:srcCompat="@drawable/mission_hangjeong_loadingon" />
 
 
     </FrameLayout>
 
-    <ImageButton
-        android:id="@+id/m0_01_exit"
-        android:layout_width="23.7dp"
-        android:layout_height="23.7dp"
-        android:layout_marginLeft="137dp"
-        android:layout_marginTop="55dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/misson_exit" />
-
-
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
