@@ -40,34 +40,28 @@ public class MissionMethods {
         });
     }
 
+    //특정 클래스로 가는...
+    public void goto_thisClass(ImageButton button, Class targetClass, Context context){
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,targetClass);
+                context.startActivity(intent);
+            }
+        });
+    }
+
 
     /*
     *******************
     *******************
-    * 미션 0의 함수들
+    * hangjeong의 함수들
     *******************
     *******************
      */
 
-    //뒤로가기
-    public void M0_gotoPrevious(ImageButton previous, Class targetClass, Context context){
-        previous.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context,targetClass);
-                context.startActivity(intent);
-            }
-        });
-    }
-    //처음 화면으로
-    public void M0_gotoFirstPage(ImageButton home, Class targetClass, Context context){
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context,targetClass);
-                context.startActivity(intent);
-            }
-        });
-    }
+
+
+
 
 }//main

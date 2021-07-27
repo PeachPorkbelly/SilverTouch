@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/m0_01_background">
+    android:background="@drawable/mission_hangjeong_m0_01_bg">
 
 
     <FrameLayout
@@ -48,7 +48,7 @@
         android:layout_height="46.54dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/m0_01_jumin" />
+        app:srcCompat="@drawable/mission_hangjeong_jumin" />
 
     <ImageButton
         android:id="@+id/m0_01_hint"
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
             android:layout_marginLeft="140dp"
-            app:srcCompat="@drawable/m0_loading_off" />
+            app:srcCompat="@drawable/mission_hangjeong_loadingoff" />
 
 
         <ImageView
@@ -99,7 +99,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
             android:layout_marginLeft="230dp"
-            app:srcCompat="@drawable/m0_loading_off" />
+            app:srcCompat="@drawable/mission_hangjeong_loadingoff" />
 
         <ImageView
             android:id="@+id/m0_00_loading_off3"
@@ -107,7 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
             android:layout_marginLeft="320dp"
-            app:srcCompat="@drawable/m0_loading_off" />
+            app:srcCompat="@drawable/mission_hangjeong_loadingoff" />
 
         <ImageView
             android:id="@+id/m0_00_loading_on1"
@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
             android:layout_marginLeft="140dp"
-            app:srcCompat="@drawable/m0_loading_on" />
+            app:srcCompat="@drawable/mission_hangjeong_loadingon" />
 
 
         <ImageView
@@ -124,7 +124,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
             android:layout_marginLeft="230dp"
-            app:srcCompat="@drawable/m0_loading_on" />
+            app:srcCompat="@drawable/mission_hangjeong_loadingon" />
 
         <ImageView
             android:id="@+id/m0_00_loading_on3"
@@ -132,7 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
             android:layout_marginLeft="320dp"
-            app:srcCompat="@drawable/m0_loading_on" />
+            app:srcCompat="@drawable/mission_hangjeong_loadingon" />
 
 
     </FrameLayout>

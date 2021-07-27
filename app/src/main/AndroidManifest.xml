@@ -24,14 +24,15 @@
         <activity android:name="mission.mission_0" />
         <activity android:name="mission.mission_1" />
         <activity android:name="mission.mission_2" />
-        <activity android:name="mission_0.m0_00" />
+
+        <activity android:name="mission.hangjeong.M0_00" />
         <activity
-            android:name="mission_0.m0_01"
+            android:name="mission.hangjeong.M0_01"
             android:screenOrientation="landscape" />
         <activity
-            android:name="mission_0.m0_02"
+            android:name="mission.hangjeong.M0_02"
             android:screenOrientation="landscape" />
-        <activity android:name="mission_0.m0_03"
+        <activity android:name="mission.hangjeong.M0_03"
             android:screenOrientation="landscape"></activity>
 
 
