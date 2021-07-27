@@ -1,11 +1,14 @@
 package inssa_test;
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -49,6 +52,17 @@ public class InsiderTestEnd extends Fragment {
                 getActivity().finish();
             }
         });
+
+
+        // 이미지 토스트 부분
+        ImageView iv = new ImageView(container.getContext());
+        iv.setImageResource(R.drawable.m0_confirm);
+
+        Toast toast = Toast.makeText(container.getContext(), "InsiderTestEnd",Toast.LENGTH_SHORT);
+        toast.setView(iv);
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show();
+        // -- 이미지 토스트 end --
 
         return view;
     }
