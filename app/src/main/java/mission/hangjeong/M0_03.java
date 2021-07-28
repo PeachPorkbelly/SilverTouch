@@ -61,7 +61,10 @@ public class M0_03 extends AppCompatActivity {
         m3 = (ImageView)findViewById(R.id.m0_03_mission_order_3);
 
         /*
-        실행할 코드
+        실행할 코드 - 주민번호 13자리 다 입력시 확인, 확인버튼을 눌러주세요/ 확인 버튼 visible
+        13자리 입력 전에 확인 버튼이 눌렸을 때 팝업 토스트 메세지
+        13자리 입력 후 확인 버튼이 눌렸을 때 -> 로딩화면(0.5초) imageView visible  -> M0_04.class 로 넘어감
+        정정/삭제 버튼 기능 구현 - 정정(btn_edit) 1자리 지움, 삭제(btn_del) 전체 지움
          */
 
         //몇번째 미션인지 띄우기
