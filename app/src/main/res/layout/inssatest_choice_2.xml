@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/misson_exit" />
 
     <ImageView
-        android:id="@+id/inssatest_choice2_t01"
+        android:id="@+id/inssatest_choice2_questionOrder"
         android:layout_width="84dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
@@ -28,18 +28,18 @@
         app:srcCompat="@drawable/inssatest_t01" />
 
     <ImageButton
-        android:id="@+id/inssatest_choice2_q01"
+        android:id="@+id/inssatest_choice2_questionTitle"
         android:layout_width="wrap_content"
         android:layout_height="94dp"
         android:layout_marginTop="36dp"
         android:scaleType="fitCenter"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice2_t01"
+        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice2_questionOrder"
         app:srcCompat="@drawable/inssatest_q01" />
 
     <ImageButton
-        android:id="@+id/inssatest_choice2_icon_wifi"
+        android:id="@+id/inssatest_choice2_answer02"
         android:layout_width="330dp"
         android:layout_height="152dp"
         android:layout_marginTop="40dp"
@@ -47,11 +47,11 @@
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice2_icon_data"
+        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice2_answer01"
         app:srcCompat="@drawable/inssatest_answer_icon_wifi" />
 
     <ImageButton
-        android:id="@+id/inssatest_choice2_icon_data"
+        android:id="@+id/inssatest_choice2_answer01"
         android:layout_width="330dp"
         android:layout_height="152dp"
         android:layout_marginTop="104dp"
@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice2_q01"
+        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice2_questionTitle"
         app:srcCompat="@drawable/inssatest_answer_icon_data" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
