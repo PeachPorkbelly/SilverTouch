@@ -27,32 +27,39 @@
         app:layout_constraintTop_toBottomOf="@+id/inssatest_exit"
         app:srcCompat="@drawable/inssatest_t01" />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <ImageButton
+        android:id="@+id/inssatest_q01"
         android:layout_width="wrap_content"
         android:layout_height="94dp"
         android:layout_marginTop="36dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inssatest_t01"
         app:srcCompat="@drawable/inssatest_q01" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/inssatest_icon_wifi"
         android:layout_width="330dp"
         android:layout_height="152dp"
         android:layout_marginTop="40dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inssatest_icon_data"
         app:srcCompat="@drawable/inssatest_answer_icon_wifi" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/inssatest_icon_data"
         android:layout_width="330dp"
         android:layout_height="152dp"
         android:layout_marginTop="104dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/inssatest_q01"
         app:srcCompat="@drawable/inssatest_answer_icon_data" />
 </androidx.constraintlayout.widget.ConstraintLayout>
