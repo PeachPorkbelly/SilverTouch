@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/inssatest_exit"
+        android:id="@+id/inssatest_choice4_exit"
         android:layout_width="51dp"
         android:layout_height="41dp"
         android:layout_marginTop="4dp"
@@ -18,26 +18,26 @@
         app:srcCompat="@drawable/misson_exit" />
 
     <ImageView
-        android:id="@+id/inssatest_t01"
+        android:id="@+id/inssatest_choice4_t01"
         android:layout_width="84dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inssatest_exit"
+        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice4_exit"
         app:srcCompat="@drawable/inssatest_t01" />
 
     <ImageView
-        android:id="@+id/inssatest_q06"
+        android:id="@+id/inssatest_choice4_q06"
         android:layout_width="wrap_content"
         android:layout_height="94dp"
         android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inssatest_t01"
+        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice4_t01"
         app:srcCompat="@drawable/inssatest_q06" />
 
     <ImageButton
-        android:id="@+id/inssatest_icon_menu1"
+        android:id="@+id/inssatest_choice4_icon_menu1"
         android:layout_width="156dp"
         android:layout_height="155dp"
         android:scaleType="fitCenter"
@@ -46,30 +46,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inssatest_q06"
+        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice4_q06"
         app:srcCompat="@drawable/inssatest_answer_icon_menu1" />
 
     <ImageButton
-        android:id="@+id/inssatest_icon_wifi"
+        android:id="@+id/inssatest_choice4_icon_wifi"
         android:layout_width="156dp"
         android:layout_height="155dp"
         android:scaleType="fitCenter"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/inssatest_icon_menu1"
-        app:layout_constraintTop_toTopOf="@+id/inssatest_icon_menu1"
+        app:layout_constraintStart_toEndOf="@+id/inssatest_choice4_icon_menu1"
+        app:layout_constraintTop_toTopOf="@+id/inssatest_choice4_icon_menu1"
         app:srcCompat="@drawable/inssatest_answer_icon_menu2" />
 
     <ImageButton
-        android:id="@+id/inssatest_icon_comment"
+        android:id="@+id/inssatest_choice4_icon_comment"
         android:layout_width="156dp"
         android:layout_height="155dp"
         android:layout_marginTop="24dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="@+id/inssatest_icon_menu1"
-        app:layout_constraintTop_toBottomOf="@+id/inssatest_icon_menu1"
+        app:layout_constraintStart_toStartOf="@+id/inssatest_choice4_icon_menu1"
+        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice4_icon_menu1"
         app:srcCompat="@drawable/inssatest_answer_icon_comment" />
 
     <ImageButton
@@ -79,10 +79,10 @@
         android:layout_marginTop="24dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="@+id/inssatest_icon_wifi"
+        app:layout_constraintEnd_toEndOf="@+id/inssatest_choice4_icon_wifi"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/inssatest_icon_comment"
-        app:layout_constraintTop_toBottomOf="@+id/inssatest_icon_wifi"
+        app:layout_constraintStart_toEndOf="@+id/inssatest_choice4_icon_comment"
+        app:layout_constraintTop_toBottomOf="@+id/inssatest_choice4_icon_wifi"
         app:srcCompat="@drawable/inssatest_answer_icon_menu3" />
 
 
