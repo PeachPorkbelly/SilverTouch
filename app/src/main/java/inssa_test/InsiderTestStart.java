@@ -168,6 +168,7 @@ public class InsiderTestStart extends FragmentActivity {// AppCompatActivity -->
         insiderQuestionList.clear();
         insiderQuestionAllList.clear();
 
+        // 인싸테스트 문제 추가
         addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q01),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_wifi),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_data),
@@ -214,7 +215,10 @@ public class InsiderTestStart extends FragmentActivity {// AppCompatActivity -->
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_search),
                 4);
 
-        addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q06),
+        /*
+        홈버튼을 골라보세요 문제
+
+        addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q09),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu1),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu3),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_refresh),
@@ -222,82 +226,118 @@ public class InsiderTestStart extends FragmentActivity {// AppCompatActivity -->
                 3);
 
 
+         */
+
+        addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q10),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu1),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_fixedscreen2),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_setting),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_refresh),
+                1);
 
         /*
-        // 인싸테스트 문제 추가 -----
-        addQuestion_choice4("다음 중 뒤로가기 아이콘은 무엇일까요?",
-                ContextCompat.getDrawable(this, R.drawable.insider_back),
-                ContextCompat.getDrawable(this, R.drawable.insider_home),
-                ContextCompat.getDrawable(this, R.drawable.insider_menu),
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_lock), 1);
+        와이파이
+        addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q11),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_search),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu3),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_refresh),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_fixedscreen1),
+                4);
 
-        addQuestion_choice4("다음 중 와이파이 아이콘은 무엇일까요?",
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_rotation),
-                ContextCompat.getDrawable(this, R.drawable.insider_search),
-                ContextCompat.getDrawable(this, R.drawable.insider_wifi),
-                ContextCompat.getDrawable(this, R.drawable.insider_settings), 3);
-
-        addQuestion_choice4("다음 중 홈 아이콘은 무엇일까요?",
-                ContextCompat.getDrawable(this, R.drawable.insider_refresh),
-                ContextCompat.getDrawable(this, R.drawable.insider_home),
-                ContextCompat.getDrawable(this, R.drawable.insider_flashlight),
-                ContextCompat.getDrawable(this, R.drawable.insider_bluetooth), 2);
-
-        addQuestion_choice4("다음 중 메뉴 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_menu),
-                ContextCompat.getDrawable(this, R.drawable.insider_flashlight),
-                ContextCompat.getDrawable(this, R.drawable.insider_search),
-                ContextCompat.getDrawable(this, R.drawable.insider_settings), 1);
-
-        addQuestion_choice4("다음 중 검색 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_wifi),
-                ContextCompat.getDrawable(this, R.drawable.insider_search),
-                ContextCompat.getDrawable(this, R.drawable.insider_back),
-                ContextCompat.getDrawable(this, R.drawable.insider_home), 2);
-
-        addQuestion_choice4("다음 중 새로고침 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_refresh),
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_rotation),
-                ContextCompat.getDrawable(this, R.drawable.insider_menu),
-                ContextCompat.getDrawable(this, R.drawable.insider_wifi), 1);
-
-        addQuestion_choice4("다음 중 설정 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_search),
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_lock),
-                ContextCompat.getDrawable(this, R.drawable.insider_bluetooth),
-                ContextCompat.getDrawable(this, R.drawable.insider_settings), 4);
-
-        addQuestion_choice4("다음 중 화면 고정 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_home),
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_rotation),
-                ContextCompat.getDrawable(this, R.drawable.insider_search),
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_lock), 4);
-
-        addQuestion_choice4("다음 중 화면 회전 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_refresh),
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_lock),
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_rotation),
-                ContextCompat.getDrawable(this, R.drawable.insider_menu), 3);
-
-        addQuestion_choice4("다음 중 손전등 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_wifi),
-                ContextCompat.getDrawable(this, R.drawable.insider_search),
-                ContextCompat.getDrawable(this, R.drawable.insider_flashlight),
-                ContextCompat.getDrawable(this, R.drawable.insider_settings), 3);
-
-        // 테스트용 문제 MODE2 -----
-        addQuestion_choice2("다음 중 새로고침 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_refresh),
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_rotation),
-                 1);
-
-        addQuestion_choice2("다음 중 설정 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_search),
-                ContextCompat.getDrawable(this, R.drawable.insider_settings), 2);
-
-        addQuestion_choice2("다음 중 화면 고정 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_home),
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_lock), 2);
-
-        addQuestion_choice2("다음 중 화면 회전 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_refresh),
-                ContextCompat.getDrawable(this, R.drawable.insider_screen_rotation), 2);
-
-        addQuestion_choice2("다음 중 손전등 아이콘은 무엇일까요?", ContextCompat.getDrawable(this, R.drawable.insider_wifi),
-                ContextCompat.getDrawable(this, R.drawable.insider_flashlight), 2);
-        // ----- END ------
-
+        데이터
+        addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q12),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu1),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu3),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_refresh),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu2),
+                3);
 
          */
+
+        addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q13),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_search),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_back),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_refresh),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_setting),
+                3);
+
+        addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q14),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu1),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_setting),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_screenrotation),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_fixedscreen1),
+                2);
+
+        addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q15),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_search),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_comment),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_refresh),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_screenrotation),
+                4);
+
+        addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q16),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_fixedscreen1),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu2),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_back),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_setting),
+                1);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q17),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q17_answer_right),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q17_answer_wrong),
+                1);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q18),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q18_answer_wrong),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q18_answer_right),
+                2);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q19),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q19_answer_wrong),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q19_answer_right),
+                2);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q20),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q20_answer_right),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q20_answer_wrong),
+                1);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q21),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q21_answer_right),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q21_answer_wrong),
+                1);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q22),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q22_answer_wrong),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q22_answer_right),
+                2);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q23),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q23_answer_wrong),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q23_answer_right),
+                2);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q24),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q24_answer_wrong),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q24_answer_right),
+                2);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q25),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q25_answer_right),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q25_answer_wrong),
+                1);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q26),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q26_answer_right),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q26_answer_wrong),
+                1);
+
+        addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q27),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q26_answer_right),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_q26_answer_wrong),
+                2);
+
+
 
 
     }
