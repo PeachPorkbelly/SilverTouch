@@ -76,7 +76,7 @@ public class M0_03 extends AppCompatActivity {
         missionMethods.set_missionOrder(M0,m1,m2,m3);
         //홈으로,메인으로,뒤로
         missionMethods.set_Exit(btn_exit,this);
-        missionMethods.goto_thisClass(btn_home,M0_00.class,this);
+        missionMethods.goto_thisClass(btn_home,M0_01.class,this);
         missionMethods.goto_thisClass(btn_previous,M0_02.class,this);
 
         //finger와 ok_msg invisible
