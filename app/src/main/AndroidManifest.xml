@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SilverTouch">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <!-- 인싸테스트 -->
         <activity android:name="inssa_test.InsiderTestStart" />
 

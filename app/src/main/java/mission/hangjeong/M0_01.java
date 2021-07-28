@@ -27,7 +27,6 @@ public class M0_01 extends AppCompatActivity {
 
     ImageView initialize, connecting;
     ImageView ld_off_1,ld_off_2,ld_off_3;
-    ImageView ld_on_1,ld_on_2,ld_on_3;
     ImageView m1, m2, m3;
 
     ImageButton jumin, exit, hint;
@@ -55,9 +54,6 @@ public class M0_01 extends AppCompatActivity {
         ld_off_2 = (ImageView)findViewById(R.id.m0_00_loading_off2);
         ld_off_3 = (ImageView)findViewById(R.id.m0_00_loading_off3);
 
-        ld_on_1 = (ImageView)findViewById(R.id.m0_00_loading_on1);
-        ld_on_2 = (ImageView)findViewById(R.id.m0_00_loading_on2);
-        ld_on_3 = (ImageView)findViewById(R.id.m0_00_loading_on3);
 
         /*
         버튼들
@@ -166,9 +162,9 @@ public class M0_01 extends AppCompatActivity {
         ld_off_1.setVisibility(View.INVISIBLE);
         ld_off_2.setVisibility(View.INVISIBLE);
         ld_off_3.setVisibility(View.INVISIBLE);
-        ld_on_1.setVisibility(View.INVISIBLE);
-        ld_on_2.setVisibility(View.INVISIBLE);
-        ld_on_3.setVisibility(View.INVISIBLE);
+        //ld_on_1.setVisibility(View.INVISIBLE);
+        //ld_on_2.setVisibility(View.INVISIBLE);
+        //ld_on_3.setVisibility(View.INVISIBLE);
 
     }
 }

@@ -29,6 +29,15 @@ public class SavedInfo {
     //}
 
 
+    /*
+    사용자 이름 받는 함수
+     */
+
+    public static void setUserName(Context context, String name){
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString("UserName",name).apply();
+    }
 
     /*
     미션 몇개 완료되었는지 저장하는 함수
@@ -88,6 +97,15 @@ public class SavedInfo {
         key값 M1_STATE, M2_STATE, M3_STATE
          */
 
+    }
+
+    /*
+    사용자 이름 불러오는 함수
+     */
+    public static String getUserName(Context context){
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        String name = sp.getString("UserName","김수아");
+        return name;
     }
 
     /*

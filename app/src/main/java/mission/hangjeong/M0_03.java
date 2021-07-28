@@ -1,6 +1,8 @@
 package mission.hangjeong;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -27,6 +29,8 @@ public class M0_03 extends AppCompatActivity {
 
     //몇번째 미션인지
     ImageView m1,m2,m3;
+    //확인버튼을 눌러주세요, 선택 손가락
+    ImageView ok_msg, finger;
 
 
     @Override
@@ -60,6 +64,10 @@ public class M0_03 extends AppCompatActivity {
         m2 = (ImageView)findViewById(R.id.m0_03_mission_order_2);
         m3 = (ImageView)findViewById(R.id.m0_03_mission_order_3);
 
+        //확인을 눌러주세요, 손가락
+        ok_msg = (ImageView)findViewById(R.id.m0_03_ok_msg);
+        finger = (ImageView)findViewById(R.id.m0_03_finger);
+
         /*
         실행할 코드
          */
@@ -70,6 +78,9 @@ public class M0_03 extends AppCompatActivity {
         missionMethods.set_Exit(btn_exit,this);
         missionMethods.goto_thisClass(btn_home,M0_00.class,this);
         missionMethods.goto_thisClass(btn_previous,M0_02.class,this);
+
+        //finger와 ok_msg invisible
+        finger.setVisibility(View.INVISIBLE); ok_msg.setVisibility(View.INVISIBLE);
 
 
 
