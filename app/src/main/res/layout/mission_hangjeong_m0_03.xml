@@ -222,4 +222,24 @@
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/misson_hangjeong_btn_ok" />
 
+    <ImageView
+        android:id="@+id/m0_03_ok_msg"
+        android:layout_width="198dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="368dp"
+        android:layout_marginTop="208dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_hangjeong_ok_msg" />
+
+    <ImageView
+        android:id="@+id/m0_03_finger"
+        android:layout_width="57dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/m0_03_btn_ok"
+        app:layout_constraintEnd_toStartOf="@+id/m0_03_btn_ok"
+        app:srcCompat="@drawable/misson_hangjeong_choice" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

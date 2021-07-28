@@ -86,7 +86,7 @@ public class M0_02 extends AppCompatActivity {
         전페이지와 처음페이지로 돌아감, 종료
          */
         missionMethods.goto_thisClass(previous,M0_01.class,this);
-        missionMethods.goto_thisClass(home,M0_00.class,this);
+        missionMethods.goto_thisClass(home,M0_01.class,this);
         missionMethods.set_Exit(exit,this);
 
 
