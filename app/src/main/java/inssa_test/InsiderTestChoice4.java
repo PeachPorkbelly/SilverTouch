@@ -6,13 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.silvertouch.R;
 
+import static inssa_test.InsiderTestStart.insiderQuestionOrderList;
 import static inssa_test.InsiderTestStart.insiderTestChoice2;
 import static inssa_test.InsiderTestStart.insiderTestChoice4;
 import static inssa_test.InsiderTestStart.insiderTestEnd;
@@ -25,11 +26,14 @@ import static inssa_test.InsiderTestStart.insiderQuestionList;
 
 
 public class InsiderTestChoice4 extends Fragment {
+    // 변수 선언
     View view;
-    TextView questionNumberView, questionStrView;
-    ImageButton choiceButton1, choiceButton2, choiceButton3, choiceButton4, exitTest;
+    ImageView questionOrder, questionTitle;
+    ImageButton choiceButton1, choiceButton2, choiceButton3, choiceButton4, exitButton;
 
+    // 변수 선언 끝
 
+    // 생성자
     public InsiderTestChoice4(){
 
     }
@@ -57,8 +61,9 @@ public class InsiderTestChoice4 extends Fragment {
     }
 
     public void setQuestion(){
-        questionNumberView.setText((questionIndex+1) + "번째 문제"); // 인덱스는 0부터 시작하기 때문에 +1 해줘야 함
-        questionStrView.setText(nowQuestion.getQuestionStr());
+
+        questionOrder.setImageDrawable(insiderQuestionOrderList.get(questionIndex));
+        questionTitle.setImageDrawable(nowQuestion.getQuestionTitle());
         choiceButton1.setImageDrawable(nowQuestion.getChoice1());
         choiceButton2.setImageDrawable(nowQuestion.getChoice2());
         choiceButton3.setImageDrawable(nowQuestion.getChoice3());
@@ -84,16 +89,16 @@ public class InsiderTestChoice4 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.insider_test_choice_4, container, false);
-        
+        view = inflater.inflate(R.layout.inssatest_choice_4, container, false);
+
         // xml 연동
-        questionNumberView = (TextView) view.findViewById(R.id.insider_order_mode_4);
-        questionStrView = (TextView) view.findViewById(R.id.insider_question_mode_4);
-        choiceButton1 = (ImageButton) view.findViewById(R.id.insider_choice_1_mode_4);
-        choiceButton2 = (ImageButton) view.findViewById(R.id.insider_choice_2_mode_4);
-        choiceButton3 = (ImageButton) view.findViewById(R.id.insider_choice_3_mode_4);
-        choiceButton4 = (ImageButton) view.findViewById(R.id.insider_choice_4_mode_4);
-        exitTest = (ImageButton) view.findViewById(R.id.exitButton_mode_4);
+        questionOrder = (ImageView) view.findViewById(R.id.inssatest_choice4_questionOrder);
+        questionTitle = (ImageView) view.findViewById(R.id.inssatest_choice4_questionTitle);
+        choiceButton1 = (ImageButton) view.findViewById(R.id.inssatest_choice4_answer01);
+        choiceButton2 = (ImageButton) view.findViewById(R.id.inssatest_choice4_answer02);
+        choiceButton3 = (ImageButton) view.findViewById(R.id.inssatest_choice4_answer03);
+        choiceButton4 = (ImageButton) view.findViewById(R.id.inssatest_choice4_answer04);
+        exitButton = (ImageButton) view.findViewById(R.id.inssatest_choice4_exit);
         
         // 문제 설정
         setQuestion();
@@ -131,7 +136,7 @@ public class InsiderTestChoice4 extends Fragment {
             }
         });
 
-        exitTest.setOnClickListener(new View.OnClickListener() {
+        exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getActivity().finish();
