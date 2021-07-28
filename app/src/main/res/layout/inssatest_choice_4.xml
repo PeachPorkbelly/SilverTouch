@@ -73,7 +73,7 @@
         app:srcCompat="@drawable/inssatest_answer_icon_comment" />
 
     <ImageButton
-        android:id="@+id/inssatest_icon_menu3"
+        android:id="@+id/inssatest_choice4_icon_menu3"
         android:layout_width="156dp"
         android:layout_height="155dp"
         android:layout_marginTop="24dp"
