@@ -332,9 +332,7 @@ public class InsiderTestStart extends FragmentActivity {// AppCompatActivity -->
                 ContextCompat.getDrawable(this, R.drawable.inssatest_q26_answer_right),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_q26_answer_wrong),
                 2);
-
-
-
+        // 문제 추가 끝
 
     }
 
