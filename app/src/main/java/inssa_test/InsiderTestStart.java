@@ -172,7 +172,7 @@ public class InsiderTestStart extends FragmentActivity {// AppCompatActivity -->
         addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q01),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_wifi),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_data),
-                1);
+                2);
 
         addQuestion_choice2(ContextCompat.getDrawable(this, R.drawable.inssatest_q02),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_q02_answer_right),
@@ -239,7 +239,7 @@ public class InsiderTestStart extends FragmentActivity {// AppCompatActivity -->
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu3),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_wifi1),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_fixedscreen1),
-                4);
+                3);
 
 
         addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q12),
