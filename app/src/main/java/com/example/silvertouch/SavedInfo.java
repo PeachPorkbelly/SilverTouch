@@ -19,9 +19,6 @@ public class SavedInfo {
 
     private static final int How_Many_Missions_Completed = 0;
 
-    private static final int Total_Completed = 0;
-
-    private static final int Inssa_Test_Score = 0;
 
 
     //private  static SharedPreferences getPreferences(Context context){
@@ -49,22 +46,14 @@ public class SavedInfo {
     }
 
     /*
-    미션 총 몇개 완료되었는지 저장하는 함수(total) 3번 다 완료된 횟수수
+    물뿌리개 저장
     */
-    public static void setTotalCompleted(Context context, int num){
+    public static void setWateringCan(Context context, int num){
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sp.edit();
-        editor.putInt("TotalCompNum",num).apply();
+        editor.putInt("WateringCan",num).apply();
     }
 
-    /*
-    인싸력 테스트 점수 저장하는 함수
-     */
-    public static void setInssaTestScore(Context context, int num){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = sp.edit();
-        editor.putInt("InssaTestScore",num).apply();
-    }
 
     /*
     날짜 저장하는 함수
@@ -154,20 +143,12 @@ public class SavedInfo {
     /*
     미션 총 몇개 끝냈는지 불러오는 함수
      */
-    public static int getTotalCompleted(Context context){
+    public static int getWateringCan(Context context){
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        int totalCompNum = sp.getInt("TotalCompNum",Total_Completed);
+        int totalCompNum = sp.getInt("WateringCan",0);
         return totalCompNum;
     }
 
-    /*
-    인싸 테스트 점수 불러오는 함수
-     */
-    public static int getInssaTestScore(Context context){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        int inssaTestScore = sp.getInt("InssaTestScore",Inssa_Test_Score);
-        return inssaTestScore;
-    }
 
 
 }
