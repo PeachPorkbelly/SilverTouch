@@ -72,7 +72,19 @@ public class vector_test extends AppCompatActivity {
         wateringCanNum = (TextView)findViewById(R.id.mygarden_wateringCanNum);
 
         /*
-        꽃
+
+1. 인싸테스트가 끝나면 물뿌리개 저장
+2. 물뿌리개 개수를 받아서 띄움
+3. 물뿌리개를 누르면 물뿌리개 개수 -1개 해서 새로 저장
+4. 성장도를 받음
+5. 성장도에 따라 보이는 이미지가 다름
+
+1. 물뿌리개 누른 개수가 10 이하일때 -> 이미지 디폴트 위치 0~9까지 새싹으로 바꿈
+2. 물뿌리개 누른 개수가 11 이상일 때 -> 물뿌리개 개수 -11 위치는 꽃으로 바꿈
+3. 물뿌리개를 눌렀을 때
+	- 물뿌리개 누른 개수가 9 이하일 때 -> 물뿌리개 누른 개수 위치 새싹으로 바꿈+wateredCount+1 파일저장
+	- 물뿌리개 누른 개수가 10이상일 때 -> 물뿌리개 누른 개수 위치 꽃으로 바꾸고+wateredCount+1 파일저장
+
          */
 
         /*
@@ -95,11 +107,6 @@ public class vector_test extends AppCompatActivity {
         for(int i=0; i<b; i++) {
             defaultPlace.get(i).setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.main_farm_flower));
         }
-
-
-
-
-
 
     }//onCreate
 
