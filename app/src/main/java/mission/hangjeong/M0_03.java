@@ -50,15 +50,25 @@ public class M0_03 extends AppCompatActivity {
             back_jumin += input_number;
             text_back_jumin.setText(back_jumin);
 
-        } else if ((front_jumin.length() + back_jumin.length()) == 13) {
+        } else {
+            /* 알 수 없는 곳 */
+        }
+
+        // 확인을 눌러주세요, 확인 버튼 손가락, 확인 버튼
+        if ((front_jumin.length() + back_jumin.length()) == 13) {
             /* 주민번호 13자리 다 찼을 경우 */
+            ok_msg.setVisibility(View.VISIBLE);
+            finger.setVisibility(View.VISIBLE);
 
         } else{
-            /* 알 수 없는 곳? */
-
+            /* 정정 or 삭제 했을 경우 */
+            ok_msg.setVisibility(View.INVISIBLE);
+            finger.setVisibility(View.INVISIBLE);
         }
 
     }
+
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,19 +108,25 @@ public class M0_03 extends AppCompatActivity {
         text_back_jumin = (TextView) findViewById(R.id.m0_03_back_jumin);
 
         /*
-        실행할 코드 - 주민번호 13자리 다 입력시 확인, 확인버튼을 눌러주세요/ 확인 버튼 visible
+        실행할 코드 - 주민번호 13자리 다 입력시 확인, 확인버튼을 눌러주세요/ 확인 버튼 visible - 완
         13자리 입력 전에 확인 버튼이 눌렸을 때 팝업 토스트 메세지
         13자리 입력 후 확인 버튼이 눌렸을 때 -> 로딩화면(0.5초) imageView visible  -> M0_04.class 로 넘어감
-        정정/삭제 버튼 기능 구현 - 정정(btn_edit) 1자리 지움, 삭제(btn_del) 전체 지움
+        정정/삭제 버튼 기능 구현 - 정정(btn_edit) 1자리 지움, 삭제(btn_del) 전체 지움 - 완
+
         % String에서 마지막꺼 제거 str.substring(0, str.length()-1);
 
         2021-07-29 01:13 김광희 -> 주민번호 버튼 입력기능 추가 완료
+        2021-07-29 01:13 김광희 -> 정정/삭제 버튼 기능 구현 완료
+        2021-07-29 10:29 김광희 -> 주민번호 13자리 다 입력 시 확인, 확인버튼을 눌러주세요 완료
+
          */
+
 
         // 정정 버튼 기능
         btn_edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 front_jumin = text_front_jumin.getText().toString();
                 back_jumin = text_back_jumin.getText().toString();
 
@@ -123,6 +139,10 @@ public class M0_03 extends AppCompatActivity {
                     back_jumin = back_jumin.substring(0, back_jumin.length()-1);
                     text_back_jumin.setText(back_jumin);
                 }
+
+                // 확인 메세지, 손가락 INVISIBLE
+                ok_msg.setVisibility(View.INVISIBLE);
+                finger.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -135,6 +155,10 @@ public class M0_03 extends AppCompatActivity {
 
                 text_front_jumin.setText(front_jumin);
                 text_back_jumin.setText(back_jumin);
+
+                // 확인 메세지, 손가락 INVISIBLE
+                ok_msg.setVisibility(View.INVISIBLE);
+                finger.setVisibility(View.INVISIBLE);
             }
         });
 

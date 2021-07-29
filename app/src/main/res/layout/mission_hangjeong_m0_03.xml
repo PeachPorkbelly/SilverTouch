@@ -255,11 +255,10 @@
             android:id="@+id/m0_03_front_jumin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
             android:layout_gravity="center"
             android:textSize="20dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="" />
 
         <TextView
             android:id="@+id/textView8"
@@ -273,10 +272,9 @@
             android:id="@+id/m0_03_back_jumin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
             android:textSize="20dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="" />
     </LinearLayout>
 
 
