@@ -20,6 +20,9 @@
             </intent-filter>
         </activity>
 
+        <!--유저 이름 받아오기-->
+        <activity android:name=".GetUserName" />
+
         <!-- 인싸테스트 -->
         <activity android:name="inssa_test.InsiderTestStart" />
 

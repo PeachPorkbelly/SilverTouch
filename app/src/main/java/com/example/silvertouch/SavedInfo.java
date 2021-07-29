@@ -19,6 +19,8 @@ public class SavedInfo {
 
     private static final int How_Many_Missions_Completed = 0;
 
+    private static final String USERNAME_DEFAULT_VALUE = "";
+
 
 
     //private  static SharedPreferences getPreferences(Context context){
@@ -93,7 +95,7 @@ public class SavedInfo {
      */
     public static String getUserName(Context context){
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        String name = sp.getString("UserName","김수아");
+        String name = sp.getString("UserName",USERNAME_DEFAULT_VALUE);
         return name;
     }
 

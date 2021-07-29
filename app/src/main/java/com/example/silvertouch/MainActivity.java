@@ -1,5 +1,6 @@
 package com.example.silvertouch;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -26,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     //SharedPreference에 저장된 날짜가 담길 변수
     String today;
+    
+    // 유저 이름 저장 변수
+    String userName;
 
     //random mission 배열
     int[] selectMissionNum = new int[3];
@@ -74,11 +78,16 @@ public class MainActivity extends AppCompatActivity {
     //카드 만들기 버튼//
     ImageButton btn_card;
 
+
+    // 김광희 테스트용
+    TextView testView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        testView = (TextView) findViewById(R.id.khtextView3);
 
         /*
 
@@ -102,6 +111,14 @@ public class MainActivity extends AppCompatActivity {
         graph3 = (ImageView)findViewById(R.id.main_graph3);
 
         reset = (Button)findViewById(R.id.reset);
+
+
+        /*
+        userName이 없으면 userName 받는 ACtivity 실행
+
+         */
+        checkUserName();
+
 
         /*
         저장되어있는 날짜를 불러와서 today에 저장한다
@@ -343,4 +360,25 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void checkUserName(){
+        userName = si.getUserName(getApplicationContext());
+
+        if (userName == ""){
+            /* userName이 없으면 Activity 실행 */
+            startActivityForResult(new Intent(getApplicationContext(), GetUserName.class), 0);
+        }
+
+        testView.setText(userName);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 0){
+            if(resultCode == RESULT_OK){
+                checkUserName();
+            }
+        }
+    }
 }
