@@ -360,6 +360,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // userName 받아오기
     public void checkUserName(){
         userName = si.getUserName(getApplicationContext());
 
@@ -368,9 +369,10 @@ public class MainActivity extends AppCompatActivity {
             startActivityForResult(new Intent(getApplicationContext(), GetUserName.class), 0);
         }
 
-        testView.setText(userName);
+        testView.setText(userName);// 테스트용
     }
 
+    // userName 받아오기 ActivityForResult
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
