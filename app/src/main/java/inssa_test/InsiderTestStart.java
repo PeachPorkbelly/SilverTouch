@@ -215,18 +215,16 @@ public class InsiderTestStart extends FragmentActivity {// AppCompatActivity -->
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_search),
                 4);
 
-        /*
-        홈버튼을 골라보세요 문제
+
 
         addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q09),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu1),
-                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu3),
-                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_refresh),
-                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu2),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_screenrotation),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_home),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_search),
                 3);
 
 
-         */
 
         addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q10),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu1),
@@ -235,24 +233,22 @@ public class InsiderTestStart extends FragmentActivity {// AppCompatActivity -->
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_refresh),
                 1);
 
-        /*
-        와이파이
+
         addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q11),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_search),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu3),
-                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_refresh),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_wifi1),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_fixedscreen1),
                 4);
 
-        데이터
+
         addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q12),
-                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu1),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_home),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu3),
+                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_data1),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_refresh),
-                ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_menu2),
                 3);
 
-         */
 
         addQuestion_choice4(ContextCompat.getDrawable(this, R.drawable.inssatest_q13),
                 ContextCompat.getDrawable(this, R.drawable.inssatest_answer_icon_search),
