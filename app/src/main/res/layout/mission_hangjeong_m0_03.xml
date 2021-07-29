@@ -241,5 +241,43 @@
         app:layout_constraintEnd_toStartOf="@+id/m0_03_btn_ok"
         app:srcCompat="@drawable/misson_hangjeong_choice" />
 
+    <!--주민번호 입력 창-->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="96dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">>
+
+        <TextView
+            android:id="@+id/m0_03_front_jumin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/m0_03_back_jumin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
