@@ -162,9 +162,6 @@ public class M0_01 extends AppCompatActivity {
         ld_off_1.setVisibility(View.INVISIBLE);
         ld_off_2.setVisibility(View.INVISIBLE);
         ld_off_3.setVisibility(View.INVISIBLE);
-        //ld_on_1.setVisibility(View.INVISIBLE);
-        //ld_on_2.setVisibility(View.INVISIBLE);
-        //ld_on_3.setVisibility(View.INVISIBLE);
 
     }
 }
