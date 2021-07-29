@@ -39,6 +39,15 @@ public class SavedInfo {
     }
 
     /*
+    성장도 기록
+     */
+    public static void setWateredCount(Context context, int wateredCount){
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putInt("WateredCount",wateredCount).apply();
+    }
+
+    /*
     미션 몇개 완료되었는지 저장하는 함수
      */
     public static void setCompNum(Context context,int num){
@@ -151,6 +160,13 @@ public class SavedInfo {
         return totalCompNum;
     }
 
-
+    /*
+    성장도 기록 불러오기
+     */
+    public static int getWateredCount(Context context){
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        int totalCompNum = sp.getInt("WateredCount",0);
+        return totalCompNum;
+    }
 
 }
