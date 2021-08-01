@@ -292,7 +292,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 intent = new Intent(getApplicationContext(),mission.hangjeong.vector_test.class);
-                startActivity(intent);
             }
         });
 
@@ -302,6 +301,8 @@ public class MainActivity extends AppCompatActivity {
         btn_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                intent = new Intent(getApplicationContext(),card_maker.card_main.class);
+                startActivity(intent);
             }
         });
 
