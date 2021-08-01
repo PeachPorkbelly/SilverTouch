@@ -78,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
     //카드 만들기 버튼//
     ImageButton btn_card;
 
+    // 디지털 농장
+    ImageView digital_farm;
 
     // 김광희 테스트용
     TextView testView;
@@ -87,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 김광희 테스트용
         testView = (TextView) findViewById(R.id.khtextView3);
 
         /*
@@ -112,6 +115,8 @@ public class MainActivity extends AppCompatActivity {
 
         reset = (Button)findViewById(R.id.reset);
 
+
+        digital_farm = (ImageView) findViewById(R.id.digital_farm);
 
         /*
         userName이 없으면 userName 받는 ACtivity 실행
@@ -283,11 +288,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
         /*test*/
+        digital_farm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(getApplicationContext(),mission.hangjeong.vector_test.class);
+                startActivity(intent);
+            }
+        });
+
+        /*
+        카드보내기 버튼
+         */
         btn_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(getApplicationContext(),mission.hangjeong.vector_test.class);
-                startActivity(intent);
             }
         });
 
@@ -323,6 +337,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 
     @Override

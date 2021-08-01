@@ -165,7 +165,7 @@ public class SavedInfo {
      */
     public static int getWateredCount(Context context){
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        int totalCompNum = sp.getInt("WateredCount",0);
+        int totalCompNum = sp.getInt("WateredCount",3);
         return totalCompNum;
     }
 

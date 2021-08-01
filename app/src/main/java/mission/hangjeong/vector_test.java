@@ -15,7 +15,9 @@ import com.example.silvertouch.R;
 
 import org.w3c.dom.Text;
 
+import static com.example.silvertouch.SavedInfo.getWateredCount;
 import static com.example.silvertouch.SavedInfo.getWateringCan;
+import static com.example.silvertouch.SavedInfo.setWateredCount;
 import static com.example.silvertouch.SavedInfo.setWateringCan;
 import java.util.ArrayList;
 
@@ -42,6 +44,9 @@ public class vector_test extends AppCompatActivity {
 
     //wateringCan이 눌린 총 횟수
     int wateredCount;
+
+    // defaultPlace Index때 쓸 변수
+    int defaultPlaceStartCount, defaultPlaceEndCount;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -92,25 +97,37 @@ public class vector_test extends AppCompatActivity {
          */
         wateringCan = getWateringCan(getApplicationContext());
 
+
         /*
         2. wateringCan의 개수를 TextView에 띄운다 (옆에 물뿌리개 총 몇번 눌렸는지도)
          */
         wateringCanNum.setText("물뿌리개 수"+wateringCan+"성장도"+wateredCount);
 
         /*
-        3.리스트에 위치 정해주기
+        3.리스트에 위치 정해주기 -> 리스트에 추가
          */
-        adddefaultLocation();
+        addDefaultLocation();
 
-        int b=3; //물뿌리개 클릭된 수
+        // 꽃 배치 설정
+        setFlower();
 
-        for(int i=0; i<b; i++) {
-            defaultPlace.get(i).setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.main_farm_flower));
-        }
+        // 물뿌리개 버튼 클릭 시 물뿌리개 보유 개수 -1, 물뿌리개 눌린 횟수 +1. 꽃 다시 보여주기
+        btn_wateringCan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                wateringCan -= 1;
+                wateredCount += 1;
+                setWateringCan(getApplicationContext(), wateringCan);
+                setWateredCount(getApplicationContext(), wateredCount);
+                setFlower();
+            }
+        });
 
-    }//onCreate
 
-    public void adddefaultLocation(){
+
+    }//onCreate End---
+
+    public void addDefaultLocation(){
         defaultPlace.add(defaultPlace_01);
         defaultPlace.add(defaultPlace_02);
         defaultPlace.add(defaultPlace_03);
@@ -121,6 +138,30 @@ public class vector_test extends AppCompatActivity {
         defaultPlace.add(defaultPlace_08);
         defaultPlace.add(defaultPlace_09);
         defaultPlace.add(defaultPlace_10);
+    }
+
+    // 꽃 배치해주는 함수
+    public void setFlower(){
+        wateredCount = getWateredCount(getApplicationContext());
+
+        // 꽃 배치 인덱스 설정
+        if (wateredCount >= 10){
+            defaultPlaceStartCount = wateredCount - 10;
+            defaultPlaceEndCount = 10;
+        }
+        else{
+            defaultPlaceStartCount = 0;
+            defaultPlaceEndCount = wateredCount;
+        }
+
+        if (defaultPlaceStartCount != 0){
+            for (int i = 0; i<defaultPlaceStartCount; i++){
+                defaultPlace.get(i).setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.main_farm_flower));//꽃 모양으로 바꿈
+            }
+        }
+        for(int i=defaultPlaceStartCount; i<defaultPlaceEndCount; i++) {
+            defaultPlace.get(i).setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.main_farm_flower));//새싹모양 설정
+        }
     }
 
 
