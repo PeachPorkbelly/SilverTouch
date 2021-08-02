@@ -18,6 +18,7 @@ import java.util.Date;
 import java.util.Random;
 
 import inssa_test.InsiderTestStart;
+import card_maker.card_main;
 
 public class MainActivity extends AppCompatActivity {
 

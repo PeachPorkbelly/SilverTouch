@@ -23,6 +23,9 @@
         <!--유저 이름 받아오기-->
         <activity android:name=".GetUserName" />
 
+        <!--Card Maker-->
+        <activity android:name="card_maker.card_main"/>
+
         <!-- 인싸테스트 -->
         <activity android:name="inssa_test.InsiderTestStart" />
 
