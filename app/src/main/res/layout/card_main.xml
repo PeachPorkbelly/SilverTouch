@@ -1,29 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="cardMaker" />
 
-    <androidx.viewpager2.widget.ViewPager2
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
 
-        <Button
-            android:id="@+id/button"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Button" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_left"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="<" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:text="card_name" />
+
+                <Button
+                    android:id="@+id/btn_right"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text=">" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/card_image"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_weight="1"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_close"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="X" />
+                <Button
+                    android:id="@+id/btn_text"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="T" />
+                <Button
+                    android:id="@+id/btn_emoji"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="😀️" />
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="🗑️" />
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="✓" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
 </LinearLayout>
