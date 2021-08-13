@@ -42,23 +42,23 @@ public class M0_01 extends AppCompatActivity {
         /*
         반투명 레이아웃
          */
-        fl = (FrameLayout)findViewById(R.id.m0_01_transparent_layout);
+        //fl = (FrameLayout)findViewById(R.id.m0_01_transparent_layout);
 
         /*
         로딩 이미지 파일들
          */
-        initialize = (ImageView)findViewById(R.id.m0_00_initialize);
-        connecting = (ImageView)findViewById(R.id.m0_00_connecting);
+        initialize = (ImageView)findViewById(R.id.mission_hangjeong_m0_01_init_bg);
+        connecting = (ImageView)findViewById(R.id.mission_hangjeong_m0_01_commute_bg);
 
-        ld_off_1 = (ImageView)findViewById(R.id.m0_00_loading_off1);
-        ld_off_2 = (ImageView)findViewById(R.id.m0_00_loading_off2);
-        ld_off_3 = (ImageView)findViewById(R.id.m0_00_loading_off3);
+        ld_off_1 = (ImageView)findViewById(R.id.mission_hangjeong_m0_01_loading_off_01);
+        ld_off_2 = (ImageView)findViewById(R.id.mission_hangjeong_m0_01_loading_off_02);
+        ld_off_3 = (ImageView)findViewById(R.id.mission_hangjeong_m0_01_loading_off_03);
 
 
         /*
         버튼들
          */
-        jumin = (ImageButton)findViewById(R.id.m0_01_jumin);
+        jumin = (ImageButton)findViewById(R.id.mission_hangjeong_m0_01_01);
         hint = (ImageButton)findViewById(R.id.m0_01_hint);
         exit = (ImageButton)findViewById(R.id.m0_01_exit);
 
@@ -103,7 +103,7 @@ public class M0_01 extends AppCompatActivity {
                  로딩창 회색동그라미 3개 동시에 있고 동그라미 3개 0.5초마다 바꿈
                   그 다음 Intent로 M0_02로 넘어감 */
 
-                fl.setVisibility(View.VISIBLE);
+                //fl.setVisibility(View.VISIBLE);
                 initialize.setVisibility(View.VISIBLE);
 
                 /*
@@ -156,7 +156,7 @@ public class M0_01 extends AppCompatActivity {
         /*
         VIsible/Invisible
          */
-        fl.setVisibility(View.INVISIBLE);
+        //fl.setVisibility(View.INVISIBLE);
         initialize.setVisibility(View.INVISIBLE);
         connecting.setVisibility(View.INVISIBLE);
         ld_off_1.setVisibility(View.INVISIBLE);
