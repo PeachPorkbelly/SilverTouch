@@ -19,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 
 import com.example.silvertouch.R;
 
@@ -58,6 +59,7 @@ public class card_main extends AppCompatActivity {
     }
 
     private Uri saveImageExternal(Bitmap image) {
+        Context context = getApplicationContext();
         //TODO - Should be processed in another thread
         Uri uri = null;
         try {
@@ -65,7 +67,8 @@ public class card_main extends AppCompatActivity {
             FileOutputStream stream = new FileOutputStream(file);
             image.compress(Bitmap.CompressFormat.PNG, 90, stream);
             stream.close();
-            uri = Uri.fromFile(file);
+//            uri = Uri.fromFile(file);
+            uri = FileProvider.getUriForFile(context, context.getApplicationContext().getPackageName() + ".provider", file);
         } catch (IOException e) {
             Log.d("bitmapError", "IOException while trying to write file for sharing: " + e.getMessage());
         }
