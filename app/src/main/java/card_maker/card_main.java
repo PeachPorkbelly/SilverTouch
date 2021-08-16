@@ -1,23 +1,24 @@
 package card_maker;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
+import android.content.ContentUris;
+import android.content.Context;
+import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import com.example.silvertouch.R;
 
@@ -56,36 +57,30 @@ public class card_main extends AppCompatActivity {
         return returnedBitmap;
     }
 
-    private void saveBitmapToJpeg(Bitmap bitmap, String name) {
-
-        //내부저장소 캐시 경로를 받아옵니다.
-        File storage = getCacheDir();
-
-        //저장할 파일 이름
-        String fileName = name + ".jpg";
-
-        //storage 에 파일 인스턴스를 생성합니다.
-        File tempFile = new File(getFilesDir(), fileName);
-
+    private Uri saveImageExternal(Bitmap image) {
+        //TODO - Should be processed in another thread
+        Uri uri = null;
         try {
-
-            // 자동으로 빈 파일을 생성합니다.
-            tempFile.createNewFile();
-
-            // 파일을 쓸 수 있는 스트림을 준비합니다.
-            FileOutputStream out = new FileOutputStream(tempFile);
-
-            // compress 함수를 사용해 스트림에 비트맵을 저장합니다.
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
-
-            // 스트림 사용후 닫아줍니다.
-            out.close();
-
-        } catch (FileNotFoundException e) {
-            Log.e("MyTag","FileNotFoundException : " + e.getMessage());
+            File file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES), "share.png");
+            FileOutputStream stream = new FileOutputStream(file);
+            image.compress(Bitmap.CompressFormat.PNG, 90, stream);
+            stream.close();
+            uri = Uri.fromFile(file);
         } catch (IOException e) {
-            Log.e("MyTag","IOException : " + e.getMessage());
+            Log.d("bitmapError", "IOException while trying to write file for sharing: " + e.getMessage());
         }
+        return uri;
+    }
+
+    private void sharingJpge(Bitmap image){
+
+        Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+        Uri screenshotUri = saveImageExternal(image);
+        Log.d("uriToString", screenshotUri.toString());
+        sharingIntent.setType("image/*");
+        sharingIntent.putExtra(Intent.EXTRA_STREAM, screenshotUri);
+        startActivity(Intent.createChooser(sharingIntent, "Share image using"));
+
     }
 
 
@@ -161,7 +156,8 @@ public class card_main extends AppCompatActivity {
 //                layout_bottom_1.setVisibility(View.GONE);
 //                layout_bottom_2.setVisibility(View.VISIBLE);
 
-                saveBitmapToJpeg(getBitmapFromView(card_image), "01");
+                sharingJpge(getBitmapFromView(card_image));
+
             }
         });
 
