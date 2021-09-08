@@ -48,9 +48,10 @@
         <activity android:name="mission.hangjeong.M0_03"
             android:screenOrientation="landscape"></activity>
 
-        <activity android:name="mission.hangjeong.vector_test"
-            >
+
+        <activity android:name="mission.hangjeong.vector_test">
         </activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"

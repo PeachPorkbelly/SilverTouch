@@ -11,16 +11,11 @@ public class SavedInfo {
 
     //public static final String PREFERENCES_NAME = "rebuild_preference";
 
-    private static final String TODAY_DEFAULT_VALUE = "";
+    private static final String DEFAULT_STRING = "";
 
-    private static final int MISSION_DEFAULT_VALUE = 0;
+    private static final int DEFAULT_INT = 0;
 
-    private static final boolean M_STATE_DEFAULT_VALUE = false;
-
-    private static final int How_Many_Missions_Completed = 0;
-
-    private static final String USERNAME_DEFAULT_VALUE = "";
-
+    private static final boolean DEFAULT_BOOLEAN = false;
 
 
     //private  static SharedPreferences getPreferences(Context context){
@@ -29,144 +24,60 @@ public class SavedInfo {
 
 
     /*
-    사용자 이름 받는 함수
+
+    Key , Value type, Value information
+
+
+UserName String 유저의 이름
+Waterd int 물을 준 횟수(성장도)
+TotalMissionCompleted int 미션3개 전부 클리어된 횟수(물뿌리개와 동일...?!)
+TodayMissionCompleted int 오늘 몇개 클리어 했는지
+WateringCan int 물뿌리개 개수
+Today String 오늘 날짜
+Mission1, Mission2, Mission3 int 미션별 리스트 인덱스
+isM1Completed, isM2Completed, isM3Completed boolean true or false 미션별 성공 여부
+
      */
 
-    public static void setUserName(Context context, String name){
+
+//  String 값 저장하고 불러오는 메소드
+    public static void setString(Context context, String key, String value) {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sp.edit();
-        editor.putString("UserName",name).apply();
+        editor.putString(key, value).apply();
     }
 
-    /*
-    성장도 기록
-     */
-    public static void setWateredCount(Context context, int wateredCount){
+    public static String getString(Context context, String key) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        String stringValue = sp.getString(key, DEFAULT_STRING);
+        return stringValue;
+    }
+
+//  Int 값 저장하고 불러오는 메소드
+    public static void setInt(Context context, String key, int value) {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sp.edit();
-        editor.putInt("WateredCount",wateredCount).apply();
+        editor.putInt(key, value).apply();
     }
 
-    /*
-    미션 몇개 완료되었는지 저장하는 함수
-     */
-    public static void setCompNum(Context context,int num){
+    public static int getInt(Context context, String key) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        int intValue = sp.getInt(key, DEFAULT_INT);
+        return intValue;
+    }
+
+
+//  Boolean 값 저장하고 불러오는 메소드
+    public static void setBoolean(Context context, String key, boolean value) {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sp.edit();
-        editor.putInt("MissionCompNum",num).apply();
+        editor.putBoolean(key, value).apply();
     }
-
-    /*
-    물뿌리개 저장
-    */
-    public static void setWateringCan(Context context, int num){
+    public static boolean getBoolean(Context context, String key) {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = sp.edit();
-        editor.putInt("WateringCan",num).apply();
+        boolean booleanValue = sp.getBoolean(key, DEFAULT_BOOLEAN);
+        return booleanValue;
     }
-
-
-    /*
-    날짜 저장하는 함수
-     */
-    public static void setDate(Context context,String date){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = sp.edit();
-        editor.putString("DATE",date).apply();
-    }
-
-    /*
-    미션 번호 저장하는 함수
-     */
-    public static void setMission(Context context,int mission1, int mission2, int mission3){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = sp.edit();
-        editor.putInt("MISSION1",mission1).apply();
-        editor.putInt("MISSION2",mission2).apply();
-        editor.putInt("MISSION3",mission3).apply();
-    }
-
-    /*
-    미션이 성공했는지 아닌지 저장하는 함수
-     */
-    public static void setMissionState(Context context,String key, boolean state){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = sp.edit();
-        editor.putBoolean(key,state).apply();
-        /*
-        key값 M1_STATE, M2_STATE, M3_STATE
-         */
-
-    }
-
-    /*
-    사용자 이름 불러오는 함수
-     */
-    public static String getUserName(Context context){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        String name = sp.getString("UserName",USERNAME_DEFAULT_VALUE);
-        return name;
-    }
-
-    /*
-    저장된 날짜가 며칠인지 불러오는 함수
-     */
-    public static String getDate(Context context){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        String date = sp.getString("DATE",TODAY_DEFAULT_VALUE);
-        return date;
-    }
-
-    /*
-    저장된 미션을 불러오는 함수
-     */
-    public static int getMission(Context context,String key){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        int mission = sp.getInt(key,MISSION_DEFAULT_VALUE);
-        return mission;
-        /*
-        key MISSION1, MISSION2, MISSION3
-         */
-    }
-
-    /*
-    미션 상태를 불러오는 함수
-     */
-    public static boolean getMState(Context context,String key){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        Boolean M_state=sp.getBoolean(key,M_STATE_DEFAULT_VALUE);
-        return M_state;
-        /*
-        key M1_STATE M2_STATE, M3_STATE
-         */
-    }
-
-    /*
-    하루 미션 몇개 끝냈는지 불러오는 함수
-     */
-    public static int getCompNum(Context context){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        int compNum = sp.getInt("MissionCompNum",How_Many_Missions_Completed);
-        return compNum;
-    }
-
-
-    /*
-    미션 총 몇개 끝냈는지 불러오는 함수
-     */
-    public static int getWateringCan(Context context){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        int totalCompNum = sp.getInt("WateringCan",0);
-        return totalCompNum;
-    }
-
-    /*
-    성장도 기록 불러오기
-     */
-    public static int getWateredCount(Context context){
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        int totalCompNum = sp.getInt("WateredCount",3);
-        return totalCompNum;
-    }
-
 }
+
+

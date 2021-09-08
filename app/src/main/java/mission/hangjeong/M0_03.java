@@ -1,6 +1,7 @@
 package mission.hangjeong;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.ImageButton;
@@ -57,8 +58,11 @@ public class M0_03 extends AppCompatActivity {
         // 확인을 눌러주세요, 확인 버튼 손가락, 확인 버튼
         if ((front_jumin.length() + back_jumin.length()) == 13) {
             /* 주민번호 13자리 다 찼을 경우 */
+
             ok_msg.setVisibility(View.VISIBLE);
             finger.setVisibility(View.VISIBLE);
+
+
 
         } else{
             /* 정정 or 삭제 했을 경우 */

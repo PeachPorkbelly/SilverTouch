@@ -12,13 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.example.silvertouch.R;
+import com.example.silvertouch.SavedInfo;
 
 import org.w3c.dom.Text;
 
-import static com.example.silvertouch.SavedInfo.getWateredCount;
-import static com.example.silvertouch.SavedInfo.getWateringCan;
-import static com.example.silvertouch.SavedInfo.setWateredCount;
-import static com.example.silvertouch.SavedInfo.setWateringCan;
 import java.util.ArrayList;
 
 public class vector_test extends AppCompatActivity {
@@ -47,6 +44,8 @@ public class vector_test extends AppCompatActivity {
 
     // defaultPlace Index때 쓸 변수
     int defaultPlaceStartCount, defaultPlaceEndCount;
+
+    SavedInfo si = new SavedInfo();
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -95,8 +94,10 @@ public class vector_test extends AppCompatActivity {
         /*
         1. wateringCan의 수를 불러온다
          */
-        wateringCan = getWateringCan(getApplicationContext());
+        wateringCan = si.getInt(getApplicationContext(),"WatringCan");
 
+        // 꽃 배치 설정
+        setFlower();
 
         /*
         2. wateringCan의 개수를 TextView에 띄운다 (옆에 물뿌리개 총 몇번 눌렸는지도)
@@ -108,8 +109,7 @@ public class vector_test extends AppCompatActivity {
          */
         addDefaultLocation();
 
-        // 꽃 배치 설정
-        setFlower();
+
 
         // 물뿌리개 버튼 클릭 시 물뿌리개 보유 개수 -1, 물뿌리개 눌린 횟수 +1. 꽃 다시 보여주기
         btn_wateringCan.setOnClickListener(new View.OnClickListener() {
@@ -117,8 +117,8 @@ public class vector_test extends AppCompatActivity {
             public void onClick(View view) {
                 wateringCan -= 1;
                 wateredCount += 1;
-                setWateringCan(getApplicationContext(), wateringCan);
-                setWateredCount(getApplicationContext(), wateredCount);
+                si.setInt(getApplicationContext(), "WateringCan",wateringCan);
+                si.setInt(getApplicationContext(), "Watered",wateredCount);
                 setFlower();
             }
         });
@@ -142,7 +142,7 @@ public class vector_test extends AppCompatActivity {
 
     // 꽃 배치해주는 함수
     public void setFlower(){
-        wateredCount = getWateredCount(getApplicationContext());
+        wateredCount = si.getInt(getApplicationContext(),"Watered");
 
         // 꽃 배치 인덱스 설정
         if (wateredCount >= 10){
