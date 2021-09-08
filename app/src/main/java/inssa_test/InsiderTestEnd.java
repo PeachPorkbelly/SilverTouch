@@ -19,8 +19,8 @@ import com.example.silvertouch.R;
 import static inssa_test.InsiderTestStart.answerCount;
 import static inssa_test.InsiderTestStart.questionIndex;
 import static inssa_test.InsiderTestStart.wrongCount;
-import static com.example.silvertouch.SavedInfo.getWateringCan;
-import static com.example.silvertouch.SavedInfo.setWateringCan;
+import static com.example.silvertouch.SavedInfo.getInt;
+import static com.example.silvertouch.SavedInfo.setInt;
 
 public class InsiderTestEnd extends Fragment {
     View view;
@@ -50,8 +50,8 @@ public class InsiderTestEnd extends Fragment {
 
         //물뿌리개 주고 + 이미지 띄우기
         if (answerCount>=8) {
-            int wateringCan = getWateringCan(getContext());
-            setWateringCan(container.getContext(), wateringCan+1);
+            int wateringCan = getInt(getContext(),"WateringCan");
+            setInt(container.getContext(),"WateringCan",wateringCan+1);
 
             // 이미지 토스트 부분
             ImageView iv = new ImageView(container.getContext());

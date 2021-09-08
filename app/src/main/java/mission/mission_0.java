@@ -31,18 +31,18 @@ public class mission_0 extends AppCompatActivity {
             public void onClick(View v) {
 
                 //미션 몇개 끝났는지 불러옴
-                int howManyMissionsCompleted = si.getCompNum(getApplicationContext());
+                int howManyMissionsCompleted = si.getInt(getApplicationContext(),"TodayMissionCompleted");
                 howManyMissionsCompleted = howManyMissionsCompleted+1;
-                si.setCompNum(getApplicationContext(),howManyMissionsCompleted);
+                si.setInt(getApplicationContext(),"TodayMissionCompleted",howManyMissionsCompleted);
 
                 int missionOrder = getIntent().getIntExtra("missionOrder",0);
                 Toast.makeText(getApplicationContext(),missionOrder+"dd",Toast.LENGTH_SHORT).show();
                 if (missionOrder==1)
-                    si.setMissionState(getApplicationContext(),"M1_STATE",true);
+                    si.setBoolean(getApplicationContext(),"isM1Completed",true);
                 if(missionOrder==2)
-                    si.setMissionState(getApplicationContext(),"M2_STATE",true);
+                    si.setBoolean(getApplicationContext(),"isM2Completed",true);
                 if(missionOrder==3)
-                    si.setMissionState(getApplicationContext(),"M3_STATE",true);
+                    si.setBoolean(getApplicationContext(),"isM3Completed",true);
             }
         });
     }

@@ -4,50 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mission_hangjeong_m0_02_bg">
+    >
+
 
 
     <FrameLayout
+        android:id="@+id/frameLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="284px"
-        android:layout_marginTop="268px"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="90dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/m0_02_mission_order_1"
-            android:layout_width="90.2dp"
-            android:layout_height="25.5dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/misson_contents_1" />
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_1" />
 
         <ImageView
             android:id="@+id/m0_02_mission_order_2"
-            android:layout_width="90.2dp"
-            android:layout_height="25.5dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/misson_contents_2" />
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_2" />
 
         <ImageView
             android:id="@+id/m0_02_mission_order_3"
-            android:layout_width="90.2dp"
-            android:layout_height="25.5dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/misson_contents_3" />
-    </FrameLayout>
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_3"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="74dp" />
 
+    </FrameLayout>
 
     <ImageButton
         android:id="@+id/m0_02_hint"
-        android:layout_width="158.5dp"
-        android:layout_height="53dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="272dp"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="164dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
         app:srcCompat="@drawable/mission_hint" />
 
     <ImageButton
@@ -55,57 +56,103 @@
         android:layout_width="23.7dp"
         android:layout_height="23.7dp"
         android:layout_marginLeft="116dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="48dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166"
         app:srcCompat="@drawable/misson_exit" />
 
-    <ImageButton
-        android:id="@+id/m0_02_chobon"
-        android:layout_width="87dp"
-        android:layout_height="46.54dp"
-        android:layout_marginLeft="536dp"
-        android:layout_marginTop="144dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mission_hangjeong_m0_02_chobon" />
-
-    <ImageButton
-        android:id="@+id/m0_02_home"
-        android:layout_width="48dp"
-        android:layout_height="47.6dp"
-        android:layout_marginLeft="312dp"
-        android:layout_marginTop="332dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mission_hangjeong_home" />
-
-    <ImageButton
-        android:id="@+id/m0_02_previous"
-        android:layout_width="48dp"
-        android:layout_height="47.6dp"
-        android:layout_marginStart="8dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/m0_02_home"
-        app:layout_constraintTop_toTopOf="@+id/m0_02_home"
-        app:srcCompat="@drawable/mission_hangjeong_previous" />
-
     <ImageView
-        android:id="@+id/m0_02_waiting"
+        android:id="@+id/imageView2"
+        android:layout_width="241dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+        app:srcCompat="@drawable/mission_map_m01" />
+
+
+
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/m0_02_waiting" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="270dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="444dp"
+                android:layout_height="332dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mission_hj_bg_04" />
+
+            <ImageButton
+                android:id="@+id/m0_02_chobon"
+                android:layout_width="78dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="120dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4"
+                app:srcCompat="@drawable/mission_hj_btn_17" />
+
+            <ImageButton
+                android:id="@+id/m0_02_dueongbon"
+                android:layout_width="78dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="28dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="@+id/m0_02_chobon"
+                app:layout_constraintTop_toBottomOf="@+id/m0_02_chobon"
+                app:srcCompat="@drawable/mission_hj_btn_18" />
+
+            <ImageButton
+                android:id="@+id/m0_02_previous"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="280dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mission_hj_btn_previous" />
+
+            <ImageButton
+                android:id="@+id/m0_02_home"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toEndOf="@+id/m0_02_previous"
+                app:layout_constraintTop_toTopOf="@+id/m0_02_previous"
+                app:srcCompat="@drawable/mission_hj_btn_home" />
+
+            <ImageView
+                android:id="@+id/m0_02_waiting"
+                android:layout_width="444dp"
+                android:layout_height="332dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mission_hj_bg_05" />
 
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

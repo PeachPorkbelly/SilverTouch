@@ -26,80 +26,49 @@ public class MainActivity extends AppCompatActivity {
     SavedInfo si = new SavedInfo();
     Random random = new Random();
 
-    //SharedPreference에 저장된 날짜가 담길 변수
+    /*
+    SharedPreference에 저장된 날짜가 담길 변수
+     */
     String today;
-    
     // 유저 이름 저장 변수
     String userName;
-
     //random mission 배열
     int[] selectMissionNum = new int[3];
-
     //SharedPreference에 저장될 랜덤 미션 번호들
-    int Mission1;
-    int Mission2;
-    int Mission3;
-
+    int Mission1, Mission2, Mission3;
     //SharedPreference에 저장될 미션이 끝났는지 아닌지 기록할 번호들
-    boolean ifMission1_completed;
-    boolean ifMission2_completed;
-    boolean ifMission3_completed;
-
-
+    boolean ifMission1_completed, ifMission2_completed, ifMission3_completed;
     //몇개의 미션이 completed 되었는지
     int howManyMissionsCompleted;
 
     /*
-
     화면에 보이는 버튼들 변수 선언
-
      */
-
     //미션 성공/비성공 버튼과 View 들
-    ImageView m1_completed;
-    ImageView m2_completed;
-    ImageView m3_completed;
-
-    ImageButton m1_uncompleted;
-    ImageButton m2_uncompleted;
-    ImageButton m3_uncompleted;
-
+    ImageView m1_completed, m2_completed, m3_completed;
+    ImageButton m1_uncompleted, m2_uncompleted, m3_uncompleted;
     //그래프에 관한 .. 변수들
-    ImageView empty_graph;
-    ImageView graph1;
-    ImageView graph2;
-    ImageView graph3;
-
+    ImageView empty_graph, graph1, graph2, graph3;
     //초기화 버튼
     Button reset;
-
     //인싸테스트 버튼
     ImageButton insider_Button;
-
     //카드 만들기 버튼//
     ImageButton btn_card;
-
     // 디지털 농장
     ImageView digital_farm;
-
-    // 김광희 테스트용
-    TextView testView;
+    // 김수아, 김광희 테스트용
+    TextView testView, text, text2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 김광희 테스트용
+        // 김수아 김광희 테스트용
         testView = (TextView) findViewById(R.id.khtextView3);
-
-        /*
-
-        변수 아이디랑 연결
-
-         */
-        TextView text = (TextView)findViewById(R.id.text);
-        TextView text2 = (TextView)findViewById(R.id.textView2);
+        text = (TextView)findViewById(R.id.text);
+        text2 = (TextView)findViewById(R.id.textView2);
 
         //미션 성공 실패 이미지와 버튼들
         m1_completed = (ImageView)findViewById(R.id.main_mission1_completed);
@@ -113,15 +82,13 @@ public class MainActivity extends AppCompatActivity {
         graph1 = (ImageView)findViewById(R.id.main_graph1);
         graph2 = (ImageView)findViewById(R.id.main_graph2);
         graph3 = (ImageView)findViewById(R.id.main_graph3);
-
         reset = (Button)findViewById(R.id.reset);
-
-
         digital_farm = (ImageView) findViewById(R.id.digital_farm);
+        insider_Button = (ImageButton) findViewById(R.id.inssatest);
+        btn_card = (ImageButton)findViewById(R.id.cardmaking);
 
         /*
         userName이 없으면 userName 받는 ACtivity 실행
-
          */
         checkUserName();
 
@@ -129,35 +96,14 @@ public class MainActivity extends AppCompatActivity {
         /*
         저장되어있는 날짜를 불러와서 today에 저장한다
         */
-        today = si.getDate(getApplicationContext());
-
-        insider_Button = (ImageButton) findViewById(R.id.inssatest);
-        btn_card = (ImageButton)findViewById(R.id.cardmaking);
-
-
-
+        today = si.getString(getApplicationContext(),"Today");
         /*
         저장된 today가 null이면(앱을 처음 실행) 오늘 날짜를 DATE라는 키의 value로 저장한다 + 랜덤 넘버 3개 저장(중복 없이)
         저장된 today가 오늘의 날짜와 다르면(하루가 지남) 오늘 날짜를 DATE라는 키의 value로 업데이트 한다 + 랜덤 넘버 3개 저장
          */
 
-
-        if (today==""){
-            si.setDate(getApplicationContext(),getToday());
-
-            for(int i=0; i<3; i++){
-                selectMissionNum[i] = random.nextInt(3);
-                for(int j=0; j<i; j++){
-                    if(selectMissionNum[i]==selectMissionNum[j]){
-                        i--;
-                    }
-                }
-            }
-
-            si.setMission(getApplicationContext(),selectMissionNum[0],selectMissionNum[1],selectMissionNum[2]);
-
-        }else if(!today.equals(getToday())){
-            si.setDate(getApplicationContext(),getToday());
+        if (today=="" || !today.equals(getToday())){
+            si.setString(getApplicationContext(),"Today",getToday());
 
             for(int i=0; i<3; i++){
                 selectMissionNum[i] = random.nextInt(3);
@@ -168,47 +114,38 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-            si.setMission(getApplicationContext(),selectMissionNum[0],selectMissionNum[1],selectMissionNum[2]);
+            si.setInt(getApplicationContext(),"Mission1", selectMissionNum[0]);
+            si.setInt(getApplicationContext(), "Mission2", selectMissionNum[1]);
+            si.setInt(getApplicationContext(), "Mission3", selectMissionNum[2]);
 
-            /*
-            이쪽에서 랜덤 미션 완료 여부와 몇개의 미션이 끝났는지 초기화 시켜줘야함
-             */
+            //원래는 else if로 날짜가 어제와 다를때 실행하던 코드인데 안그래도 될 것 같은데.... 일단 확인 필요
+            si.setInt(getApplicationContext(), "TodayMissionCompleted",0); //완료 미션 개수 0개로 초기화
+            si.setBoolean(getApplicationContext(),"isM1Completed",false); //미션 완료 상태 초기화
+            si.setBoolean(getApplicationContext(),"isM2Completed",false);
+            si.setBoolean(getApplicationContext(),"isM3Completed",false);
 
-            si.setCompNum(getApplicationContext(),0); //완료 미션 개수 0개로 초기화
-            si.setMissionState(getApplicationContext(),"M1_STATE",false); //미션 완료 상태 초기화
-            si.setMissionState(getApplicationContext(),"M2_STATE",false);
-            si.setMissionState(getApplicationContext(),"M3_STATE",false);
 
         }
 
         //랜덤 미션 번호 불러오기
-        Mission1 = si.getMission(getApplicationContext(),"MISSION1");
-        Mission2 = si.getMission(getApplicationContext(),"MISSION2");
-        Mission3 = si.getMission(getApplicationContext(),"MISSION3");
+        Mission1 = si.getInt(getApplicationContext(),"Mission1");
+        Mission2 = si.getInt(getApplicationContext(),"Mission2");
+        Mission3 = si.getInt(getApplicationContext(),"Mission3");
 
         //랜덤 미션 완료 여부 체크
-        ifMission1_completed = si.getMState(getApplicationContext(),"M1_STATE");
-        ifMission2_completed = si.getMState(getApplicationContext(),"M2_STATE");
-        ifMission3_completed = si.getMState(getApplicationContext(),"M3_STATE");
+        ifMission1_completed = si.getBoolean(getApplicationContext(),"isM1Completed");
+        ifMission2_completed = si.getBoolean(getApplicationContext(),"isM2Completed");
+        ifMission3_completed = si.getBoolean(getApplicationContext(),"isM3Completed");
 
         //오늘 미션 몇개 끝났는지 불러옴 , 그래프 용
-        howManyMissionsCompleted = si.getCompNum(getApplicationContext());
+        howManyMissionsCompleted = si.getInt(getApplicationContext(),"TodayMissionCompleted");
 
         /*
         지워
          */
-        text.setText("오늘날짜"+si.getDate(getApplicationContext()));
+        text.setText("오늘날짜"+si.getString(getApplicationContext(),"Today"));
         text2.setText("미션넘버"+Mission1+Mission2+Mission3+"미션성공여부"+ifMission1_completed+ifMission2_completed+ifMission3_completed);
 
-
-        /* 꽃피우기
-        if (howManyMissionsCompleted==3){
-            //미션 3번 깨면 1씩 올라가는 파일 저장해야됨
-            if 그 번호가 1~5면
-                실행할 코드
-        }
-
-         */
 
 
         //미션 1,2,3 버튼 보여주기
@@ -280,11 +217,13 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 }
-                si.setMission(getApplicationContext(),selectMissionNum[0],selectMissionNum[1],selectMissionNum[2]);
-                si.setMissionState(getApplicationContext(),"M1_STATE",false);
-                si.setMissionState(getApplicationContext(),"M2_STATE",false);
-                si.setMissionState(getApplicationContext(),"M3_STATE",false);
-                si.setCompNum(getApplicationContext(),0);
+                si.setInt(getApplicationContext(),"Mission1", selectMissionNum[0]);
+                si.setInt(getApplicationContext(), "Mission2", selectMissionNum[1]);
+                si.setInt(getApplicationContext(), "Mission3", selectMissionNum[2]);
+                si.setInt(getApplicationContext(), "TodayMissionCompleted",0); //완료 미션 개수 0개로 초기화
+                si.setBoolean(getApplicationContext(),"isM1Completed",false); //미션 완료 상태 초기화
+                si.setBoolean(getApplicationContext(),"isM2Completed",false);
+                si.setBoolean(getApplicationContext(),"isM3Completed",false);
             }
         });
 
@@ -330,6 +269,7 @@ public class MainActivity extends AppCompatActivity {
                 MissionStart(Mission3,3);
             }
         });
+
 
         // 인싸테스트 버튼 ClickListener
         insider_Button.setOnClickListener(new View.OnClickListener() {
@@ -380,7 +320,7 @@ public class MainActivity extends AppCompatActivity {
 
     // userName 받아오기
     public void checkUserName(){
-        userName = si.getUserName(getApplicationContext());
+        userName = si.getString(getApplicationContext(),"UserName");
 
         if (userName == ""){
             /* userName이 없으면 Activity 실행 */

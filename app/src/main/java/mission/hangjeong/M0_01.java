@@ -22,16 +22,23 @@ import static mission.hangjeong.M0_00.M0;
 public class M0_01 extends AppCompatActivity {
 
     Intent i;
-    FrameLayout fl;
 
 
     ImageView initialize, connecting;
     ImageView ld_off_1,ld_off_2,ld_off_3;
     ImageView m1, m2, m3;
-
+    Toast toast;
     ImageButton jumin, exit, hint;
-
+    /*
+    ImageButton btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15,btn16;
+    ImageButton[] img_btns = new ImageButton[]{btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15,btn16};
+    int[] img_btn_id = {R.id.mission_hangjeong_m0_01_02,R.id.mission_hangjeong_m0_01_03,R.id.mission_hangjeong_m0_01_04,R.id.mission_hangjeong_m0_01_05,R.id.mission_hangjeong_m0_01_06
+    ,R.id.mission_hangjeong_m0_01_07,R.id.mission_hangjeong_m0_01_08,R.id.mission_hangjeong_m0_01_09,R.id.mission_hangjeong_m0_01_10,R.id.mission_hangjeong_m0_01_11,R.id.mission_hangjeong_m0_01_12,
+            R.id.mission_hangjeong_m0_01_13,R.id.mission_hangjeong_m0_01_14,R.id.mission_hangjeong_m0_01_15,R.id.mission_hangjeong_m0_01_16};
+     */
     MissionMethods missionMethods = new MissionMethods();
+
+    View.OnClickListener cl;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,10 +46,7 @@ public class M0_01 extends AppCompatActivity {
 
         setContentView(R.layout.mission_hangjeong_m0_01);
 
-        /*
-        반투명 레이아웃
-         */
-        //fl = (FrameLayout)findViewById(R.id.m0_01_transparent_layout);
+
 
         /*
         로딩 이미지 파일들
@@ -61,6 +65,24 @@ public class M0_01 extends AppCompatActivity {
         jumin = (ImageButton)findViewById(R.id.mission_hangjeong_m0_01_01);
         hint = (ImageButton)findViewById(R.id.m0_01_hint);
         exit = (ImageButton)findViewById(R.id.m0_01_exit);
+
+
+        /*해당 버튼 아닌거 눌렸을 때*/
+        /*
+        cl = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                toast.makeText(getApplicationContext(),"오늘은 주민등록을 떼러 왔습니다.",Toast.LENGTH_SHORT).show();
+            }
+        };
+
+        for(int i = 0; i<15; i++){
+            img_btns[i] = (ImageButton)findViewById(img_btn_id[i]);
+            img_btns[i].setOnClickListener(cl);
+        }
+
+         */
 
 
         /*

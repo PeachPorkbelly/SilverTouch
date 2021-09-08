@@ -38,7 +38,7 @@ public class GetUserName extends AppCompatActivity {
                 try{
 
                     userName = putName.getText().toString();
-                    si.setUserName(getApplicationContext(), userName);
+                    si.setString(getApplicationContext(), "UserName",userName);
                     setResult(RESULT_OK, new Intent());
                     finish();
 
