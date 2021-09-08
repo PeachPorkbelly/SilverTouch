@@ -94,7 +94,12 @@ public class vector_test extends AppCompatActivity {
         /*
         1. wateringCan의 수를 불러온다
          */
-        wateringCan = si.getInt(getApplicationContext(),"WatringCan");
+        wateringCan = si.getInt(getApplicationContext(),"WateringCan");
+
+        /*
+        3.리스트에 위치 정해주기 -> 리스트에 추가
+         */
+        addDefaultLocation();
 
         // 꽃 배치 설정
         setFlower();
@@ -104,10 +109,7 @@ public class vector_test extends AppCompatActivity {
          */
         wateringCanNum.setText("물뿌리개 수"+wateringCan+"성장도"+wateredCount);
 
-        /*
-        3.리스트에 위치 정해주기 -> 리스트에 추가
-         */
-        addDefaultLocation();
+
 
 
 

@@ -232,6 +232,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 intent = new Intent(getApplicationContext(),mission.hangjeong.vector_test.class);
+                startActivity(intent);
             }
         });
 

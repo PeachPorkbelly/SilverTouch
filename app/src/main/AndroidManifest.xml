@@ -49,7 +49,9 @@
             android:screenOrientation="landscape"></activity>
 
 
-        <activity android:name="mission.hangjeong.vector_test">
+        <activity
+            android:name="mission.hangjeong.vector_test"
+            android:screenOrientation="landscape">
         </activity>
 
         <provider
