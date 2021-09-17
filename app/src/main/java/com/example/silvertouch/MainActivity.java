@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView empty_graph, graph1, graph2, graph3;
     //초기화 버튼
     Button reset;
+    //미션선택 해서 플레이하는 버튼
+    Button selectMission;
     //인싸테스트 버튼
     ImageButton insider_Button;
     //카드 만들기 버튼//
@@ -89,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         digital_farm = (ImageButton) findViewById(R.id.digital_farm);
         insider_Button = (ImageButton) findViewById(R.id.inssatest);
         btn_card = (ImageButton)findViewById(R.id.cardmaking);
+
+        selectMission = (Button)findViewById(R.id.selectMission);
 
         /*
         userName이 없으면 userName 받는 ACtivity 실행
@@ -144,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
         howManyMissionsCompleted = si.getInt(getApplicationContext(),"TodayMissionCompleted");
 
         /*
-        지워
+        테스트용 텍스트
          */
         text.setText("오늘날짜"+si.getString(getApplicationContext(),"Today"));
         text2.setText("미션넘버"+Mission1+Mission2+Mission3+"미션성공여부"+ifMission1_completed+ifMission2_completed+ifMission3_completed);
@@ -159,8 +163,6 @@ public class MainActivity extends AppCompatActivity {
         else{
             m1_uncompleted.setVisibility(View.INVISIBLE);
             m1_completed.setVisibility(View.VISIBLE);
-            //howManyMissionsCompleted = howManyMissionsCompleted+1;
-            //si.setCompNum(getApplicationContext(),howManyMissionsCompleted);
         }
 
         if (ifMission2_completed==false) {
@@ -170,8 +172,6 @@ public class MainActivity extends AppCompatActivity {
         else{
             m2_uncompleted.setVisibility(View.INVISIBLE);
             m2_completed.setVisibility(View.VISIBLE);
-            //howManyMissionsCompleted = howManyMissionsCompleted+1;
-            //si.setCompNum(getApplicationContext(),howManyMissionsCompleted);
         }
 
         if (ifMission3_completed==false) {
@@ -181,8 +181,6 @@ public class MainActivity extends AppCompatActivity {
         else{
             m3_uncompleted.setVisibility(View.INVISIBLE);
             m3_completed.setVisibility(View.VISIBLE);
-            //howManyMissionsCompleted = howManyMissionsCompleted+1;
-            //si.setCompNum(getApplicationContext(),howManyMissionsCompleted);
         }
 
         //그래프 보이기 안보이기 정해줌
@@ -251,7 +249,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
+        //미션 버튼 눌러서 미션 시작!!
         m1_uncompleted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -322,7 +320,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
      */
 
     //미션을 시작하는 함수, 랜덤으로 생성된 missionNum(리스트 인덱스로 쓰일 것)과 몇번쨰 미션인지(missionOrder)를
