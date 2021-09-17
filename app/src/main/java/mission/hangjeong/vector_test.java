@@ -96,8 +96,7 @@ public class vector_test extends AppCompatActivity {
          */
         wateringCan = si.getInt(getApplicationContext(),"WatringCan");
 
-        // 꽃 배치 설정
-        setFlower();
+
 
         /*
         2. wateringCan의 개수를 TextView에 띄운다 (옆에 물뿌리개 총 몇번 눌렸는지도)
@@ -109,7 +108,8 @@ public class vector_test extends AppCompatActivity {
          */
         addDefaultLocation();
 
-
+        // 꽃 배치 설정
+        setFlower();
 
         // 물뿌리개 버튼 클릭 시 물뿌리개 보유 개수 -1, 물뿌리개 눌린 횟수 +1. 꽃 다시 보여주기
         btn_wateringCan.setOnClickListener(new View.OnClickListener() {

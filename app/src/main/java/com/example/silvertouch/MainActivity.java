@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     Intent intent;
     SavedInfo si = new SavedInfo();
+    MissionList missionList;
     Random random = new Random();
 
     /*
@@ -55,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
     ImageButton insider_Button;
     //카드 만들기 버튼//
     ImageButton btn_card;
-    // 디지털 농장
-    ImageView digital_farm;
+    // 디지털 농장 버튼
+    ImageButton digital_farm;
     // 김수아, 김광희 테스트용
     TextView testView, text, text2;
 
@@ -69,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
         testView = (TextView) findViewById(R.id.khtextView3);
         text = (TextView)findViewById(R.id.text);
         text2 = (TextView)findViewById(R.id.textView2);
+
+
 
         //미션 성공 실패 이미지와 버튼들
         m1_completed = (ImageView)findViewById(R.id.main_mission1_completed);
@@ -83,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         graph2 = (ImageView)findViewById(R.id.main_graph2);
         graph3 = (ImageView)findViewById(R.id.main_graph3);
         reset = (Button)findViewById(R.id.reset);
-        digital_farm = (ImageView) findViewById(R.id.digital_farm);
+        digital_farm = (ImageButton) findViewById(R.id.digital_farm);
         insider_Button = (ImageButton) findViewById(R.id.inssatest);
         btn_card = (ImageButton)findViewById(R.id.cardmaking);
 
@@ -300,6 +303,7 @@ public class MainActivity extends AppCompatActivity {
         return stringToday.format(today);
     }
 
+    /*
     public void MissionStart(int missionNum, int missionOrder){
 
         if (missionNum==0){
@@ -316,6 +320,17 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
+    }
+
+     */
+
+    //미션을 시작하는 함수, 랜덤으로 생성된 missionNum(리스트 인덱스로 쓰일 것)과 몇번쨰 미션인지(missionOrder)를
+    //받아야 함
+    public void MissionStart(int missionNum, int missionOrder){
+        missionList = new MissionList();
+        intent = new Intent(getApplicationContext(),missionList.missionList.get(missionNum));
+        intent.putExtra("missionOrder",missionOrder);
+        startActivity(intent);
     }
 
     // userName 받아오기
