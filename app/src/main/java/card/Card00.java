@@ -54,7 +54,7 @@ public class Card00 extends AppCompatActivity {
 
 
         // 하단 미리보기 이미지
-
+        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card0));
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card1));
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card2));
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card3));
@@ -64,7 +64,6 @@ public class Card00 extends AppCompatActivity {
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card7));
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card8));
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card9));
-
 
 //        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.image1));
 //        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.image1));

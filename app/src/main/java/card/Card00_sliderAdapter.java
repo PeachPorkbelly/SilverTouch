@@ -37,7 +37,7 @@ public class Card00_sliderAdapter extends RecyclerView.Adapter<Card00_sliderAdap
     // 리스트 끝에 올때 새로운 리스트를 추가해줌
     @Override
     public void onBindViewHolder(@NonNull SliderViewHolder holder, int position) {
-        holder.setImage(sliderItems.get(position % 5));
+        holder.setImage(sliderItems.get(position % 10));
         if (position == sliderItems.size() - 2) {
             viewPager2.post(runnable);
         }

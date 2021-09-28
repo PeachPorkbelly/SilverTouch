@@ -11,8 +11,8 @@ public class MissionList {
     public ArrayList<Class> missionListHJ = new ArrayList<>();
     public ArrayList<String> missionTitleHJ = new ArrayList<>();
 
-
-    public ArrayList<String> missionTitleHamburger = new ArrayList<>();
+    public ArrayList<Class> missionListHB = new ArrayList<>();
+    public ArrayList<String> missionTitleHB = new ArrayList<>();
 
     //미션이 추가될 때 마다 여기에 add 시켜주세요(클래스 이름과 미션 타이틀)
     public MissionList(){
