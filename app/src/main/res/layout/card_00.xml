@@ -3,91 +3,100 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="card.Card00">
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/card_00_exit"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_exit" />
+
+    <ImageView
+        android:id="@+id/card_00_todo"
+        android:layout_width="336dp"
+        android:layout_height="109dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_00_title"
+        app:srcCompat="@drawable/card_message" />
+
+    <ImageView
+        android:id="@+id/card_00_title"
+        android:layout_width="141dp"
+        android:layout_height="47dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_00_exit"
+        app:srcCompat="@drawable/card_title" />
 
     <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:id="@+id/card00_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_00_todo">
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPagerImageSlider"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginTop="200dp"
+            android:layout_width="350dp"
+            android:layout_height="375dp"
             android:background="@android:color/transparent"
             android:paddingStart="80dp"
-            android:paddingEnd="80dp" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="70dp"
-            android:background="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:src="@drawable/card_title" />
-
-        <ImageView
-            android:layout_width="190dp"
-            android:layout_height="52dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="115dp"
-            android:background="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:src="@drawable/card_message" />
-
-        <ImageButton
-            android:id="@+id/btn_next"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_gravity="right|center_vertical"
-            android:background="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:src="@drawable/card_next" />
+            android:paddingEnd="80dp" >
+        </androidx.viewpager2.widget.ViewPager2>
 
         <ImageButton
             android:id="@+id/btn_pre"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_gravity="left|center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
-            android:src="@drawable/card_previous" />
-
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/mTabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="100dp"
-            android:background="@android:color/transparent"
-            android:scaleType="fitXY"
-            app:tabGravity="center"
-            app:tabMode="scrollable" />
+            android:layout_gravity="center|left"
+            app:srcCompat="@drawable/card_previous" />
 
         <ImageButton
-            android:id="@+id/btn_select"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="44dp"
+            android:id="@+id/btn_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
-            android:src="@drawable/card_select" />
-
-        <ImageButton
-            android:id="@+id/card_00_exit"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:background="@android:color/transparent"
-            android:layout_gravity="top|right"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/misson_exit" />
-
+            android:layout_gravity="center|right"
+            app:srcCompat="@drawable/card_next" />
     </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card00_framelayout"
+        app:tabGravity="center"
+        app:tabMode="scrollable" />
+
+    <ImageButton
+        android:id="@+id/btn_select"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/card_select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTabLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

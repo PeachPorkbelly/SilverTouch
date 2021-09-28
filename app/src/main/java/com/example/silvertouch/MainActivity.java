@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //미션 1,2,3 버튼 보여주기
-        if (ifMission1_completed==false) {
+        if (!ifMission1_completed) {
             m1_completed.setVisibility(View.INVISIBLE);
             graph1.setVisibility(View.INVISIBLE);
         }
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
             m1_completed.setVisibility(View.VISIBLE);
         }
 
-        if (ifMission2_completed==false) {
+        if (!ifMission2_completed) {
             m2_completed.setVisibility(View.INVISIBLE);
             graph2.setVisibility(View.INVISIBLE);
         }
@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
             m2_completed.setVisibility(View.VISIBLE);
         }
 
-        if (ifMission3_completed==false) {
+        if (!ifMission3_completed) {
             m3_completed.setVisibility(View.INVISIBLE);
             graph3.setVisibility(View.INVISIBLE);
         }
