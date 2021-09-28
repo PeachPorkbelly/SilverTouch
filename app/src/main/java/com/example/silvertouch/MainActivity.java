@@ -19,6 +19,7 @@ import java.util.Random;
 
 import inssa_test.InsiderTestStart;
 import card_maker.card_main;
+import select_mission.SelectMission_00;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -282,8 +283,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //미션리스트중에서 선택해서 미션 플레이 하는 버튼
+        selectMission.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(), SelectMission_00.class);
+                startActivity(intent);
+            }
+        });
 
-    }
+    }//onCreate
 
     @Override
     public void onBackPressed() {

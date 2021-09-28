@@ -27,6 +27,11 @@
         <!--유저 이름 받아오기-->
         <activity android:name=".GetUserName" />
 
+        <!--미션리스트찾아서플레이하기-->
+        <activity android:name="select_mission.SelectMission_00"/>
+        <activity android:name="select_mission.SelectMission_main"/>
+
+
         <!--Card Maker-->
         <activity android:name="card_maker.card_main"/>
 
