@@ -17,6 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
 
+import card.Card00;
 import inssa_test.InsiderTestStart;
 import card_maker.card_main;
 import select_mission.SelectMission_00;
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     //초기화 버튼
     Button reset;
     //미션선택 해서 플레이하는 버튼
-    Button selectMission;
+    ImageButton selectMission;
     //인싸테스트 버튼
     ImageButton insider_Button;
     //카드 만들기 버튼//
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         insider_Button = (ImageButton) findViewById(R.id.inssatest);
         btn_card = (ImageButton)findViewById(R.id.cardmaking);
 
-        selectMission = (Button)findViewById(R.id.selectMission);
+        selectMission = (ImageButton)findViewById(R.id.selectMission);
 
         /*
         userName이 없으면 userName 받는 ACtivity 실행
@@ -244,7 +245,7 @@ public class MainActivity extends AppCompatActivity {
         btn_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(getApplicationContext(),card_maker.card_main.class);
+                intent = new Intent(getApplicationContext(), Card00.class);
                 startActivity(intent);
             }
         });

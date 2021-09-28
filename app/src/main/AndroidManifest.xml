@@ -31,6 +31,9 @@
         <activity android:name="select_mission.SelectMission_00"/>
         <activity android:name="select_mission.SelectMission_main"/>
 
+        <!--카드-->
+        <activity android:name="card.Card00"/>
+
 
         <!--Card Maker-->
         <activity android:name="card_maker.card_main"/>

@@ -44,12 +44,16 @@ public class SelectMission_Adapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        View view = layoutInflater.inflate(R.layout.select_mission_hangjeong_litems,null);
+        if (convertView == null){
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = inflater.inflate(R.layout.select_mission_hangjeong_litems, parent, false);
+        }
 
-        TextView mText = (TextView)view.findViewById(R.id.select_mission_hangjeong_text);
+        TextView mText = (TextView)convertView.findViewById(R.id.select_mission_hangjeong_text);
         mText.setText(this.missionTitle.get(position));
 
-        return view;
+        return convertView;
+
 
     }
 }

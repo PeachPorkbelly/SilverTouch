@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,7 +14,7 @@ import com.example.silvertouch.R;
 public class SelectMission_00 extends AppCompatActivity {
 
     //이미지 버튼들
-    ImageButton hangjeong, theater, burger, hospital, ktx;
+    ImageButton hangjeong, theater, burger, hospital, ktx, exit;
     Intent intent;
 
     @Override
@@ -26,6 +27,7 @@ public class SelectMission_00 extends AppCompatActivity {
         burger = (ImageButton)findViewById(R.id.select_mission_burger);
         hospital = (ImageButton)findViewById(R.id.select_mission_hospital);
         ktx = (ImageButton)findViewById(R.id.select_mission_ktx);
+        exit = (ImageButton)findViewById(R.id.select_mission_00_exit);
 
 
         //인텐트로 넘길 때 어떤걸 선택했는지 갖고 넘기자!!
@@ -37,8 +39,14 @@ public class SelectMission_00 extends AppCompatActivity {
             }
         });
 
-        
-
+        //닫기
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(),com.example.silvertouch.MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
