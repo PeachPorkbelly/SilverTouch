@@ -1,7 +1,10 @@
 package mission.hangjeong;
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -41,7 +44,7 @@ public class vector_test extends AppCompatActivity {
     // 꽃 자라날 위치를 담은 리스트
     ArrayList<ImageView> defaultPlace = new ArrayList<>();
     //꽃 위치 ImageView의 id값을 int 배열로 저장하여 차후 사용. 이후 확장성이 좋습니다.
-    int getDefaultPlace[] = {
+    int[] getDefaultPlace = {
             R.id.mygarden_defaultPlace_01,
             R.id.mygarden_defaultPlace_02,
             R.id.mygarden_defaultPlace_03,
@@ -58,6 +61,8 @@ public class vector_test extends AppCompatActivity {
     //물뿌리개 숫자에 관한 변수명
     //wateringCan 개수, wateringCan이 눌린 총 횟수
     int wateringCan, wateredCount;
+    // 꽃밭 수
+    int maxFlower;
     //초기화, 물뿌리개 수 up에 관한 버튼
     Button btn_init, btn_wateringCanUp;
     //물뿌리개 버튼
@@ -65,7 +70,7 @@ public class vector_test extends AppCompatActivity {
     //wateringCan 개수 보여줄 TextView
     TextView wateringCanNum;
 
-    //SavedInfo를 si에 할당합니다.
+    //SavedInfo 를 si에 할당합니다.
     SavedInfo si = new SavedInfo();
 
     /*** 최초 실행시 실행되는 실행문. ***/
@@ -84,10 +89,11 @@ public class vector_test extends AppCompatActivity {
         btn_wateringCanUp = (Button)findViewById(R.id.mygarden_countUp);
         //물뿌리개 수 보여주는 TextView
         wateringCanNum = (TextView)findViewById(R.id.mygarden_wateringCanNum);
-        //Array에 int형으로 저장된 ViewId를 ImageView로 연결하여 저장합니다.
+        //Array 에 int 형으로 저장된 ViewId를 ImageView 로 연결하여 저장합니다.
         for(int i = 0; i < getDefaultPlace.length; i++){
             defaultPlace.add((ImageView) findViewById(getDefaultPlace[i]));
         }
+        maxFlower = getDefaultPlace.length;
 
         // 화면 초기화
         garden_refresh();
@@ -97,14 +103,17 @@ public class vector_test extends AppCompatActivity {
         btn_wateringCan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (wateringCan >= 1){
+
+                if(wateredCount >= maxFlower * 2){
+                    logs("최대 갯수");
+                }else if (wateringCan >= 1){
                     wateringCan -= 1;
                     wateredCount += 1;
                     save_setter();
+                    garden_refresh();
                 } else{
                     logs("물뿌리개 부족");
                 }
-                garden_refresh();
             }
         });
         // 초기화 버튼
@@ -157,27 +166,48 @@ public class vector_test extends AppCompatActivity {
         // defaultPlace Index때 쓸 변수
         int defaultPlaceStartCount, defaultPlaceEndCount;
 
-
         wateredCount = si.getInt(getApplicationContext(),"Watered");
 
-        // 꽃 배치 인덱스 설정
-        if (wateredCount >= 10){
-            defaultPlaceStartCount = wateredCount - 10;
-            defaultPlaceEndCount = 10;
-        }
-        else{
-            defaultPlaceStartCount = 0;
-            defaultPlaceEndCount = wateredCount;
-        }
-
-        if (defaultPlaceStartCount != 0){
-            for (int i = 0; i<defaultPlaceStartCount; i++){
-                defaultPlace.get(i).setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.main_farm_flower));//꽃 모양으로 바꿈
+        // 현재 wateredCount에 따라 애니메이션 여부가 결정됩니다.
+        // 마지막 watered에만 애니메이션이 출력되며, 나머지는 ImageDrawable만 변경됩니다.
+        for (int i = 0; i < maxFlower; i++){
+            if(wateredCount >= maxFlower + i + 2) {
+                defaultPlace.get(i).setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.main_farm_flower_0000));//꽃 모양으로 바꿈
+            }else if(wateredCount == maxFlower + i + 1){
+                changeImage(defaultPlace.get(i), R.drawable.main_farm_flower_0000);
+            }else if (wateredCount >= i + 2){
+                defaultPlace.get(i).setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.main_farm_flower));//새싹모양 설정
+            }else if (wateredCount == i + 1){
+                changeImage(defaultPlace.get(i), R.drawable.main_farm_flower);
+            }else{
+                defaultPlace.get(i).setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.transparent_flower));//새싹모양 설정
             }
         }
-        for(int i=defaultPlaceStartCount; i<defaultPlaceEndCount; i++) {
-            defaultPlace.get(i).setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.main_farm_flower));//새싹모양 설정
-        }
+    }
+
+    // 특정 ImageView를 res로 이미지 변환하는 애니메이션
+    private void changeImage(final ImageView place, final int res){
+        // 페이드 애니메이션
+        Animation fadeOut = AnimationUtils.loadAnimation(vector_test.this, R.anim.image_fade_out);
+        Animation fadeIn = AnimationUtils.loadAnimation(vector_test.this, R.anim.image_fade_in);
+
+        // 페이드 아웃 애니메이션을 시작합니다.
+        place.startAnimation(fadeOut);
+
+        fadeOut.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+            }
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                //페이드 아웃 애니메이션이 끝나면 페이드 인 애니메이션을 시작합니다.
+                place.setImageResource(res);
+                place.startAnimation(fadeIn);
+            }
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+            }
+        });
     }
 
 
