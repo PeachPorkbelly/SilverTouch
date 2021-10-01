@@ -4,47 +4,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/framelayout"
-    tools:context="burger1.BurgerFragment0_1">
+    tools:context="mission.burger.BurgerFragment0_1">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageButton
         android:id="@+id/doubleburger"
-        android:layout_width="145dp"
-        android:layout_height="72dp"
+        android:layout_width="133dp"
+        android:layout_height="60dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
         android:src="@drawable/doubleburger"
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="276dp" />
 
     <ImageButton
         android:id="@+id/chickenburger"
-        android:layout_width="145dp"
-        android:layout_height="72dp"
-        android:layout_marginLeft="230dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="133dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="30dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         android:src="@drawable/chickenburger" />
 
     <ImageButton
         android:id="@+id/cheeseburger"
-        android:layout_width="145dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginStart="40dp"
+        android:layout_width="133dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="20dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         android:src="@drawable/cheeseburger" />
 
     <ImageButton
         android:id="@+id/hanwooburger"
-        android:layout_width="145dp"
-        android:layout_height="72dp"
-        android:layout_marginLeft="230dp"
-        android:layout_marginTop="150dp"
+        android:layout_width="133dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="130dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         android:src="@drawable/hanwooburger" />
