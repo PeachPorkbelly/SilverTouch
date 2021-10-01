@@ -1,6 +1,5 @@
-package mission.burger1;
+package mission.burger;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,44 +10,45 @@ import android.widget.ImageButton;
 import com.example.silvertouch.MainActivity;
 import com.example.silvertouch.R;
 
-public class M0_04 extends AppCompatActivity {
-    ImageButton rec, ham, dri, cancel;
+public class M0_07 extends AppCompatActivity {
+
+    ImageButton po, chi, che, oni, cok, spr, ok, can, cancel;
     View.OnClickListener cl;
     Intent i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_m004);
+        setContentView(R.layout.activity_m007);
 
 
-
-        rec=(ImageButton) findViewById(R.id.recomm);
-        ham=(ImageButton) findViewById(R.id.hamburger);
-        dri=(ImageButton) findViewById(R.id.drink);
+        po=(ImageButton) findViewById(R.id.potato);
+        chi=(ImageButton) findViewById(R.id.chicken);
+        che=(ImageButton) findViewById(R.id.cheesestick);
+        oni=(ImageButton) findViewById(R.id.onion);
+        cok=(ImageButton) findViewById(R.id.coke);
+        spr=(ImageButton) findViewById(R.id.sprite);
+        ok=(ImageButton) findViewById(R.id.ok);
+        can=(ImageButton) findViewById(R.id.cancel2);
         cancel=(ImageButton)findViewById(R.id.cancel);
+
 
         cl= new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.recomm:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_02.class);
+                    case R.id.ok:
+                        i = new Intent(getApplicationContext(), mission.burger.M0_08.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
-                    case R.id.hamburger:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_03.class);
-                        startActivity(i);
-                        overridePendingTransition(0, 0); //애니메이션 없애기
-                        break;
-                    case R.id.drink:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_05.class);
+                    case R.id.cancel2:
+                        i = new Intent(getApplicationContext(), mission.burger.M0_06.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.cancel:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_00.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_00.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
@@ -56,9 +56,8 @@ public class M0_04 extends AppCompatActivity {
                 }
             }
         };
-        rec.setOnClickListener(cl);
-        ham.setOnClickListener(cl);
-        dri.setOnClickListener(cl);
+        ok.setOnClickListener(cl);
+        can.setOnClickListener(cl);
         cancel.setOnClickListener(cl);
     }
     /*

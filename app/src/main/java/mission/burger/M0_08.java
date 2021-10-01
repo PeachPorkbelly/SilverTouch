@@ -1,6 +1,5 @@
-package mission.burger1;
+package mission.burger;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -11,8 +10,6 @@ import android.widget.ImageButton;
 
 import com.example.silvertouch.MainActivity;
 import com.example.silvertouch.R;
-
-import mission.burger1.BurgerFragment0_1;
 
 public class M0_08 extends AppCompatActivity {
     ImageButton pay, cancel;
@@ -34,7 +31,7 @@ public class M0_08 extends AppCompatActivity {
         BurgerFragment0_1 fragment1 = new BurgerFragment0_1();
         adapter.addItem(fragment1);
 
-        mission.burger1.BurgerFragment0_2 fragment2 = new mission.burger1.BurgerFragment0_2();
+        mission.burger.BurgerFragment0_2 fragment2 = new mission.burger.BurgerFragment0_2();
         adapter.addItem(fragment2);
 
         pager.setAdapter(adapter);
@@ -48,12 +45,12 @@ public class M0_08 extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.pay:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_09.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_09.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.cancel:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_00.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_00.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;

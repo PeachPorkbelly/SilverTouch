@@ -1,6 +1,5 @@
-package mission.burger1;
+package mission.burger;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -37,32 +36,32 @@ public class M0_09 extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.more:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_02.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_02.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.cancel:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_00.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_00.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.card2:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_10.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_10.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.mobile:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_10.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_10.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.lpay:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_10.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_10.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.tmoney:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_10.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_10.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;

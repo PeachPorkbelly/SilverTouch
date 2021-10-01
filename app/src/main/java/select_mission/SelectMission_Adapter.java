@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 import com.example.silvertouch.R;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 public class SelectMission_Adapter extends BaseAdapter {
@@ -46,10 +44,10 @@ public class SelectMission_Adapter extends BaseAdapter {
 
         if (convertView == null){
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.select_mission_hangjeong_litems, parent, false);
+            convertView = inflater.inflate(R.layout.select_mission_litems, parent, false);
         }
 
-        TextView mText = (TextView)convertView.findViewById(R.id.select_mission_hangjeong_text);
+        TextView mText = (TextView)convertView.findViewById(R.id.select_mission_text);
         mText.setText(this.missionTitle.get(position));
 
         return convertView;

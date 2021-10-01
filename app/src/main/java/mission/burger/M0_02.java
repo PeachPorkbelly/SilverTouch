@@ -1,9 +1,6 @@
-package mission.burger1;
+package mission.burger;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.PagerAdapter;
-import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,34 +10,18 @@ import android.widget.ImageButton;
 import com.example.silvertouch.MainActivity;
 import com.example.silvertouch.R;
 
-import mission.burger1.BurgerFragment0_1;
+public class M0_02 extends AppCompatActivity {
 
-public class M0_03 extends AppCompatActivity {
-    private ViewPager mPager;
-    private PagerAdapter pagerAdapter;
-    ImageButton rec, des,dri,cancel;
-    View.OnClickListener cl;
     Intent i;
-
+    ImageButton ham, des, dri, cancel;
+    View.OnClickListener cl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_m003);
+        setContentView(R.layout.activity_m002);
 
-        ViewPager pager = findViewById(R.id.pager);
-        pager.setOffscreenPageLimit(2); //2개까지 caching
 
-        burger1.MainPagerAdapter adapter = new burger1.MainPagerAdapter(getSupportFragmentManager(), 1);
-
-        BurgerFragment0_1 fragment1 = new BurgerFragment0_1();
-        adapter.addItem(fragment1);
-
-        mission.burger1.BurgerFragment0_2 fragment2 = new mission.burger1.BurgerFragment0_2();
-        adapter.addItem(fragment2);
-
-        pager.setAdapter(adapter);
-
-        rec=(ImageButton) findViewById(R.id.recomm);
+        ham=(ImageButton) findViewById(R.id.hamburger);
         des=(ImageButton) findViewById(R.id.desert);
         dri=(ImageButton) findViewById(R.id.drink);
         cancel=(ImageButton)findViewById(R.id.cancel);
@@ -50,23 +31,23 @@ public class M0_03 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.recomm:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_02.class);
+                    case R.id.hamburger:
+                        i = new Intent(getApplicationContext(), mission.burger.M0_03.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.desert:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_04.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_04.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.drink:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_05.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_05.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.cancel:
-                        i = new Intent(getApplicationContext(), mission.burger1.M0_00.class);
+                        i = new Intent(getApplicationContext(), mission.burger.M0_00.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
@@ -74,11 +55,10 @@ public class M0_03 extends AppCompatActivity {
                 }
             }
         };
-        rec.setOnClickListener(cl);
+        ham.setOnClickListener(cl);
         des.setOnClickListener(cl);
         dri.setOnClickListener(cl);
         cancel.setOnClickListener(cl);
-
     }
     /*
 뒤로가기 버튼 눌렀을 때

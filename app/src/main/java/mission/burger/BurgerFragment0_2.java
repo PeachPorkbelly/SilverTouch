@@ -1,4 +1,4 @@
-package mission.burger1;
+package mission.burger;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -70,7 +70,7 @@ public class BurgerFragment0_2 extends Fragment {
 
         sb.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
-                Intent i=new Intent(getActivity(), mission.burger1.M0_06.class);
+                Intent i=new Intent(getActivity(), mission.burger.M0_06.class);
                 startActivity(i);
             }
         });

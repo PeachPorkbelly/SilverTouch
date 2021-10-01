@@ -1,4 +1,4 @@
-package mission.burger1;
+package mission.burger;
 
 import android.os.Bundle;
 

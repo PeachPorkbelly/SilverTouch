@@ -60,17 +60,18 @@
             android:screenOrientation="landscape">
         </activity>
 
-        <activity android:name="mission.burger1.M0_00" />
-        <activity android:name="mission.burger1.M0_01" />
-        <activity android:name="mission.burger1.M0_02" />
-        <activity android:name="mission.burger1.M0_03" />
-        <activity android:name="mission.burger1.M0_04" />
-        <activity android:name="mission.burger1.M0_05" />
-        <activity android:name="mission.burger1.M0_06" />
-        <activity android:name="mission.burger1.M0_07" />
-        <activity android:name="mission.burger1.M0_08" />
-        <activity android:name="mission.burger1.M0_09" />
-        <activity android:name="mission.burger1.M0_10" />
+        <activity android:name="mission.burger.M0_Map"/>
+        <activity android:name="mission.burger.M0_00" />
+        <activity android:name="mission.burger.M0_01" />
+        <activity android:name="mission.burger.M0_02" />
+        <activity android:name="mission.burger.M0_03" />
+        <activity android:name="mission.burger.M0_04" />
+        <activity android:name="mission.burger.M0_05" />
+        <activity android:name="mission.burger.M0_06" />
+        <activity android:name="mission.burger.M0_07" />
+        <activity android:name="mission.burger.M0_08" />
+        <activity android:name="mission.burger.M0_09" />
+        <activity android:name="mission.burger.M0_10" />
 
 
         <provider

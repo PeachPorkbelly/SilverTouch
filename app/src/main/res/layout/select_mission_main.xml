@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
     <ImageButton
         android:id="@+id/select_mission_hangjeong_exit"
         android:layout_width="40dp"
@@ -18,7 +20,7 @@
         app:srcCompat="@drawable/misson_exit" />
 
     <ImageView
-        android:id="@+id/select_mission_hangjeong_title"
+        android:id="@+id/select_mission_title"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_marginTop="16dp"
@@ -31,8 +33,16 @@
         android:layout_width="match_parent"
         android:layout_height="655dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/select_mission_hangjeong_title"
+        app:layout_constraintTop_toBottomOf="@+id/select_mission_title"
         />
+
+    <TextView
+        android:id="@+id/selectedmissiontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

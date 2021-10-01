@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/m0_00_exit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_exit" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/missionOrder_1"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_1" />
+
+        <ImageView
+            android:id="@+id/missionOrder_2"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_2" />
+
+        <ImageView
+            android:id="@+id/missionOrder_3"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_3"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/mission_hangjeong_m0_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+        app:srcCompat="@drawable/mission_bg_m0_map_title" />
+
+
+    <ImageView
+        android:id="@+id/mission_hangjeong_m0_mapbg"
+        android:layout_width="332dp"
+        android:layout_height="426dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mission_hangjeong_m0_title"
+        app:srcCompat="@drawable/mission_map_bg" />
+
+    <ImageButton
+        android:id="@+id/bg_m0_hangjeong"
+        android:layout_width="130dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mission_hangjeong_m0_mapbg"
+        app:srcCompat="@drawable/mission_map_icon_hangjeong" />
+
+    <ImageButton
+        android:id="@+id/bg_m0_burger"
+        android:layout_width="82dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="128dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/mission_hangjeong_m0_mapbg"
+        app:layout_constraintTop_toTopOf="@+id/mission_hangjeong_m0_mapbg"
+        app:srcCompat="@drawable/mission_map_icon_burger" />
+
+    <ImageButton
+        android:id="@+id/bg_m0_hospital"
+        android:layout_width="138dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="184dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/mission_hangjeong_m0_mapbg"
+        app:layout_constraintTop_toTopOf="@+id/mission_hangjeong_m0_mapbg"
+        app:srcCompat="@drawable/mission_map_icon_hospital" />
+
+
+    <ImageButton
+        android:id="@+id/bg_m0_ktx"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="344dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/mission_hangjeong_m0_mapbg"
+        app:layout_constraintTop_toTopOf="@+id/mission_hangjeong_m0_mapbg"
+        app:srcCompat="@drawable/mission_map_icon_ktx" />
+
+    <ImageButton
+        android:id="@+id/bg_m0_theater"
+        android:layout_width="128dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="268dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mission_hangjeong_m0_mapbg"
+        app:srcCompat="@drawable/mission_map_icon_theater" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
