@@ -20,13 +20,13 @@ public class MissionList {
         missionListHJ.add(mission.hangjeong.M0_00.class);
         missionTitleHJ.add("주민등록초본(개인확인용) 1부를 발급해주세요!");
 
-        missionList.add(mission.mission_1.class);
-        missionListHJ.add(mission.mission_1.class);
-        missionTitleHJ.add("1번 미션");
-
         missionList.add(mission.mission_2.class);
         missionListHJ.add(mission.mission_2.class);
         missionTitleHJ.add("2번 미션");
+
+        missionList.add(mission.burger1.M0_00.class);
+        missionListHB.add(mission.burger1.M0_00.class);
+        missionTitleHB.add("새우버거 세트 1개를 주문해보세요");
     }
 }
 

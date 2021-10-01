@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mission.burger1.M0_09">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="299dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/kiosk_0021_kiosk_misson"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/hint"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_btn_hint"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/line5" />
+
+    <ImageButton
+        android:id="@+id/disabled"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="81dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/disabled" />
+
+    <ImageButton
+        android:id="@+id/lens"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="81dp"
+        app:srcCompat="@drawable/lens"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="611dp" />
+
+    <ImageButton
+        android:id="@+id/call"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="81dp"
+        app:srcCompat="@drawable/call"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/lens"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/cancel"
+        android:layout_width="99dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="81dp"
+        app:srcCompat="@drawable/cancel"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toRightOf="@id/call"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/more"
+        android:layout_width="99dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="81dp"
+        app:srcCompat="@drawable/more"
+        app:layout_constraintLeft_toRightOf="@id/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="190dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/l1"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="190dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="270dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageView10"
+        app:srcCompat="@drawable/l4"
+        tools:layout_editor_absoluteY="199dp" />
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="190dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="85dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageView13"
+        app:srcCompat="@drawable/l5"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <ImageButton
+        android:id="@+id/takeout"
+        android:layout_width="73dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginStart="207dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/takeout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/forhere"
+        android:layout_width="73dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/forhere"
+        app:layout_constraintLeft_toRightOf="@id/takeout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/discount2"
+        android:layout_width="42dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="207dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/takeout"
+        app:srcCompat="@drawable/discount2" />
+    <ImageButton
+        android:id="@+id/lpoint"
+        android:layout_width="42dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/discount2"
+        app:layout_constraintTop_toBottomOf="@id/takeout"
+        app:srcCompat="@drawable/lpoint1" />
+    <ImageButton
+        android:id="@+id/no"
+        android:layout_width="42dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/lpoint"
+        app:layout_constraintTop_toBottomOf="@id/takeout"
+        app:srcCompat="@drawable/no" />
+    <ImageButton
+        android:id="@+id/card2"
+        android:layout_width="42dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="207dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/discount2"
+        app:srcCompat="@drawable/card2" />
+    <ImageButton
+        android:id="@+id/mobile"
+        android:layout_width="42dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/card2"
+        app:layout_constraintTop_toBottomOf="@id/discount2"
+        app:srcCompat="@drawable/mobile" />
+    <ImageButton
+        android:id="@+id/lpay"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/mobile"
+        app:layout_constraintTop_toBottomOf="@id/discount2"
+        app:srcCompat="@drawable/lpay" />
+    <ImageButton
+        android:id="@+id/tmoney"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/mobile"
+        app:layout_constraintTop_toBottomOf="@id/discount2"
+        app:srcCompat="@drawable/tmoney" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="360dp"
+        android:layout_height="243dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/o1" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="124dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imageView12"
+        app:srcCompat="@drawable/o2"
+        tools:layout_editor_absoluteY="482dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mission.burger1.M0_01">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/line2" />
+    <ImageButton
+        android:id="@+id/hint"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_btn_hint"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="299dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kiosk_0021_kiosk_misson" />
+
+    <ImageButton
+        android:id="@+id/discount"
+        android:layout_width="138dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="78dp"
+        android:layout_marginLeft="90dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/call"
+        app:srcCompat="@drawable/discount" />
+
+    <ImageButton
+        android:id="@+id/disabled"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="81dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/disabled" />
+
+    <ImageButton
+        android:id="@+id/lens"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="81dp"
+        app:srcCompat="@drawable/lens"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="611dp" />
+
+    <ImageButton
+        android:id="@+id/call"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="81dp"
+        app:srcCompat="@drawable/call"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/lens"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/card"
+        android:layout_width="420dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="270dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card" />
+
+    <ImageButton
+        android:id="@+id/cash"
+        android:layout_width="172dp"
+        android:layout_height="194dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginBottom="150dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/cash" />
+
+    <ImageButton
+        android:id="@+id/digital"
+        android:layout_width="218dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="138dp"
+        android:layout_marginLeft="0dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/digital" />
+</androidx.constraintlayout.widget.ConstraintLayout>
