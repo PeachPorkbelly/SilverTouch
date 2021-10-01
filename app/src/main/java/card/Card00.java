@@ -151,9 +151,6 @@ public class Card00 extends AppCompatActivity {
         });
 
     }
-
-
-
     //나중에 함수로 빼기기
    public void addPictures(){
 

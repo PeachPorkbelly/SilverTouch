@@ -21,8 +21,8 @@
 
     <ImageView
         android:id="@+id/card_00_todo"
-        android:layout_width="336dp"
-        android:layout_height="109dp"
+        android:layout_width="167dp"
+        android:layout_height="98dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_00_title"
@@ -30,8 +30,8 @@
 
     <ImageView
         android:id="@+id/card_00_title"
-        android:layout_width="141dp"
-        android:layout_height="47dp"
+        android:layout_width="85dp"
+        android:layout_height="28dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,8 @@
             android:layout_height="375dp"
             android:background="@android:color/transparent"
             android:paddingStart="80dp"
-            android:paddingEnd="80dp" >
+            android:paddingEnd="80dp">
+
         </androidx.viewpager2.widget.ViewPager2>
 
         <ImageButton
@@ -85,7 +86,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card00_framelayout"
         app:tabGravity="center"
-        app:tabMode="scrollable" />
+        app:tabMode="scrollable">
+    </com.google.android.material.tabs.TabLayout>
 
     <ImageButton
         android:id="@+id/btn_select"
@@ -98,5 +100,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mTabLayout" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
