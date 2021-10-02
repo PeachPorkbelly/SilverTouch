@@ -33,9 +33,9 @@ public class M0_Map extends AppCompatActivity {
 
         setContentView(R.layout.mission_bg_m0_map);
 
-        ImageView missionOrder1 = (ImageView)findViewById(R.id.missionOrder_1);
-        ImageView missionOrder2 = (ImageView)findViewById(R.id.missionOrder_2);
-        ImageView missionOrder3 = (ImageView)findViewById(R.id.missionOrder_3);
+        ImageView missionOrder1 = (ImageView)findViewById(R.id.bg_m0_map_mo1);
+        ImageView missionOrder2 = (ImageView)findViewById(R.id.bg_m0_map_mo2);
+        ImageView missionOrder3 = (ImageView)findViewById(R.id.bg_m0_map_mo3);
 
 
         hangjeong = (ImageButton)findViewById(R.id.bg_m0_hangjeong);

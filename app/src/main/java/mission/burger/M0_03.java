@@ -8,21 +8,30 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.example.silvertouch.MainActivity;
 import com.example.silvertouch.R;
 
+import mission.MissionMethods;
+import static mission.burger.M0_Map.M0;
+
 public class M0_03 extends AppCompatActivity {
-    private ViewPager mPager;
-    private PagerAdapter pagerAdapter;
-    ImageButton rec, des,dri,cancel;
+
+    ImageButton rec, des,dri,cancel,exit;
     View.OnClickListener cl;
     Intent i;
+    MissionMethods missionMethods = new MissionMethods();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_m003);
+
+        ImageView missionOrder1 = (ImageView)findViewById(R.id.bg_m0_03_mission_order_1);
+        ImageView missionOrder2 = (ImageView)findViewById(R.id.bg_m0_03_mission_order_2);
+        ImageView missionOrder3 = (ImageView)findViewById(R.id.bg_m0_03_mission_order_3);
+
 
         ViewPager pager = findViewById(R.id.pager);
         pager.setOffscreenPageLimit(2); //2개까지 caching
@@ -41,7 +50,12 @@ public class M0_03 extends AppCompatActivity {
         des=(ImageButton) findViewById(R.id.desert);
         dri=(ImageButton) findViewById(R.id.drink);
         cancel=(ImageButton)findViewById(R.id.cancel);
+        exit=(ImageButton) findViewById(R.id.bg0_x3);
 
+        //몇번째 미션인지
+        missionMethods.set_missionOrder(M0,missionOrder1,missionOrder2,missionOrder3);
+        //종료버튼
+        missionMethods.set_Exit(exit,this);
 
         cl= new View.OnClickListener() {
             @Override

@@ -29,19 +29,19 @@
 
 
         <ImageView
-            android:id="@+id/missionOrder_1"
+            android:id="@+id/bg_m0_map_mo1"
             android:layout_width="84dp"
             android:layout_height="24dp"
             app:srcCompat="@drawable/mission_map_icon_misson_1" />
 
         <ImageView
-            android:id="@+id/missionOrder_2"
+            android:id="@+id/bg_m0_map_mo2"
             android:layout_width="84dp"
             android:layout_height="24dp"
             app:srcCompat="@drawable/mission_map_icon_misson_2" />
 
         <ImageView
-            android:id="@+id/missionOrder_3"
+            android:id="@+id/bg_m0_map_mo3"
             android:layout_width="84dp"
             android:layout_height="24dp"
             app:srcCompat="@drawable/mission_map_icon_misson_3"

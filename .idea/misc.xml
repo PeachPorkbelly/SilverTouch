@@ -4,10 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m000.xml" value="0.16973684210526316" />
-        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m001.xml" value="0.1" />
-        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m008.xml" value="0.16973684210526316" />
-        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m009.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m001.xml" value="0.15" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m002.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m003.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m004.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m005.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m006.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m007.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m008.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m009.xml" value="0.15" />
         <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m010.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/fragment_burger1.xml" value="0.17149122807017544" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/fragment_burger2.xml" value="0.17149122807017544" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/mission_bg_m0_map.xml" value="0.17149122807017544" />
         <entry key="..\:/Workspace/Android/21_pf038/app/src/main/res/layout/activity_main.xml" value="0.2046875" />
         <entry key="..\:/Workspace/Android/21_pf038/app/src/main/res/layout/card_main.xml" value="0.25" />
         <entry key="..\:/Workspace/Android/21_pf038/app/src/main/res/layout/insider_test_start.xml" value="0.2046875" />
