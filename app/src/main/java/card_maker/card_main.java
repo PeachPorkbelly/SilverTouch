@@ -34,7 +34,7 @@ public class card_main extends AppCompatActivity {
     Button btn_left, btn_right, btn_close, btn_emoji, btn_clear, btn_ok, btn_check;
     TextView tx_title;
     LinearLayout layout_bottom_1, layout_bottom_2, card_image;
-
+/*
     int bgmax = 9;
     int[] card_bg = new int[bgmax];
     double[] card_size = new double[bgmax];
@@ -173,4 +173,6 @@ public class card_main extends AppCompatActivity {
 //            }
 //        });
     }
+
+ */
 }

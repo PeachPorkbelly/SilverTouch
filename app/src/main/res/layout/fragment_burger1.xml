@@ -27,7 +27,7 @@
         android:layout_marginTop="30dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
-        android:src="@drawable/chickenburger" />
+        android:src="@drawable/mission_bg_chickenburger" />
 
     <ImageButton
         android:id="@+id/cheeseburger"
@@ -37,7 +37,7 @@
         android:layout_marginStart="20dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
-        android:src="@drawable/cheeseburger" />
+        android:src="@drawable/mission_bg_cheeseburger" />
 
     <ImageButton
         android:id="@+id/hanwooburger"

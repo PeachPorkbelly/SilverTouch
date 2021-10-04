@@ -124,7 +124,7 @@
         android:layout_height="44dp"
         android:layout_marginLeft="30dp"
         android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/cancel"
+        app:srcCompat="@drawable/mission_bg_cancel"
         android:background="@android:color/transparent"
         app:layout_constraintLeft_toRightOf="@id/call"
         android:scaleType="fitXY"
@@ -231,7 +231,7 @@
         android:scaleType="fitXY"
         app:layout_constraintLeft_toLeftOf="@id/imageView6"
         app:layout_constraintTop_toTopOf="@id/imageView6"
-        app:srcCompat="@drawable/burgeronly"
+        app:srcCompat="@drawable/mission_bg_burgeronly"
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="311dp" />
 

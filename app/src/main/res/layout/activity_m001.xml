@@ -149,7 +149,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/line"
-        app:srcCompat="@drawable/card" />
+        app:srcCompat="@drawable/mission_bg_card" />
 
     <ImageButton
         android:id="@+id/cash"
@@ -162,7 +162,7 @@
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="@id/line"
         app:layout_constraintLeft_toLeftOf="@id/line"
-        app:srcCompat="@drawable/cash" />
+        app:srcCompat="@drawable/mission_bg_cash" />
 
     <ImageButton
         android:id="@+id/digital"

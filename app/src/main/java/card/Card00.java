@@ -43,7 +43,7 @@ public class Card00 extends AppCompatActivity {
         List<Card00_sliderItem> sliderItems = new ArrayList<>();
         sliderItems.add(new Card00_sliderItem(R.drawable.card0));
         sliderItems.add(new Card00_sliderItem(R.drawable.card1));
-        sliderItems.add(new Card00_sliderItem(R.drawable.card2));
+        sliderItems.add(new Card00_sliderItem(R.drawable.mission_bg_card2));
         sliderItems.add(new Card00_sliderItem(R.drawable.card3));
         sliderItems.add(new Card00_sliderItem(R.drawable.card4));
         sliderItems.add(new Card00_sliderItem(R.drawable.card5));
@@ -56,7 +56,7 @@ public class Card00 extends AppCompatActivity {
         // 하단 미리보기 이미지
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card0));
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card1));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card2));
+        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.mission_bg_card2));
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card3));
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card4));
         mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card5));

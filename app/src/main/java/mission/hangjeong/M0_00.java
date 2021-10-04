@@ -45,6 +45,7 @@ public class M0_00 extends AppCompatActivity {
         ktx = (ImageButton)findViewById(R.id.m0_00_ktx);
 
         exit = (ImageButton)findViewById(R.id.m0_00_exit);
+
         int missionOrder = getIntent().getIntExtra("missionOrder",0);
 
         M0 = missionOrder;

@@ -96,6 +96,7 @@ public class M0_01 extends AppCompatActivity {
         /*
        초기화면
        */
+
         set_initialPage();
         missionMethods.set_missionOrder(M0,m1,m2,m3);
 

@@ -134,7 +134,7 @@
         android:layout_height="44dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/cancel"
+        app:srcCompat="@drawable/mission_bg_cancel"
         android:background="@android:color/transparent"
         app:layout_constraintLeft_toRightOf="@id/call"
         android:scaleType="fitXY"
@@ -250,7 +250,7 @@
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="@id/imageView9"
         app:layout_constraintTop_toBottomOf="@id/discount2"
-        app:srcCompat="@drawable/card2" />
+        app:srcCompat="@drawable/mission_bg_card2" />
     <ImageButton
         android:id="@+id/mobile"
         android:layout_width="45dp"

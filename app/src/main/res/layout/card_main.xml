@@ -50,7 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="410dp"
                     android:orientation="vertical"
-                    tools:background="@drawable/card_friend">
+                    tools:background="@drawable/card0">
 
                     <EditText
                         android:id="@+id/editTextTextPersonName"
