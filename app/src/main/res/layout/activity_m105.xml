@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mission.burger.M0_05">
+    tools:context="mission.burger.M1_05">
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="297dp"
         android:layout_height="51dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/kiosk_0021_kiosk_misson"
+        app:srcCompat="@drawable/kiosk_icecreammission"
         app:layout_constraintTop_toBottomOf="@id/frameLayout3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
@@ -29,7 +29,7 @@
         tools:layout_editor_absoluteY="171dp" />
 
     <ImageButton
-        android:id="@+id/bg0_x5"
+        android:id="@+id/bg1_x5"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:color/transparent"
@@ -46,22 +46,22 @@
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bg0_x5">
+        app:layout_constraintTop_toBottomOf="@id/bg1_x5">
 
         <ImageView
-            android:id="@+id/bg_m0_05_mission_order_1"
+            android:id="@+id/bg_m1_05_mission_order_1"
             android:layout_width="84dp"
             android:layout_height="24dp"
             app:srcCompat="@drawable/mission_map_icon_misson_1" />
 
         <ImageView
-            android:id="@+id/bg_m0_05_mission_order_2"
+            android:id="@+id/bg_m1_05_mission_order_2"
             android:layout_width="84dp"
             android:layout_height="24dp"
             app:srcCompat="@drawable/mission_map_icon_misson_2" />
 
         <ImageView
-            android:id="@+id/bg_m0_05_mission_order_3"
+            android:id="@+id/bg_m1_05_mission_order_3"
             android:layout_width="84dp"
             android:layout_height="24dp"
             app:srcCompat="@drawable/mission_map_icon_misson_3"

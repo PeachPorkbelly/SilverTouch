@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mission.burger.BurgerFragment0_2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+        android:id="@+id/shrimpburger"
+        android:layout_width="133dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/shrimpburger"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <ImageButton
+        android:id="@+id/kidsburger"
+        android:layout_width="133dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/kidsburger" />
+
+</FrameLayout>

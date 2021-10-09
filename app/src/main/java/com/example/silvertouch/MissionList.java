@@ -20,9 +20,9 @@ public class MissionList {
         missionListHJ.add(mission.hangjeong.M0_01.class);
         missionTitleHJ.add("주민등록초본(개인확인용) 1부를 발급해주세요!");
 
-        missionList.add(mission.mission_2.class);
-        missionListHJ.add(mission.mission_2.class);
-        missionTitleHJ.add("2번 미션");
+        missionList.add(mission.burger.M1_Map.class);
+        missionListBG.add(mission.burger.M1_00.class);
+        missionTitleBG.add("아이스크림 1개를 주문해보세요");
 
         missionList.add(mission.burger.M0_Map.class);
         missionListBG.add(mission.burger.M0_00.class);

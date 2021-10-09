@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mission.burger.M0_03">
+    tools:context="mission.burger.M0_08">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager"
