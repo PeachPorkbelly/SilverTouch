@@ -15,7 +15,7 @@
         android:scaleType="fitXY"
         android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
-        android:src="@drawable/doubleburger"
+        android:src="@drawable/mission_bg_doubleburger"
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="276dp" />
 
@@ -47,7 +47,7 @@
         android:layout_marginTop="130dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
-        android:src="@drawable/hanwooburger" />
+        android:src="@drawable/mission_bg_hanwooburger" />
 
 
 </FrameLayout>

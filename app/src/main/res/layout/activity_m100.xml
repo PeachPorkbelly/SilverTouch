@@ -90,7 +90,7 @@
         android:layout_height="48dp"
         android:layout_marginLeft="7dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/lens"
+        app:srcCompat="@drawable/mission_bg_lens"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         app:layout_constraintLeft_toRightOf="@id/disabled"
@@ -120,7 +120,7 @@
         android:scaleType="fitXY"
         app:layout_constraintTop_toBottomOf="@id/line"
         app:layout_constraintLeft_toRightOf="@id/call"
-        app:srcCompat="@drawable/kiosk_0001_korean" />
+        app:srcCompat="@drawable/mission_bg_kiosk_0001_korean" />
 
     <ImageButton
         android:id="@+id/english"
@@ -132,7 +132,7 @@
         android:scaleType="fitXY"
         app:layout_constraintTop_toBottomOf="@id/line"
         app:layout_constraintLeft_toRightOf="@id/korean"
-        app:srcCompat="@drawable/kiosk_0000_english"/>
+        app:srcCompat="@drawable/mission_bg_kiosk_0000_english"/>
 
 
     <ImageButton
@@ -145,7 +145,7 @@
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/line"
-        app:srcCompat="@drawable/touch" />
+        app:srcCompat="@drawable/mission_bg_touch" />
 
 
 
@@ -157,7 +157,7 @@
         app:layout_constraintTop_toTopOf="@id/line"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@drawable/notice"
+        app:srcCompat="@drawable/mission_bg_notice"
         tools:layout_editor_absoluteY="158dp" />
 
     <ImageView

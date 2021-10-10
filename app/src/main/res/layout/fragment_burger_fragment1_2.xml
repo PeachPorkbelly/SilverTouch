@@ -14,7 +14,7 @@
         android:scaleType="fitXY"
         android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
-        android:src="@drawable/shrimpburger"
+        android:src="@drawable/mission_bg_shrimpburger"
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="276dp" />
 
@@ -26,6 +26,6 @@
         android:layout_marginTop="30dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
-        android:src="@drawable/kidsburger" />
+        android:src="@drawable/mission_bg_kidsburger" />
 
 </FrameLayout>

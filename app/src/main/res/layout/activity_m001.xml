@@ -28,7 +28,7 @@
         android:layout_width="297dp"
         android:layout_height="51dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/kiosk_0021_kiosk_misson"
+        app:srcCompat="@drawable/mission_bg_kiosk_0021_kiosk_misson"
         app:layout_constraintTop_toBottomOf="@id/frameLayout3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
@@ -98,7 +98,7 @@
         android:scaleType="fitXY"
         app:layout_constraintTop_toBottomOf="@id/line"
         app:layout_constraintLeft_toRightOf="@id/call"
-        app:srcCompat="@drawable/discount" />
+        app:srcCompat="@drawable/mission_bg_discount" />
 
     <ImageButton
         android:id="@+id/disabled"
@@ -118,7 +118,7 @@
         android:layout_height="48dp"
         android:layout_marginLeft="7dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/lens"
+        app:srcCompat="@drawable/mission_bg_lens"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         app:layout_constraintLeft_toRightOf="@id/disabled"
@@ -174,5 +174,5 @@
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="@id/line"
         app:layout_constraintStart_toStartOf="@id/line"
-        app:srcCompat="@drawable/digital" />
+        app:srcCompat="@drawable/mission_bg_digital" />
 </androidx.constraintlayout.widget.ConstraintLayout>

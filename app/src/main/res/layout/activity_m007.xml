@@ -11,7 +11,7 @@
         android:layout_width="297dp"
         android:layout_height="51dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/kiosk_0021_kiosk_misson"
+        app:srcCompat="@drawable/mission_bg_kiosk_0021_kiosk_misson"
         app:layout_constraintTop_toBottomOf="@id/frameLayout3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
@@ -100,7 +100,7 @@
         android:layout_height="48dp"
         android:layout_marginLeft="7dp"
         android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/lens"
+        app:srcCompat="@drawable/mission_bg_lens"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@id/line"
@@ -136,7 +136,7 @@
         android:layout_height="44dp"
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/pay"
+        app:srcCompat="@drawable/mission_bg_pay"
         app:layout_constraintLeft_toRightOf="@id/cancel"
         app:layout_constraintBottom_toBottomOf="@id/line"
         android:background="@android:color/transparent"
@@ -153,7 +153,7 @@
         app:layout_constraintRight_toRightOf="@id/hamburger"
         app:layout_constraintStart_toStartOf="@id/line"
         app:layout_constraintTop_toTopOf="@id/line"
-        app:srcCompat="@drawable/kiosk3_0019_recomm"
+        app:srcCompat="@drawable/mission_bg_kiosk3_0019_recomm"
         tools:layout_editor_absoluteY="165dp" />
 
     <ImageButton
@@ -167,7 +167,7 @@
         android:scaleType="fitXY"
         app:layout_constraintLeft_toLeftOf="@id/recomm"
         app:layout_constraintTop_toTopOf="@id/line"
-        app:srcCompat="@drawable/hamburgerw" />
+        app:srcCompat="@drawable/mission_bg_hamburgerw" />
 
     <ImageButton
         android:id="@+id/desert"
@@ -176,7 +176,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginBottom="458dp"
         android:layout_marginLeft="20dp"
-        app:srcCompat="@drawable/kiosk3_0017_kiosk_menu3"
+        app:srcCompat="@drawable/mission_bg_kiosk3_0017_kiosk_menu3"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         app:layout_constraintLeft_toRightOf="@id/hamburger"
@@ -188,7 +188,7 @@
         android:id="@+id/drink"
         android:layout_width="58dp"
         android:layout_height="14dp"
-        app:srcCompat="@drawable/kiosk3_0016_kiosk_menu4"
+        app:srcCompat="@drawable/mission_bg_kiosk3_0016_kiosk_menu4"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         android:layout_marginLeft="20dp"
@@ -206,7 +206,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/setsel" />
+        app:srcCompat="@drawable/mission_bg_setsel" />
 
     <ImageButton
         android:id="@+id/popupcancel"
@@ -218,7 +218,7 @@
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="@id/imageView3"
         app:layout_constraintTop_toTopOf="@id/imageView3"
-        app:srcCompat="@drawable/popupcancel"
+        app:srcCompat="@drawable/mission_bg_popupcancel"
         tools:layout_editor_absoluteY="233dp" />
 
     <ImageButton
@@ -231,7 +231,7 @@
         android:layout_marginTop="180dp"
         app:layout_constraintTop_toTopOf="@id/imageView3"
         app:layout_constraintStart_toStartOf="@id/imageView3"
-        app:srcCompat="@drawable/potato"
+        app:srcCompat="@drawable/mission_bg_potato"
         tools:layout_editor_absoluteX="68dp"
         tools:layout_editor_absoluteY="283dp" />
 
@@ -259,7 +259,7 @@
         android:layout_marginLeft="30dp"
         app:layout_constraintTop_toBottomOf="@id/potato"
         app:layout_constraintLeft_toRightOf="@id/cheesestick"
-        app:srcCompat="@drawable/onion"
+        app:srcCompat="@drawable/mission_bg_onion"
         tools:layout_editor_absoluteX="111dp"
         tools:layout_editor_absoluteY="485dp" />
 
@@ -299,7 +299,7 @@
         android:layout_marginLeft="30dp"
         app:layout_constraintTop_toBottomOf="@id/cheesestick"
         app:layout_constraintLeft_toRightOf="@id/coke"
-        app:srcCompat="@drawable/sprite"
+        app:srcCompat="@drawable/mission_bg_sprite"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="432dp" />
 
@@ -309,7 +309,7 @@
         android:layout_height="54dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/ok"
+        app:srcCompat="@drawable/mission_bg_ok"
         android:layout_marginBottom="120dp"
         android:layout_marginRight="20dp"
         app:layout_constraintRight_toRightOf="@id/imageView3"

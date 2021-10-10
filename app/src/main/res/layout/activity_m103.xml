@@ -108,7 +108,7 @@
         android:layout_height="48dp"
         android:layout_marginLeft="7dp"
         android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/lens"
+        app:srcCompat="@drawable/mission_bg_lens"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@id/line"
@@ -144,7 +144,7 @@
         android:layout_height="44dp"
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/pay"
+        app:srcCompat="@drawable/mission_bg_pay"
         app:layout_constraintLeft_toRightOf="@id/cancel"
         app:layout_constraintBottom_toBottomOf="@id/line"
         android:background="@android:color/transparent"
@@ -161,7 +161,7 @@
         app:layout_constraintRight_toRightOf="@id/hamburger"
         app:layout_constraintStart_toStartOf="@id/line"
         app:layout_constraintTop_toTopOf="@id/line"
-        app:srcCompat="@drawable/kiosk3_0019_recomm"
+        app:srcCompat="@drawable/mission_bg_kiosk3_0019_recomm"
         tools:layout_editor_absoluteY="165dp" />
 
     <ImageButton
@@ -175,7 +175,7 @@
         android:scaleType="fitXY"
         app:layout_constraintLeft_toLeftOf="@id/recomm"
         app:layout_constraintTop_toTopOf="@id/line"
-        app:srcCompat="@drawable/hamburgerw" />
+        app:srcCompat="@drawable/mission_bg_hamburgerw" />
 
     <ImageButton
         android:id="@+id/desert"
@@ -184,7 +184,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginBottom="458dp"
         android:layout_marginLeft="20dp"
-        app:srcCompat="@drawable/kiosk3_0017_kiosk_menu3"
+        app:srcCompat="@drawable/mission_bg_kiosk3_0017_kiosk_menu3"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         app:layout_constraintLeft_toRightOf="@id/hamburger"
@@ -196,7 +196,7 @@
         android:id="@+id/drink"
         android:layout_width="58dp"
         android:layout_height="14dp"
-        app:srcCompat="@drawable/kiosk3_0016_kiosk_menu4"
+        app:srcCompat="@drawable/mission_bg_kiosk3_0016_kiosk_menu4"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         android:layout_marginLeft="20dp"
