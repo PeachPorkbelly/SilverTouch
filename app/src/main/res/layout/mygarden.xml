@@ -10,9 +10,10 @@
         android:id="@+id/mygarden_init"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="40dp"
         android:text="초기화"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,14 +21,11 @@
         android:id="@+id/mygarden_countUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="556dp"
-        android:layout_marginTop="32dp"
-        android:text="물뿌리개 하나 증가"
+        android:layout_marginTop="40dp"
+        android:text="코스트 각 하나씩 증가"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_init"
         app:layout_constraintEnd_toStartOf="@+id/mygarden_init"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mygarden_init"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
@@ -41,26 +39,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:srcCompat="@drawable/flowerfarm_farm_back2" />
 
-    <ImageButton
-        android:id="@+id/mygarden_wateringCan"
-        android:layout_width="137dp"
-        android:layout_height="105dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mygarden_wateringcan" />
-
     <ImageView
-        android:id="@+id/mygarden_defaultPlace_01"
+        android:id="@+id/mygarden_defaultPlace_00"
         android:layout_width="93dp"
         android:layout_height="66dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="308dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transparent_flower" />
+
+    <ImageView
+        android:id="@+id/mygarden_defaultPlace_01"
+        android:layout_width="102dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_00"
+        app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_00"
         app:srcCompat="@drawable/transparent_flower" />
 
     <ImageView
@@ -76,7 +71,7 @@
         android:id="@+id/mygarden_defaultPlace_03"
         android:layout_width="102dp"
         android:layout_height="66dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_02"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_02"
         app:srcCompat="@drawable/transparent_flower" />
@@ -103,7 +98,7 @@
         android:id="@+id/mygarden_defaultPlace_06"
         android:layout_width="102dp"
         android:layout_height="66dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_05"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_05"
         app:srcCompat="@drawable/transparent_flower" />
@@ -112,18 +107,18 @@
         android:id="@+id/mygarden_defaultPlace_07"
         android:layout_width="102dp"
         android:layout_height="66dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_06"
-        app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_06"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/mygarden_defaultPlace_00"
+        app:layout_constraintStart_toStartOf="@+id/mygarden_defaultPlace_00"
         app:srcCompat="@drawable/transparent_flower" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_08"
         android:layout_width="102dp"
         android:layout_height="66dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/mygarden_defaultPlace_01"
-        app:layout_constraintStart_toStartOf="@+id/mygarden_defaultPlace_01"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_07"
+        app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_07"
         app:srcCompat="@drawable/transparent_flower" />
 
     <ImageView
@@ -131,20 +126,11 @@
         android:layout_width="102dp"
         android:layout_height="66dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="224dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_08"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_08"
-        app:srcCompat="@drawable/transparent_flower" />
-
-    <ImageView
-        android:id="@+id/mygarden_defaultPlace_10"
-        android:layout_width="102dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="224dp"
-        app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_09"
-        app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_09"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.254"
         app:srcCompat="@drawable/transparent_flower" />
 
     <TextView
