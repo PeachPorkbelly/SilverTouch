@@ -35,7 +35,6 @@ public class Card00 extends AppCompatActivity {
         viewPager2 = findViewById(R.id.viewPagerImageSlider);
         ImageView btn_next = findViewById(R.id.btn_next);
         ImageView btn_pre = findViewById(R.id.btn_pre);
-        TabLayout mTabLayout = findViewById(R.id.mTabLayout);
         ImageButton exit = findViewById(R.id.card_00_exit);
 
         // 상단 슬라이드 이미지
@@ -52,23 +51,6 @@ public class Card00 extends AppCompatActivity {
         sliderItems.add(new Card00_sliderItem(R.drawable.card8));
         sliderItems.add(new Card00_sliderItem(R.drawable.card9));
 
-
-        // 하단 미리보기 이미지
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card0));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card1));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.mission_bg_card2));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card3));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card4));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card5));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card6));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card7));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card8));
-        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.card9));
-
-//        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.image1));
-//        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.image1));
-//        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.image1));
-//        mTabLayout.addTab(mTabLayout.newTab().setIcon(R.drawable.image1));
 
         //미리보기 페이지 포함 총 3개의 화면을 보여줌
         viewPager2.setAdapter(new Card00_sliderAdapter(sliderItems, viewPager2));
@@ -115,30 +97,6 @@ public class Card00 extends AppCompatActivity {
                 } else {
                     viewPager2.setCurrentItem(current - 1, true);
                 }
-            }
-        });
-
-
-        /*
-           tabLayout 클릭시 뷰페이저 설정
-
-         */
-
-        mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                // tab이 선택되었을 때
-                viewPager2.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
             }
         });
 

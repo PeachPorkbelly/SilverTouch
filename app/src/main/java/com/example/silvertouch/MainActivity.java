@@ -20,6 +20,7 @@ import java.util.Random;
 import card.Card00;
 import inssa_test.InsiderTestStart;
 import card_maker.card_main;
+import school.SchoolDesk;
 import select_mission.SelectMission_00;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     SavedInfo si = new SavedInfo();
     MissionList missionList;
     Random random = new Random();
+    Button schoolTest;
 
     /*
     SharedPreference에 저장된 날짜가 담길 변수
@@ -74,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         testView = (TextView) findViewById(R.id.khtextView3);
         text = (TextView)findViewById(R.id.text);
         text2 = (TextView)findViewById(R.id.textView2);
+        schoolTest = (Button)findViewById(R.id.school_test);
 
 
 
@@ -289,6 +292,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent = new Intent(getApplicationContext(), SelectMission_00.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //영어교육테스트
+        schoolTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(), SchoolDesk.class);
                 startActivity(intent);
             }
         });

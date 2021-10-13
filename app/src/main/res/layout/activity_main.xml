@@ -214,6 +214,15 @@
             app:layout_constraintTop_toTopOf="@+id/inssatest"
             app:srcCompat="@drawable/main_card" />
 
+        <Button
+            android:id="@+id/school_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:text="Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
