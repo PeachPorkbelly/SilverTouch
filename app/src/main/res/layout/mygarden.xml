@@ -6,6 +6,57 @@
     android:layout_height="match_parent"
     android:background="@drawable/flowerfarm_farm_back1">
 
+    <ImageButton
+        android:id="@+id/mygarden_wateringCan"
+        android:layout_width="66dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mygarden_wateringcan"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <ImageButton
+        android:id="@+id/seed_1"
+        android:layout_width="66dp"
+        android:layout_height="51dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/seed_0"
+        app:srcCompat="@drawable/main_farm_seed_0001"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <ImageButton
+        android:id="@+id/seed_2"
+        android:layout_width="66dp"
+        android:layout_height="51dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/seed_1"
+        app:srcCompat="@drawable/main_farm_seed_0002"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <ImageButton
+        android:id="@+id/seed_3"
+        android:layout_width="66dp"
+        android:layout_height="51dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/seed_2"
+        app:srcCompat="@drawable/main_farm_seed_0003"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <ImageButton
+        android:id="@+id/seed_0"
+        android:layout_width="66dp"
+        android:layout_height="51dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/mygarden_wateringCan"
+        app:srcCompat="@drawable/main_farm_seed_0000"
+        tools:layout_editor_absoluteY="55dp" />
+
     <Button
         android:id="@+id/mygarden_init"
         android:layout_width="wrap_content"

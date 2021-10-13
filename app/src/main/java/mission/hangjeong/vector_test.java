@@ -21,7 +21,7 @@ import com.example.silvertouch.MainActivity;
 import com.example.silvertouch.R;
 import com.example.silvertouch.SavedInfo;
 import java.util.ArrayList;
-
+import java.util.Random;
 
 
 /*********************
@@ -86,6 +86,7 @@ public class vector_test extends AppCompatActivity {
             "씨앗 이름 3",
             "씨앗 이름 4"
     };
+    ImageButton[] btn_seeds = new ImageButton[4];
 
     // 꽃 자라날 위치를 담은 리스트
     ArrayList<flower> flowers = new ArrayList<>();
@@ -194,46 +195,43 @@ public class vector_test extends AppCompatActivity {
             if(this.growth >= 1){
                 this.iv.setImageResource(flowerImageTable[this.kind][this.growth]);
             }
-            this.iv.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(getGrowth() == 0){
-                        logs("성장도 0의 클릭 이벤트");
-                        AlertDialog.Builder dlg = new AlertDialog.Builder(vector_test.this);
-//                        LayoutInflater layoutInflater = LayoutInflater.from(vector_test.this);
-//                        View view = layoutInflater.inflate(R.layout.select_seeds, null);
-//                        dlg.setView(view);
-                        dlg.setTitle("씨앗 선택");
-                        String[] dlgSeeds = new String[flowerNameTable.length];
-                        for(int i = 0; i < flowerNameTable.length; i++){
-                            dlgSeeds[i] = flowerNameTable[i] + " : " + userInfo.getSeed(i) + "개";
-                        }
-                        dlg.setItems(dlgSeeds, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                if(userInfo.popSeed(which) == 1){
-                                    setKind(which);
-                                    setGrowth(1);
-                                }else{
-                                    logs("해당 씨앗이 없습니다.");
-                                }
-                            }
-                        });
-                        dlg.show();
-                    }
-                    else if (getGrowth() >= 1){
-                        logs("성장도 " + getGrowth() + "의 클릭 이벤트");
-                        if (getGrowth() <= 2){;
-                            if(userInfo.popWateringCan() == 1)
-                                setGrowth(getGrowth() + 1);
-                        }
-                    }
-                    else if(getGrowth() == 3){
-                        logs("성장도 3의 클릭 이벤트");
-                    }
-                    wateringCanNum.setText("물뿌리개 : " + userInfo.getWateringCan());
-                }
-            });
+//            this.iv.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    if(getGrowth() == 0){
+//                        logs("성장도 0의 클릭 이벤트");
+//                        AlertDialog.Builder dlg = new AlertDialog.Builder(vector_test.this);
+//                        dlg.setTitle("씨앗 선택");
+//                        String[] dlgSeeds = new String[flowerNameTable.length];
+//                        for(int i = 0; i < flowerNameTable.length; i++){
+//                            dlgSeeds[i] = flowerNameTable[i] + " : " + userInfo.getSeed(i) + "개";
+//                        }
+//                        dlg.setItems(dlgSeeds, new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                if(userInfo.popSeed(which) == 1){
+//                                    setKind(which);
+//                                    setGrowth(1);
+//                                }else{
+//                                    logs("해당 씨앗이 없습니다.");
+//                                }
+//                            }
+//                        });
+//                        dlg.show();
+//                    }
+//                    else if (getGrowth() >= 1){
+//                        logs("성장도 " + getGrowth() + "의 클릭 이벤트");
+//                        if (getGrowth() <= 2){;
+//                            if(userInfo.popWateringCan() == 1)
+//                                setGrowth(getGrowth() + 1);
+//                        }
+//                    }
+//                    else if(getGrowth() == 3){
+//                        logs("성장도 3의 클릭 이벤트");
+//                    }
+//                    wateringCanNum.setText("물뿌리개 : " + userInfo.getWateringCan());
+//                }
+//            });
         }
         public int getKind() {
             return kind;
@@ -249,6 +247,9 @@ public class vector_test extends AppCompatActivity {
             this.growth = growth;
             userInfo.setGrowth(this.place, growth);
             changeImage(flowerImageTable[this.kind][this.growth]);
+        }
+        public void addGrowth(){
+            setGrowth(getGrowth() + 1);
         }
         public int getPlace() {
             return place;
@@ -299,8 +300,13 @@ public class vector_test extends AppCompatActivity {
         btn_wateringCanUp = (Button)findViewById(R.id.mygarden_countUp);
         //물뿌리개 수 보여주는 TextView
         wateringCanNum = (TextView)findViewById(R.id.mygarden_wateringCanNum);
+        btn_wateringCan = (ImageButton)findViewById(R.id.mygarden_wateringCan);
 
         wateringCanNum.setText("물뿌리개 : " + userInfo.getWateringCan());
+        btn_seeds[0] = (ImageButton)findViewById(R.id.seed_0);
+        btn_seeds[1] = (ImageButton)findViewById(R.id.seed_1);
+        btn_seeds[2] = (ImageButton)findViewById(R.id.seed_2);
+        btn_seeds[3] = (ImageButton)findViewById(R.id.seed_3);
         //Array 에 int 형으로 저장된 ViewId를 ImageView 로 연결하여 저장합니다.
         for(int i = 0; i < getDefaultPlace.length; i++){
             flowers.add(new flower(i, userInfo.getKind(i), userInfo.getGrowth(i)));
@@ -327,6 +333,68 @@ public class vector_test extends AppCompatActivity {
                 wateringCanNum.setText("물뿌리개 : " + userInfo.getWateringCan());
             }
         });
+        btn_wateringCan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(userInfo.getWateringCan() >= 1){
+                    ArrayList<flower> target= new ArrayList<>();
+                    Random random = new Random();
+                    for(flower f:flowers){
+                        int g = f.getGrowth();
+                        if(g >= 1 && g < 3){
+                            target.add(f);
+                        }
+                    }
+                    int l = target.size();
+                    if (l >= 1){
+                        flower f = target.get(random.nextInt(l));
+                        f.setGrowth(f.getGrowth() + userInfo.popWateringCan());
+                    }
+                    wateringCanNum.setText("물뿌리개 : " + userInfo.getWateringCan());
+                }
+            }
+        });
+        View.OnClickListener seed_listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int ch;
+                switch (v.getId()){
+                    case R.id.seed_0:
+                        ch = 0;
+                        break;
+                    case R.id.seed_1:
+                        ch = 1;
+                        break;
+                    case R.id.seed_2:
+                        ch = 2;
+                        break;
+                    case R.id.seed_3:
+                        ch = 3;
+                        break;
+                    default:
+                        ch = -1;
+                        break;
+                }
+                if(userInfo.getSeed(ch) >= 1){
+                    ArrayList<flower> target= new ArrayList<>();
+                    Random random = new Random();
+                    for(flower f:flowers){
+                        if(f.getGrowth() == 0){
+                            target.add(f);
+                        }
+                    }
+                    int l = target.size();
+                    if (l >= 1){
+                        flower f = target.get(random.nextInt(l));
+                        f.setKind(ch);
+                        f.setGrowth(userInfo.popSeed(ch));
+                    }
+                }
+            }
+        };
+        for(ImageButton b:btn_seeds){
+            b.setOnClickListener(seed_listener);
+        };
 
 
 
