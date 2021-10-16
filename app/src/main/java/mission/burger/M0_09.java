@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.silvertouch.MainActivity;
 import com.example.silvertouch.R;
@@ -15,7 +16,7 @@ import mission.MissionMethods;
 import static mission.burger.M0_Map.M0;
 
 public class M0_09 extends AppCompatActivity {
-    ImageButton more, cancel, ca, mo, lp, tm,exit;
+    ImageButton cancel, ca, mo, lp, tm,exit, ta, he, di1,di2, no;
     View.OnClickListener cl;
     Intent i;
     MissionMethods missionMethods = new MissionMethods();
@@ -35,11 +36,15 @@ public class M0_09 extends AppCompatActivity {
 
         exit=(ImageButton) findViewById(R.id.bg0_x9);
         cancel=(ImageButton)findViewById(R.id.cancel);
-        more=(ImageButton)findViewById(R.id.more);
         ca=(ImageButton)findViewById(R.id.card2);
         mo=(ImageButton)findViewById(R.id.mobile);
         lp=(ImageButton)findViewById(R.id.lpay);
         tm=(ImageButton)findViewById(R.id.tmoney);
+        ta=(ImageButton)findViewById(R.id.takeout);
+        he=(ImageButton)findViewById(R.id.forhere);
+        di1=(ImageButton)findViewById(R.id.discount2);
+        di2=(ImageButton)findViewById(R.id.lpoint);
+        no=(ImageButton)findViewById(R.id.no);
 
         //몇번째 미션인지
         missionMethods.set_missionOrder(M0,missionOrder1,missionOrder2,missionOrder3);
@@ -53,11 +58,6 @@ public class M0_09 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.more:
-                        i = new Intent(getApplicationContext(), mission.burger.M0_02.class);
-                        startActivity(i);
-                        overridePendingTransition(0, 0); //애니메이션 없애기
-                        break;
                     case R.id.cancel:
                         i = new Intent(getApplicationContext(), mission.burger.M0_00.class);
                         startActivity(i);
@@ -83,16 +83,35 @@ public class M0_09 extends AppCompatActivity {
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
+                    case R.id.takeout:
+                        Toast.makeText(getApplicationContext(),"포장을 선택했습니다",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.forhere:
+                        Toast.makeText(getApplicationContext(),"매장식사를 선택했습니다",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.discount2:
+                        Toast.makeText(getApplicationContext(),"제휴사 할인을 선택했습니다",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.lpoint:
+                        Toast.makeText(getApplicationContext(),"L포인트 적립/사용을 선택했습니다",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.no:
+                        Toast.makeText(getApplicationContext(),"할인을 받지 않습니다",Toast.LENGTH_SHORT).show();
+                        break;
 
                 }
             }
         };
-        more.setOnClickListener(cl);
         cancel.setOnClickListener(cl);
         ca.setOnClickListener(cl);
         mo.setOnClickListener(cl);
         lp.setOnClickListener(cl);
         tm.setOnClickListener(cl);
+        ta.setOnClickListener(cl);
+        he.setOnClickListener(cl);
+        di1.setOnClickListener(cl);
+        di2.setOnClickListener(cl);
+        no.setOnClickListener(cl);
     }
     /*
 뒤로가기 버튼 눌렀을 때

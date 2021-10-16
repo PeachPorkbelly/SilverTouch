@@ -11,7 +11,7 @@
         android:layout_width="297dp"
         android:layout_height="51dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/kiosk_icecreammission"
+        app:srcCompat="@drawable/mission_bg_icecreammission"
         app:layout_constraintTop_toBottomOf="@id/frameLayout3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
@@ -284,7 +284,7 @@
         android:layout_width="346dp"
         android:layout_height="30dp"
         android:layout_marginTop="303dp"
-        app:srcCompat="@drawable/kiosk_icecreammission7"
+        app:srcCompat="@drawable/mission_bg_icecream5"
         app:layout_constraintStart_toStartOf="@id/line"
         app:layout_constraintTop_toTopOf="@id/line"
         />
