@@ -149,7 +149,7 @@
         android:id="@+id/mygarden_defaultPlace_06"
         android:layout_width="102dp"
         android:layout_height="66dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_05"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_05"
         app:srcCompat="@drawable/transparent_flower" />

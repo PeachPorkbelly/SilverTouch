@@ -28,7 +28,7 @@ public class SelectMission_main extends AppCompatActivity {
     ImageView title;
     ArrayList<Class> missions = new ArrayList<>();
     ArrayList<String> missionTitle = new ArrayList<>();
-    TextView text;
+    //TextView text;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class SelectMission_main extends AppCompatActivity {
         ml = new MissionList();
         selectedPlace = getIntent().getExtras().getString("selectedPlace");
         exit = (ImageButton)findViewById(R.id.select_mission_hangjeong_exit);
-        text = (TextView)findViewById(R.id.select_mission_text);
+        //text = (TextView)findViewById(R.id.select_mission_text);
 
 
         if (selectedPlace.equals("hangjeong")){
@@ -53,6 +53,7 @@ public class SelectMission_main extends AppCompatActivity {
             missions = ml.missionListBG;
             title.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.select_mission_bg_title));
         }
+
         ListView listView = (ListView)findViewById(R.id.missionList_listview);
         final SelectMission_Adapter selectMission_adapter = new SelectMission_Adapter(this,missionTitle);
         listView.setAdapter(selectMission_adapter);

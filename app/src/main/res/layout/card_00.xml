@@ -14,32 +14,36 @@
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/misson_exit" />
 
-    <ImageView
-        android:id="@+id/card_00_todo"
-        android:layout_width="167dp"
-        android:layout_height="98dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_00_title"
-        app:srcCompat="@drawable/card_message" />
 
     <ImageView
         android:id="@+id/card_00_title"
         android:layout_width="85dp"
         android:layout_height="28dp"
+        android:layout_marginTop="24dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_00_exit"
         app:srcCompat="@drawable/card_title" />
 
+
+    <ImageView
+        android:id="@+id/card_00_todo"
+        android:layout_width="179dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_00_title"
+        app:srcCompat="@drawable/card_message" />
+
     <FrameLayout
         android:id="@+id/card00_framelayout"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,10 +53,9 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPagerImageSlider"
             android:layout_width="350dp"
-            android:layout_height="375dp"
+            android:layout_height="475dp"
             android:background="@android:color/transparent"
-            android:paddingStart="80dp"
-            android:paddingEnd="80dp">
+            >
 
         </androidx.viewpager2.widget.ViewPager2>
 
@@ -75,31 +78,18 @@
             app:srcCompat="@drawable/card_next" />
     </FrameLayout>
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/mTabLayout"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card00_framelayout"
-        app:tabGravity="center"
-        app:tabMode="scrollable">
-    </com.google.android.material.tabs.TabLayout>
 
     <ImageButton
         android:id="@+id/btn_select"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="339dp"
+        android:layout_height="52dp"
         android:layout_gravity="center_horizontal|bottom"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         android:src="@drawable/card_select"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mTabLayout" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 
