@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.silvertouch.MainActivity;
 import com.example.silvertouch.R;
+import com.example.silvertouch.SavedInfo;
 
 import mission.MissionMethods;
 import static mission.burger.M0_Map.M0;
@@ -44,8 +46,26 @@ public class M0_10 extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.imageButton:
-                        i = new Intent(getApplicationContext(), mission.burger.M0_00.class);
+                        // 미션 성공 횟수 추가
+                        //미션 몇개 끝났는지 불러옴
+                        SavedInfo si = new SavedInfo();
+                        int howManyMissionsCompleted = si.getInt(getApplicationContext(),"TodayMissionCompleted");
+                        howManyMissionsCompleted = howManyMissionsCompleted+1;
+                        si.setInt(getApplicationContext(),"TodayMissionCompleted",howManyMissionsCompleted);
+
+                        int missionOrder = M0;
+                        Toast.makeText(getApplicationContext(),missionOrder+"dd",Toast.LENGTH_SHORT).show();
+                        if (missionOrder==1)
+                            si.setBoolean(getApplicationContext(),"isM1Completed",true);
+                        if(missionOrder==2)
+                            si.setBoolean(getApplicationContext(),"isM2Completed",true);
+                        if(missionOrder==3)
+                            si.setBoolean(getApplicationContext(),"isM3Completed",true);
+
+//                        i = new Intent(getApplicationContext(), mission.burger.M0_00.class);
+                        i = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(i);
+
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
 
