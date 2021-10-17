@@ -142,6 +142,7 @@ public class Card01 extends AppCompatActivity {
             shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
             startActivity(Intent.createChooser(shareIntent, "이미지 공유하기"));
 
+
         } catch (Exception e){
             Log.d("Save", e.getMessage());
         }

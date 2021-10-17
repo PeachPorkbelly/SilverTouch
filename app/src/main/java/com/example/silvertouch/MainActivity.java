@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     SavedInfo si = new SavedInfo();
     MissionList missionList;
     Random random = new Random();
-    Button schoolTest;
+    ImageButton schoolTest;
 
     /*
     SharedPreference에 저장된 날짜가 담길 변수
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         testView = (TextView) findViewById(R.id.khtextView3);
         text = (TextView)findViewById(R.id.text);
         text2 = (TextView)findViewById(R.id.textView2);
-        schoolTest = (Button)findViewById(R.id.school_test);
+        schoolTest = (ImageButton)findViewById(R.id.school_test);
 
 
 
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         graph2 = (ImageView)findViewById(R.id.main_graph2);
         graph3 = (ImageView)findViewById(R.id.main_graph3);
         reset = (Button)findViewById(R.id.reset);
-        digital_farm = (ImageButton) findViewById(R.id.digital_farm);
+        digital_farm = (ImageButton) findViewById(R.id.main_farm);
         insider_Button = (ImageButton) findViewById(R.id.inssatest);
         btn_card = (ImageButton)findViewById(R.id.cardmaking);
 

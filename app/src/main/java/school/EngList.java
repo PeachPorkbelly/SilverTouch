@@ -30,10 +30,27 @@ public class EngList {
             kioskBook.add("드링크(Drink)\n음료수");
 
         }else if(bookName.equals("it")){
-            itBook.add("와이파이(Wifi) : 무선 인터넷");
-
+            itBook.add("와이파이(Wifi) : 무료\n인터넷");
+            itBook.add("데이터(Data) : 유료\n인터넷");
+            itBook.add("로그아웃(Logout)\n내 계정 접속 끊기");
+            itBook.add("로그인(Login)\n내 계정으로 접속하기");
+            itBook.add("사인업(Sign Up)\n회원가입");
+            itBook.add("사인인(Sign In)\n내 계정으로 접속하기");
+            itBook.add("플래시 라이트(Flash Light)\n손전등");
+            itBook.add("페이(Pay)\n지불,돈을 내다");
+            itBook.add("월렛(Wallet)\n지갑");
+            itBook.add("랩탑(Laptop)\n노트북");
+            itBook.add("어그리(Agree)\n동의하다");
+            itBook.add("디스어그리(Disagree)\n비동의하다");
+            itBook.add("인스톨(Install)\n설치하다");
+            itBook.add("캔슬(Cancle)\n취소하다");
+            itBook.add("업로드(Upload)\n인터넷 공간에 자료를 보낸다");
+            itBook.add("다운로드(Download)\n인터넷에서 자료를 가져온다");
         }else if(bookName.equals("everyday")){
-            everydayBook.add("토일렛(Toilet) : 화장실, 변기");
+            everydayBook.add("토일렛(Toilet)\n화장실, 변기");
+            everydayBook.add("북(Book)\n책");
+            everydayBook.add("토일렛페이퍼(Toilet Paper)\n휴지");
+            everydayBook.add("프라이스(Price)\n가격");
         }
 
     }
