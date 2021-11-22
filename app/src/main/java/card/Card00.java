@@ -37,6 +37,8 @@ public class Card00 extends AppCompatActivity {
         ImageView btn_pre = findViewById(R.id.btn_pre);
         ImageButton exit = findViewById(R.id.card_00_exit);
 
+        ImageButton btnSelect = findViewById(R.id.card_00_btn_select);
+
         // 상단 슬라이드 이미지
         //카드 이미지들을 리스트에 넣어서 다시 넣기 => 이미지뷰 리턴타입 int
         List<Card00_sliderItem> sliderItems = new ArrayList<>();
@@ -100,11 +102,25 @@ public class Card00 extends AppCompatActivity {
             }
         });
 
+        // 나가기 이미지 보기 버튼
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(getApplicationContext(),com.example.silvertouch.MainActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        // 선택 이미지 보기 버튼
+        btnSelect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(getApplicationContext(), Card01.class);
+                // 선택한 배경화면 Card01로 전달
+                intent.putExtra("bg", sliderItems.get(viewPager2.getCurrentItem() % 10).getImage());
+                startActivity(intent);
+                
+                finish(); // 액티비티 종료
             }
         });
 

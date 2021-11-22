@@ -38,7 +38,6 @@ public class mission_1 extends AppCompatActivity {
                 si.setInt(getApplicationContext(),"TodayMissionCompleted",howManyMissionsCompleted);
 
                 int missionOrder = getIntent().getIntExtra("missionOrder",0);
-                Toast.makeText(getApplicationContext(),missionOrder+"dd",Toast.LENGTH_SHORT).show();
                 if (missionOrder==1)
                     si.setBoolean(getApplicationContext(),"isM1Completed",true);
                 if(missionOrder==2)

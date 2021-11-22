@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -40,26 +39,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ImageView
+        android:id="@+id/today_mission"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="205dp">
+        android:layout_height="260dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/school_test"
+        app:srcCompat="@drawable/main_misson_bg" />
 
-
-        <ImageView
-            android:id="@+id/today_mission"
-            android:layout_width="wrap_content"
-            android:layout_height="260dp"
-            android:layout_marginTop="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/digital_farm"
-            app:srcCompat="@drawable/main_misson_bg" />
-
-        <ImageView
+    <ImageView
             android:id="@+id/main_mission1_completed"
             android:layout_width="130dp"
             android:layout_height="40dp"
@@ -135,15 +124,14 @@
             app:layout_constraintTop_toTopOf="@+id/today_mission"
             app:srcCompat="@drawable/main_misson_graph_00" />
 
-        <ImageView
-            android:id="@+id/main_graph3"
+             <ImageView
+            android:id="@+id/main_graph1"
             android:layout_width="170dp"
             android:layout_height="140dp"
-            app:layout_constraintStart_toStartOf="@id/main_emptyGraph"
-            app:layout_constraintTop_toTopOf="@id/main_emptyGraph"
-            app:srcCompat="@drawable/main_misson_graph_03" />
-
-        <ImageView
+            app:layout_constraintStart_toStartOf="@+id/main_emptyGraph"
+            app:layout_constraintTop_toTopOf="@+id/main_emptyGraph"
+            app:srcCompat="@drawable/main_misson_graph_01" />
+            <ImageView
             android:id="@+id/main_graph2"
             android:layout_width="170dp"
             android:layout_height="140dp"
@@ -152,38 +140,28 @@
             app:srcCompat="@drawable/main_misson_graph_02" />
 
         <ImageView
-            android:id="@+id/main_graph1"
+            android:id="@+id/main_graph3"
             android:layout_width="170dp"
             android:layout_height="140dp"
-            app:layout_constraintStart_toStartOf="@+id/main_emptyGraph"
-            app:layout_constraintTop_toTopOf="@+id/main_emptyGraph"
-            app:srcCompat="@drawable/main_misson_graph_01" />
+            app:layout_constraintStart_toStartOf="@id/main_emptyGraph"
+            app:layout_constraintTop_toTopOf="@id/main_emptyGraph"
+            app:srcCompat="@drawable/main_misson_graph_03" />
 
-        <ImageButton
-            android:id="@+id/digital_farm"
-            android:layout_width="980px"
-            android:layout_height="450px"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="68dp"
-            android:background="@android:color/transparent"
-            android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/main_farm" />
 
-        <ImageButton
-            android:id="@+id/selectMission"
-            android:layout_width="358dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="8dp"
-            android:scaleType="fitXY"
-            android:background="@android:color/transparent"
-            app:srcCompat="@drawable/main_missionlist"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/today_mission" />
+    <ImageButton
+        android:id="@+id/selectMission"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/today_mission"
+        app:srcCompat="@drawable/main_missionlist" />
 
-        <Button
+    <Button
             android:id="@+id/reset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -191,38 +169,54 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageButton
-            android:id="@+id/inssatest"
-            android:layout_width="160dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:background="@android:color/transparent"
-            android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectMission"
-            app:srcCompat="@drawable/main_inssatest" />
 
-        <ImageButton
-            android:id="@+id/cardmaking"
-            android:layout_width="160dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="36dp"
-            android:background="@android:color/transparent"
-            android:scaleType="fitXY"
-            app:layout_constraintStart_toEndOf="@+id/inssatest"
-            app:layout_constraintTop_toTopOf="@+id/inssatest"
-            app:srcCompat="@drawable/main_card" />
+    <ImageButton
+        android:id="@+id/inssatest"
+        android:layout_width="150dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_inssatest" />
 
-        <Button
-            android:id="@+id/school_test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="156dp"
-            android:text="Button"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/cardmaking"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/main_farm"
+        app:layout_constraintTop_toBottomOf="@+id/selectMission"
+        app:srcCompat="@drawable/main_card" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/main_farm"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/selectMission"
+        app:layout_constraintTop_toBottomOf="@+id/selectMission"
+        app:srcCompat="@drawable/main_flower" />
+
+    <ImageButton
+        android:id="@+id/school_test"
+        android:layout_width="150dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="52dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/inssatest"
+        app:layout_constraintStart_toEndOf="@+id/inssatest"
+        app:layout_constraintTop_toTopOf="@+id/inssatest"
+        app:srcCompat="@drawable/main_silverschool" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

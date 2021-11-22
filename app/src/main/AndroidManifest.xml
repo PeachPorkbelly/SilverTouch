@@ -90,7 +90,8 @@
         <activity android:name=".GetUserName" /> <!-- 미션리스트찾아서플레이하기 -->
         <activity android:name="select_mission.SelectMission_00" />
         <activity android:name="select_mission.SelectMission_main" /> <!-- 카드 -->
-        <activity android:name="card.Card00" /> <!-- Card Maker -->
+        <activity android:name="card.Card00" />
+        <activity android:name="card.Card01" /><!-- Card Maker -->
         <activity android:name="card_maker.card_main" /> <!-- 인싸테스트 -->
         <activity android:name="inssa_test.InsiderTestStart" /> <!-- 미션들 -->
         <activity android:name="mission.mission_0" />
