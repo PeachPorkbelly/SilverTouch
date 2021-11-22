@@ -44,7 +44,7 @@ public class M1_08 extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.imageButton:
-                        i = new Intent(getApplicationContext(), mission.burger.M1_00.class);
+                        i = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;

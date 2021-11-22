@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mission.burger.M1_01">
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="350dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/mission_bg_line3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint" />
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="350dp"
+        android:layout_height="73dp"
+        android:src="@drawable/mission_bg_line2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="297dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/mission_bg_coffeemission"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/hint"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView7"
+        app:srcCompat="@drawable/misson_btn_hint"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <ImageButton
+        android:id="@+id/bg2_x1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_exit" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg2_x1">
+
+        <ImageView
+            android:id="@+id/bg_m2_01_mission_order_1"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_1" />
+
+        <ImageView
+            android:id="@+id/bg_m2_01_mission_order_2"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_2" />
+
+        <ImageView
+            android:id="@+id/bg_m2_01_mission_order_3"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_3"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/discount"
+        android:layout_width="138dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="78dp"
+        android:layout_marginLeft="70dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintLeft_toRightOf="@id/call"
+        app:srcCompat="@drawable/mission_bg_discount" />
+
+    <ImageButton
+        android:id="@+id/disabled"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mission_bg_disabled" />
+
+    <ImageButton
+        android:id="@+id/lens"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/mission_bg_lens"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/disabled"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="611dp" />
+
+    <ImageButton
+        android:id="@+id/call"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/mission_bg_call"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/lens"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+
+    <ImageButton
+        android:id="@+id/card"
+        android:layout_width="360dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/line"
+        app:srcCompat="@drawable/mission_bg_card" />
+
+    <ImageButton
+        android:id="@+id/cash"
+        android:layout_width="152dp"
+        android:layout_height="165dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginTop="250dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="@id/line"
+        app:layout_constraintLeft_toLeftOf="@id/line"
+        app:srcCompat="@drawable/mission_bg_cash" />
+
+    <ImageButton
+        android:id="@+id/digital"
+        android:layout_width="166dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="0dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="@id/line"
+        app:layout_constraintStart_toStartOf="@id/line"
+        app:srcCompat="@drawable/mission_bg_digital" />
+</androidx.constraintlayout.widget.ConstraintLayout>

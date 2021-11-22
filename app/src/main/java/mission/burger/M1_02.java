@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.silvertouch.MainActivity;
 import com.example.silvertouch.R;
@@ -50,17 +51,26 @@ public class M1_02 extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.hamburger:
+                        i=getIntent();
+                        String data=i.getStringExtra("data");
                         i = new Intent(getApplicationContext(), mission.burger.M1_03.class);
+                        i.putExtra("data",data);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.desert:
+                        i=getIntent();
+                        data=i.getStringExtra("data");
                         i = new Intent(getApplicationContext(), mission.burger.M1_04.class);
+                        i.putExtra("data",data);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.drink:
+                        i=getIntent();
+                        data=i.getStringExtra("data");
                         i = new Intent(getApplicationContext(), mission.burger.M1_05.class);
+                        i.putExtra("data",data);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;

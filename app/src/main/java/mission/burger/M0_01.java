@@ -20,6 +20,7 @@ public class M0_01 extends AppCompatActivity {
     Intent i;
     ImageButton card, cash, di, exit;
     View.OnClickListener cl;
+    int data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,16 +48,19 @@ public class M0_01 extends AppCompatActivity {
                 switch (v.getId()) {
                     case R.id.card:
                         i = new Intent(getApplicationContext(), mission.burger.M0_02.class);
+                        //i.putExtra("data",1);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.cash:
                         i = new Intent(getApplicationContext(), mission.burger.M0_02.class);
+                        //i.putExtra("data",2);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.digital:
                         i = new Intent(getApplicationContext(), mission.burger.M0_02.class);
+                        //i.putExtra("data",3);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;

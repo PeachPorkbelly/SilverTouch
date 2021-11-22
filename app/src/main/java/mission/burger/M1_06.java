@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.silvertouch.MainActivity;
 import com.example.silvertouch.R;
@@ -38,7 +39,6 @@ public class M1_06 extends AppCompatActivity {
         cancel=(ImageButton) findViewById(R.id.cancel);
 
 
-
         //몇번째 미션인지
         missionMethods.set_missionOrder(M0,missionOrder1,missionOrder2,missionOrder3);
         //종료버튼
@@ -48,10 +48,26 @@ public class M1_06 extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.pay:
-                        i = new Intent(getApplicationContext(), M1_07.class);
-                        startActivity(i);
-                        overridePendingTransition(0, 0); //애니메이션 없애기
-                        break;
+                        i=getIntent();
+                        String data=i.getStringExtra("data");
+                        if (data.equals("1")){
+                            i = new Intent(getApplicationContext(), M1_07.class);
+                            startActivity(i);
+                            overridePendingTransition(0, 0); //애니메이션 없애기
+                            break;
+                        }
+                        if (data.equals("2")){
+                            i = new Intent(getApplicationContext(), M1_cash.class);
+                            startActivity(i);
+                            overridePendingTransition(0, 0); //애니메이션 없애기
+                            break;
+                        }
+                        if (data.equals("3")) {
+                            i = new Intent(getApplicationContext(), M1_mobile.class);
+                            startActivity(i);
+                            overridePendingTransition(0, 0); //애니메이션 없애기
+                            break;
+                        }
                     case R.id.cancel:
                         i = new Intent(getApplicationContext(), mission.burger.M1_00.class);
                         startActivity(i);

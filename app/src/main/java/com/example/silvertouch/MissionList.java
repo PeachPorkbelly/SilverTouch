@@ -27,6 +27,10 @@ public class MissionList {
         missionList.add(mission.burger.M0_Map.class);
         missionListBG.add(mission.burger.M0_00.class);
         missionTitleBG.add("새우버거 세트 1개를 주문해보세요");
+
+        missionList.add(mission.burger.M2_Map.class);
+        missionListBG.add(mission.burger.M2_00.class);
+        missionTitleBG.add("커피 1개를 주문해보세요");
     }
 }
 

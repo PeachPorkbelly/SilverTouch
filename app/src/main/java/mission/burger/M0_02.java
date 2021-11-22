@@ -50,7 +50,10 @@ public class M0_02 extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.hamburger:
+                        //i=getIntent();
+                        //String data=i.getStringExtra("data");
                         i = new Intent(getApplicationContext(), mission.burger.M0_03.class);
+                        //i.putExtra("data",data);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;

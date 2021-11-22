@@ -49,17 +49,26 @@ public class M1_05 extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.recomm:
+                        i=getIntent();
+                        String data=i.getStringExtra("data");
                         i = new Intent(getApplicationContext(), mission.burger.M1_02.class);
+                        i.putExtra("data",data);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.hamburger:
+                        i=getIntent();
+                        data=i.getStringExtra("data");
                         i = new Intent(getApplicationContext(), mission.burger.M1_03.class);
+                        i.putExtra("data",data);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.desert:
+                        i=getIntent();
+                        data=i.getStringExtra("data");
                         i = new Intent(getApplicationContext(), mission.burger.M1_04.class);
+                        i.putExtra("data",data);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;

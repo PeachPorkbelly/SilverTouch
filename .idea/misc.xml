@@ -21,11 +21,46 @@
         <entry key="..\:/Users/bocab/SilverTouch/app/src/main/res/layout/mygarden.xml" value="0.14" />
         <entry key="..\:/Users/bocab/SilverTouch/app/src/main/res/layout/select_mission_00.xml" value="0.2" />
         <entry key="..\:/Users/bocab/SilverTouch/app/src/main/res/layout/select_mission_litems.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_cheesestick.xml" value="0.3177489177489177" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_chicken.xml" value="0.3177489177489177" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_coke.xml" value="0.3177489177489177" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_discount.xml" value="0.18268398268398267" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_forhere.xml" value="0.18268398268398267" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_lpoint.xml" value="0.18268398268398267" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_no.xml" value="0.18268398268398267" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_onion.xml" value="0.3177489177489177" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_potato.xml" value="0.3177489177489177" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_sprite.xml" value="0.392578125" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/drawable/btn_takeout.xml" value="0.1850877192982456" />
         <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m000.xml" value="0.16973684210526316" />
         <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m001.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m005.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m006.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m007.xml" value="0.25" />
         <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m008.xml" value="0.16973684210526316" />
         <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m009.xml" value="0.1" />
-        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m010.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m010.xml" value="0.2" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m102.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m103.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m104.xml" value="0.17149122807017544" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m105.xml" value="0.15059982862039417" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m106.xml" value="0.1" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m107.xml" value="0.33" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m108.xml" value="0.15059982862039417" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m1_cash.xml" value="0.16228070175438597" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m1_map.xml" value="0.15059982862039417" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m1_mobile.xml" value="0.15921052631578947" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m200.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m201.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m202.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m203.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m204.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m205.xml" value="0.17412280701754385" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m206.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m207.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m208.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_m2_map.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/hgyeo/AndroidStudioProjects/21_pf038/app/src/main/res/layout/activity_test.xml" value="0.17149122807017544" />
         <entry key="..\:/Workspace/Android/21_pf038/app/src/main/res/layout/activity_main.xml" value="0.2046875" />
         <entry key="..\:/Workspace/Android/21_pf038/app/src/main/res/layout/card_main.xml" value="0.25" />
         <entry key="..\:/Workspace/Android/21_pf038/app/src/main/res/layout/insider_test_start.xml" value="0.2046875" />

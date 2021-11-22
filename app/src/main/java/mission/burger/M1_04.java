@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.silvertouch.MainActivity;
 import com.example.silvertouch.R;
@@ -28,8 +29,6 @@ public class M1_04 extends AppCompatActivity {
         ImageView missionOrder1 = (ImageView)findViewById(R.id.bg_m1_04_mission_order_1);
         ImageView missionOrder2 = (ImageView)findViewById(R.id.bg_m1_04_mission_order_2);
         ImageView missionOrder3 = (ImageView)findViewById(R.id.bg_m1_04_mission_order_3);
-
-
 
         exit=(ImageButton) findViewById(R.id.bg1_x4);
         rec=(ImageButton) findViewById(R.id.recomm);
@@ -68,7 +67,10 @@ public class M1_04 extends AppCompatActivity {
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
                     case R.id.icecream:
+                        i=getIntent();
+                        String data=i.getStringExtra("data");
                         i = new Intent(getApplicationContext(), mission.burger.M1_06.class);
+                        i.putExtra("data",data);
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;

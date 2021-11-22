@@ -68,6 +68,38 @@ public class M0_07 extends AppCompatActivity {
                         startActivity(i);
                         overridePendingTransition(0, 0); //애니메이션 없애기
                         break;
+                    case R.id.potato:
+                        po.setSelected(true);
+                        che.setSelected(false);
+                        chi.setSelected(false);
+                        oni.setSelected(false);
+                        break;
+                    case R.id.chicken:
+                        po.setSelected(false);
+                        che.setSelected(false);
+                        chi.setSelected(true);
+                        oni.setSelected(false);
+                        break;
+                    case R.id.cheesestick:
+                        po.setSelected(false);
+                        che.setSelected(true);
+                        chi.setSelected(false);
+                        oni.setSelected(false);
+                        break;
+                    case R.id.onion:
+                        po.setSelected(false);
+                        che.setSelected(false);
+                        chi.setSelected(false);
+                        oni.setSelected(true);
+                        break;
+                    case R.id.coke:
+                        cok.setSelected(true);
+                        spr.setSelected(false);
+                        break;
+                    case R.id.sprite:
+                        cok.setSelected(false);
+                        spr.setSelected(true);
+                        break;
 
                 }
             }
@@ -75,6 +107,12 @@ public class M0_07 extends AppCompatActivity {
         ok.setOnClickListener(cl);
         can.setOnClickListener(cl);
         cancel.setOnClickListener(cl);
+        po.setOnClickListener(cl);
+        chi.setOnClickListener(cl);
+        che.setOnClickListener(cl);
+        oni.setOnClickListener(cl);
+        cok.setOnClickListener(cl);
+        spr.setOnClickListener(cl);
     }
     /*
 뒤로가기 버튼 눌렀을 때

@@ -13,10 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SilverTouch">
-
-
+        <activity
+            android:name="mission.burger.M1_mobile"
+            android:exported="true" />
         <activity
             android:name="mission.burger.M1_Map"
+            android:exported="true" />
+        <activity
+            android:name="mission.burger.M1_cash"
             android:exported="true" />
         <activity
             android:name="mission.burger.M1_08"
@@ -45,8 +49,36 @@
         <activity
             android:name="mission.burger.M1_00"
             android:exported="true" />
-
-
+        <activity
+            android:name="mission.burger.M2_Map"
+            android:exported="true" />
+        <activity
+            android:name="mission.burger.M2_08"
+            android:exported="true" />
+        <activity
+            android:name="mission.burger.M2_07"
+            android:exported="true" />
+        <activity
+            android:name="mission.burger.M2_06"
+            android:exported="true" />
+        <activity
+            android:name="mission.burger.M2_05"
+            android:exported="true" />
+        <activity
+            android:name="mission.burger.M2_04"
+            android:exported="true" />
+        <activity
+            android:name="mission.burger.M2_03"
+            android:exported="true" />
+        <activity
+            android:name="mission.burger.M2_02"
+            android:exported="true" />
+        <activity
+            android:name="mission.burger.M2_01"
+            android:exported="true" />
+        <activity
+            android:name="mission.burger.M2_00"
+            android:exported="true" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Splash">
             <intent-filter>
@@ -55,14 +87,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- 유저 이름 받아오기 -->
-
         <activity android:name=".GetUserName" /> <!-- 미션리스트찾아서플레이하기 -->
         <activity android:name="select_mission.SelectMission_00" />
         <activity android:name="select_mission.SelectMission_main" /> <!-- 카드 -->
         <activity android:name="card.Card00" /> <!-- Card Maker -->
         <activity android:name="card_maker.card_main" /> <!-- 인싸테스트 -->
-
-
         <activity android:name="inssa_test.InsiderTestStart" /> <!-- 미션들 -->
         <activity android:name="mission.mission_0" />
         <activity android:name="mission.mission_1" />
@@ -77,16 +106,11 @@
         <activity
             android:name="mission.hangjeong.M0_03"
             android:screenOrientation="landscape" />
-
-
         <activity
             android:name="mission.hangjeong.vector_test"
-            android:screenOrientation="landscape" />
-
-        <!-- 영어교육 -->
-        <activity android:name="school.SchoolDesk"/>
-        <activity android:name="school.SchoolMain"/>
-
+            android:screenOrientation="landscape" /> <!-- 영어교육 -->
+        <activity android:name="school.SchoolDesk" />
+        <activity android:name="school.SchoolMain" />
         <activity android:name="mission.burger.M0_Map" />
         <activity android:name="mission.burger.M0_00" />
         <activity android:name="mission.burger.M0_01" />
@@ -99,9 +123,6 @@
         <activity android:name="mission.burger.M0_08" />
         <activity android:name="mission.burger.M0_09" />
         <activity android:name="mission.burger.M0_10" />
-
-
-
 
         <provider
             android:name="androidx.core.content.FileProvider"
