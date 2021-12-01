@@ -29,6 +29,8 @@ public class Card01_TouchListener implements View.OnTouchListener{
     private float newDist;
     float oldX;
     float oldY;
+    float oldDecoX;
+    float oldDecoY;
 
 
     @Override
@@ -39,8 +41,10 @@ public class Card01_TouchListener implements View.OnTouchListener{
             case MotionEvent.ACTION_DOWN:
                 // 터치 했을 때
                 mode = DRAG;
-                oldX = motionEvent.getX();
-                oldY = motionEvent.getY();
+                oldX = motionEvent.getRawX();
+                oldY = motionEvent.getRawY();
+                oldDecoX = decoView.getX();
+                oldDecoY = decoView.getY();
                 break;
             case MotionEvent.ACTION_POINTER_DOWN:
                 // 두 손가락 터치 했을 때
@@ -58,8 +62,8 @@ public class Card01_TouchListener implements View.OnTouchListener{
             case MotionEvent.ACTION_MOVE:
                 if(mode == DRAG){
                     // 드래그(이동)
-                    decoView.setX(motionEvent.getRawX() - oldX);
-                    decoView.setY(motionEvent.getRawY() - oldY);
+                    decoView.setX(motionEvent.getRawX() - oldX + oldDecoX);
+                    decoView.setY(motionEvent.getRawY() - oldY + oldDecoY);
 
                 } else if (mode == ZOOM) {
                     // 줌
