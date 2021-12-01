@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.silvertouch.R;
+import com.example.silvertouch.SavedInfo;
 
 import mission.MissionMethods;
 
@@ -23,6 +24,7 @@ public class M1_Map extends AppCompatActivity {
     MissionMethods missionMethods = new MissionMethods();
     View.OnClickListener cl;
     Toast toast;
+
 
     /*
     아이스크림 하나 시키는 미션 시작
