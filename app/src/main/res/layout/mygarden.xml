@@ -8,14 +8,15 @@
 
     <ImageButton
         android:id="@+id/mygarden_wateringCan"
-        android:layout_width="66dp"
-        android:layout_height="51dp"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/mygarden_wateringcan"
-        tools:layout_editor_absoluteY="55dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mygarden_wateringcan" />
 
     <ImageButton
         android:id="@+id/seed_1"
@@ -24,18 +25,19 @@
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/seed_0"
-        app:srcCompat="@drawable/main_farm_seed_0001"
-        tools:layout_editor_absoluteY="55dp" />
+        app:layout_constraintTop_toTopOf="@+id/seed_0"
+        app:srcCompat="@drawable/main_farm_seed_0001" />
 
     <ImageButton
         android:id="@+id/seed_2"
         android:layout_width="66dp"
         android:layout_height="51dp"
+        android:layout_marginStart="1dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/seed_1"
-        app:srcCompat="@drawable/main_farm_seed_0002"
-        tools:layout_editor_absoluteY="55dp" />
+        app:layout_constraintTop_toTopOf="@+id/seed_1"
+        app:srcCompat="@drawable/main_farm_seed_0002" />
 
     <ImageButton
         android:id="@+id/seed_3"
@@ -44,18 +46,19 @@
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/seed_2"
-        app:srcCompat="@drawable/main_farm_seed_0003"
-        tools:layout_editor_absoluteY="55dp" />
+        app:layout_constraintTop_toTopOf="@+id/seed_2"
+        app:srcCompat="@drawable/main_farm_seed_0003" />
 
     <ImageButton
         android:id="@+id/seed_0"
         android:layout_width="66dp"
         android:layout_height="51dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/mygarden_wateringCan"
-        app:srcCompat="@drawable/main_farm_seed_0000"
-        tools:layout_editor_absoluteY="55dp" />
+        app:layout_constraintTop_toTopOf="@+id/mygarden_wateringCan"
+        app:srcCompat="@drawable/main_farm_seed_0000" />
 
     <Button
         android:id="@+id/mygarden_init"
@@ -149,18 +152,18 @@
         android:id="@+id/mygarden_defaultPlace_06"
         android:layout_width="102dp"
         android:layout_height="66dp"
-        android:layout_marginStart="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_05"
-        app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_05"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/mygarden_defaultPlace_00"
+        app:layout_constraintStart_toStartOf="@+id/mygarden_defaultPlace_00"
         app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_07"
         android:layout_width="102dp"
         android:layout_height="66dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/mygarden_defaultPlace_00"
-        app:layout_constraintStart_toStartOf="@+id/mygarden_defaultPlace_00"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_06"
+        app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_06"
         app:srcCompat="@drawable/soil" />
 
     <ImageView
@@ -168,20 +171,45 @@
         android:layout_width="102dp"
         android:layout_height="66dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="224dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_07"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_07"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
         app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_09"
         android:layout_width="102dp"
         android:layout_height="66dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="224dp"
-        app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_08"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_07"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_08"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.254"
+        app:layout_constraintTop_toTopOf="@+id/mygarden_defaultPlace_08"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/soil" />
+
+    <ImageView
+        android:id="@+id/mygarden_defaultPlace_10"
+        android:layout_width="102dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="244dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_07"
+        app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_08"
+        app:layout_constraintTop_toTopOf="@+id/mygarden_defaultPlace_08"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/soil" />
+
+
+    <ImageView
+        android:id="@+id/mygarden_defaultPlace_11"
+        android:layout_width="102dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="124dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_07"
+        app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_08"
+        app:layout_constraintTop_toTopOf="@+id/mygarden_defaultPlace_08"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/soil" />
 
     <TextView

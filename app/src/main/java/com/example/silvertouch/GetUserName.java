@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -14,7 +15,7 @@ public class GetUserName extends AppCompatActivity {
 
     SavedInfo si = new SavedInfo();
     EditText putName;
-    Button saveName;
+    ImageButton saveName;
 
     String userName;
 
@@ -30,7 +31,7 @@ public class GetUserName extends AppCompatActivity {
          */
 
         putName = (EditText) findViewById(R.id.putName);
-        saveName = (Button) findViewById(R.id.saveName);
+        saveName = (ImageButton) findViewById(R.id.savename);
 
         saveName.setOnClickListener(new View.OnClickListener() {
             @Override

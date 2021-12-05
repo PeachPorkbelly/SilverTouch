@@ -51,7 +51,9 @@ public class vector_test extends AppCompatActivity {
             R.id.mygarden_defaultPlace_06,
             R.id.mygarden_defaultPlace_07,
             R.id.mygarden_defaultPlace_08,
-            R.id.mygarden_defaultPlace_09
+            R.id.mygarden_defaultPlace_09,
+            R.id.mygarden_defaultPlace_10,
+            R.id.mygarden_defaultPlace_11
             // 뷰가 차후 늘어나거나 줄어들 경우, 여기서 배열 숫자만 조절하면 자연스럽게 수정되어 연결됩니다.
     };
     int[][] flowerImageTable = {
