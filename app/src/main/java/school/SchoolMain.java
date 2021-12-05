@@ -1,6 +1,7 @@
 package school;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -56,6 +57,7 @@ public class SchoolMain extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //AUDIO 리스트의 POSITION 인덱스에 있는 미디어를 플레이
+                //MediaPlayer mp =
             }
         });
 

@@ -46,11 +46,23 @@ public class EngList {
             itBook.add("캔슬(Cancle)\n취소하다");
             itBook.add("업로드(Upload)\n인터넷 공간에 자료를 보낸다");
             itBook.add("다운로드(Download)\n인터넷에서 자료를 가져온다");
-        }else if(bookName.equals("everyday")){
+
+        }else if(bookName.equals("daily")){
             everydayBook.add("토일렛(Toilet)\n화장실, 변기");
             everydayBook.add("북(Book)\n책");
             everydayBook.add("토일렛페이퍼(Toilet Paper)\n휴지");
             everydayBook.add("프라이스(Price)\n가격");
+            everydayBook.add("헤어(Hair)\n머리카락");
+            everydayBook.add("커트러리");
+            everydayBook.add("컬쳐");
+            everydayBook.add("에듀케이션");
+            everydayBook.add("캐쉬");
+            everydayBook.add("시트");
+            everydayBook.add("머신");
+            everydayBook.add("오피스");
+            everydayBook.add("일렉션");
+            everydayBook.add("배틀");
+            everydayBook.add("시즌");
         }
 
     }

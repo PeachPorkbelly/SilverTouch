@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- 음료 버튼 시작 -->
+
+
+    <ImageButton
+        android:id="@+id/mcafe_exit"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_exit" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="125dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mcafe_mo1"
+        app:srcCompat="@drawable/mcafe_01_title" />
+
+    <ImageView
+        android:id="@+id/mcafe_mo1"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mcafe_exit"
+        app:srcCompat="@drawable/mission_map_icon_misson_1" />
+
+    <ImageView
+        android:id="@+id/mcafe_mo2"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toStartOf="@+id/mcafe_mo1"
+        app:layout_constraintTop_toTopOf="@+id/mcafe_mo1"
+        app:srcCompat="@drawable/mission_map_icon_misson_2" />
+
+    <ImageView
+        android:id="@+id/mcafe_mo3"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/mcafe_mo1"
+        app:layout_constraintTop_toTopOf="@+id/mcafe_mo1"
+        app:srcCompat="@drawable/mission_map_icon_misson_3" />
+
+    <ImageButton
+        android:id="@+id/mcafe_hint"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:srcCompat="@drawable/mission_hint" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe1"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/imageView21"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kioskcafe1" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe2"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe1"
+        app:layout_constraintTop_toTopOf="@+id/kioskcafe1"
+        app:srcCompat="@drawable/kioskcafe2" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe3"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe2"
+        app:layout_constraintTop_toTopOf="@+id/kioskcafe1"
+        app:srcCompat="@drawable/kioskcafe3" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe4"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe3"
+        app:layout_constraintTop_toTopOf="@+id/kioskcafe1"
+        app:srcCompat="@drawable/kioskcafe4" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe5"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe4"
+        app:layout_constraintTop_toTopOf="@+id/kioskcafe1"
+        app:srcCompat="@drawable/kioskcafe5" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe6"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/kioskcafe1"
+        app:layout_constraintTop_toBottomOf="@+id/kioskcafe1"
+        app:srcCompat="@drawable/kioskcafe6" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe7"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe6"
+        app:layout_constraintTop_toBottomOf="@+id/kioskcafe1"
+        app:srcCompat="@drawable/kioskcafe7" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe8"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe7"
+        app:layout_constraintTop_toBottomOf="@+id/kioskcafe1"
+        app:srcCompat="@drawable/kioskcafe8" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe9"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe8"
+        app:layout_constraintTop_toBottomOf="@+id/kioskcafe1"
+        app:srcCompat="@drawable/kioskcafe9" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe10"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe9"
+        app:layout_constraintTop_toBottomOf="@+id/kioskcafe1"
+        app:srcCompat="@drawable/kioskcafe10" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe11"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/kioskcafe6"
+        app:layout_constraintTop_toBottomOf="@+id/kioskcafe6"
+        app:srcCompat="@drawable/kioskcafe11" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe12"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe11"
+        app:layout_constraintTop_toBottomOf="@+id/kioskcafe6"
+        app:srcCompat="@drawable/kioskcafe12" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe13"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe12"
+        app:layout_constraintTop_toBottomOf="@+id/kioskcafe6"
+        app:srcCompat="@drawable/kioskcafe13" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe14"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe13"
+        app:layout_constraintTop_toBottomOf="@+id/kioskcafe6"
+        app:srcCompat="@drawable/kioskcafe14" />
+
+    <ImageButton
+        android:id="@+id/kioskcafe15"
+        android:layout_width="80dp"
+        android:layout_height="101dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe14"
+        app:layout_constraintTop_toBottomOf="@+id/kioskcafe6"
+        app:srcCompat="@drawable/kioskcafe15" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="161dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="11dp"
+        app:layout_constraintStart_toEndOf="@+id/kioskcafe10"
+        app:layout_constraintTop_toTopOf="@+id/kioskcafe5"
+        app:srcCompat="@drawable/kioskcafe_box" />
+
+    <ImageButton
+        android:id="@+id/m_cafe_cancle"
+        android:layout_width="161dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22"
+        app:srcCompat="@drawable/kioskcafe_cancle" />
+
+    <ImageButton
+        android:id="@+id/m_cafe_pay"
+        android:layout_width="161dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toBottomOf="@+id/m_cafe_cancle"
+        app:srcCompat="@drawable/kioskcafe_pay" />
+
+    <TextView
+        android:id="@+id/mcafe_selectedDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="75dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+    <TextView
+        android:id="@+id/mcafe_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="77dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toBottomOf="@+id/mcafe_selectedDrink" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

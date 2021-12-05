@@ -29,13 +29,7 @@ public class M0_01 extends AppCompatActivity {
     ImageView m1, m2, m3;
     Toast toast;
     ImageButton jumin, exit, hint;
-    /*
-    ImageButton btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15,btn16;
-    ImageButton[] img_btns = new ImageButton[]{btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15,btn16};
-    int[] img_btn_id = {R.id.mission_hangjeong_m0_01_02,R.id.mission_hangjeong_m0_01_03,R.id.mission_hangjeong_m0_01_04,R.id.mission_hangjeong_m0_01_05,R.id.mission_hangjeong_m0_01_06
-    ,R.id.mission_hangjeong_m0_01_07,R.id.mission_hangjeong_m0_01_08,R.id.mission_hangjeong_m0_01_09,R.id.mission_hangjeong_m0_01_10,R.id.mission_hangjeong_m0_01_11,R.id.mission_hangjeong_m0_01_12,
-            R.id.mission_hangjeong_m0_01_13,R.id.mission_hangjeong_m0_01_14,R.id.mission_hangjeong_m0_01_15,R.id.mission_hangjeong_m0_01_16};
-     */
+
     MissionMethods missionMethods = new MissionMethods();
 
     View.OnClickListener cl;

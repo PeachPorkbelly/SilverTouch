@@ -56,25 +56,25 @@ public class vector_test extends AppCompatActivity {
     };
     int[][] flowerImageTable = {
             {
-                    R.drawable.transparent_flower,
+                    R.drawable.soil,
                     R.drawable.main_farm_seed_0000,
                     R.drawable.main_farm_flower,
                     R.drawable.main_farm_flower_0000
             },
             {
-                    R.drawable.transparent_flower,
+                    R.drawable.soil,
                     R.drawable.main_farm_seed_0001,
                     R.drawable.main_farm_flower,
                     R.drawable.main_farm_flower_0001
             },
             {
-                    R.drawable.transparent_flower,
+                    R.drawable.soil,
                     R.drawable.main_farm_seed_0002,
                     R.drawable.main_farm_flower,
                     R.drawable.main_farm_flower_0002
             },
             {
-                    R.drawable.transparent_flower,
+                    R.drawable.soil,
                     R.drawable.main_farm_seed_0003,
                     R.drawable.main_farm_flower,
                     R.drawable.main_farm_flower_0003

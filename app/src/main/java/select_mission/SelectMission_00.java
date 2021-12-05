@@ -14,7 +14,7 @@ import com.example.silvertouch.R;
 public class SelectMission_00 extends AppCompatActivity {
 
     //이미지 버튼들
-    ImageButton hangjeong, theater, burger, hospital, ktx, exit;
+    ImageButton hangjeong, theater, burger, hospital, ktx, exit, cafe;
     Intent intent;
 
     @Override
@@ -26,7 +26,7 @@ public class SelectMission_00 extends AppCompatActivity {
         theater = (ImageButton)findViewById(R.id.select_mission_theater);
         burger = (ImageButton)findViewById(R.id.select_mission_burger);
         hospital = (ImageButton)findViewById(R.id.select_mission_hospital);
-        ktx = (ImageButton)findViewById(R.id.select_mission_ktx);
+        cafe = (ImageButton)findViewById(R.id.select_mission_cafe);
         exit = (ImageButton)findViewById(R.id.select_mission_00_exit);
 
 
@@ -49,6 +49,17 @@ public class SelectMission_00 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        cafe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(),SelectMission_main.class);
+                intent.putExtra("selectedPlace","cafe");
+                startActivity(intent);
+            }
+        });
+
+
 
         //닫기
         exit.setOnClickListener(new View.OnClickListener() {

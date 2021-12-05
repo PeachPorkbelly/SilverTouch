@@ -17,12 +17,9 @@ public class SavedInfo {
 
     private static final boolean DEFAULT_BOOLEAN = false;
 
-
     //private  static SharedPreferences getPreferences(Context context){
     //    return context.getSharedPreferences(PREFERENCES_NAME,Context.MODE_PRIVATE);
     //}
-
-
     /*
 
     Key , Value type, Value information

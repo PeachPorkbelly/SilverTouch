@@ -98,7 +98,7 @@
         android:layout_marginTop="308dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/transparent_flower" />
+        app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_01"
@@ -107,7 +107,7 @@
         android:layout_marginStart="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_00"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_00"
-        app:srcCompat="@drawable/transparent_flower" />
+        app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_02"
@@ -116,7 +116,7 @@
         android:layout_marginStart="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_01"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_01"
-        app:srcCompat="@drawable/transparent_flower" />
+        app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_03"
@@ -125,7 +125,7 @@
         android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_02"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_02"
-        app:srcCompat="@drawable/transparent_flower" />
+        app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_04"
@@ -134,7 +134,7 @@
         android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_03"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_03"
-        app:srcCompat="@drawable/transparent_flower" />
+        app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_05"
@@ -143,7 +143,7 @@
         android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_04"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_04"
-        app:srcCompat="@drawable/transparent_flower" />
+        app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_06"
@@ -152,7 +152,7 @@
         android:layout_marginStart="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_05"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_05"
-        app:srcCompat="@drawable/transparent_flower" />
+        app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_07"
@@ -161,7 +161,7 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/mygarden_defaultPlace_00"
         app:layout_constraintStart_toStartOf="@+id/mygarden_defaultPlace_00"
-        app:srcCompat="@drawable/transparent_flower" />
+        app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_08"
@@ -170,7 +170,7 @@
         android:layout_marginStart="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/mygarden_defaultPlace_07"
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_07"
-        app:srcCompat="@drawable/transparent_flower" />
+        app:srcCompat="@drawable/soil" />
 
     <ImageView
         android:id="@+id/mygarden_defaultPlace_09"
@@ -182,7 +182,7 @@
         app:layout_constraintStart_toEndOf="@+id/mygarden_defaultPlace_08"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.254"
-        app:srcCompat="@drawable/transparent_flower" />
+        app:srcCompat="@drawable/soil" />
 
     <TextView
         android:id="@+id/mygarden_wateringCanNum"

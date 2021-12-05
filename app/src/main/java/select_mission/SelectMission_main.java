@@ -52,6 +52,10 @@ public class SelectMission_main extends AppCompatActivity {
             missionTitle = ml.missionTitleBG;
             missions = ml.missionListBG;
             title.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.select_mission_bg_title));
+        }else if (selectedPlace.equals("cafe")){
+            missionTitle = ml.missionTitleCF;
+            missions = ml.missionListCF;
+            title.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.select_mission_bg_title));
         }
 
         ListView listView = (ListView)findViewById(R.id.missionList_listview);

@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     // 유저 이름 저장 변수
     String userName;
     //random mission 배열
-    int[] selectMissionNum = new int[4];
+    int[] selectMissionNum = new int[5];
     //SharedPreference에 저장될 랜덤 미션 번호들
     int Mission1, Mission2, Mission3;
     //SharedPreference에 저장될 미션이 끝났는지 아닌지 기록할 번호들
@@ -117,8 +117,8 @@ public class MainActivity extends AppCompatActivity {
         if (today=="" || !today.equals(getToday())){
             si.setString(getApplicationContext(),"Today",getToday());
 
-            for(int i=0; i<4; i++){
-                selectMissionNum[i] = random.nextInt(4);
+            for(int i=0; i<5; i++){
+                selectMissionNum[i] = random.nextInt(5);
                 for(int j=0; j<i; j++){
                     if(selectMissionNum[i]==selectMissionNum[j]){
                         i--;
@@ -210,13 +210,12 @@ public class MainActivity extends AppCompatActivity {
             graph3.setVisibility(View.VISIBLE);
         }
 
-
         //리셋버튼
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                for(int i=0; i<4; i++){
-                    selectMissionNum[i] = random.nextInt(4);
+                for(int i=0; i<5; i++){
+                    selectMissionNum[i] = random.nextInt(5);
                     for(int j=0; j<i; j++){
                         if(selectMissionNum[i]==selectMissionNum[j]){
                             i--;
