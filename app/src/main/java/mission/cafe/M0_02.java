@@ -83,16 +83,10 @@ public class M0_02 extends AppCompatActivity {
                 if(M0==3)
                     si.setBoolean(getApplicationContext(),"isM3Completed",true);
 
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        intent = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(intent);
-                    }
-                }, 500); //딜레이 타임 조절
 
 
+                intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
         };
 

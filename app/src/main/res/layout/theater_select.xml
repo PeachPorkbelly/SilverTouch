@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageButton
+        android:id="@+id/cinema_select_exit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_exit" />
+
+    <ImageButton
+        android:id="@+id/cinema_select_hint"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="168dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cinema_select_exit"
+        app:srcCompat="@drawable/mission_hint" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/cm_select_title_1"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_1" />
+
+        <ImageView
+            android:id="@+id/cm_select_title_2"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_2" />
+
+        <ImageView
+            android:id="@+id/cm_select_title_3"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_3"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/cm_mission"
+        android:layout_width="252dp"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cinema_select_exit"
+        app:layout_constraintVertical_bias="0.145"
+        app:srcCompat="@drawable/cinema_misson" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageView23"
+        app:srcCompat="@drawable/cinema_cho_bar"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="match_parent"
+        android:layout_height="346dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        app:srcCompat="@drawable/cinema_cho_back"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cinema_cho_underbar" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="51dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.133"
+        app:srcCompat="@drawable/cinema_cho_screen" />
+
+    <ImageView
+        android:layout_width="11dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.49"
+        app:srcCompat="@drawable/cinema_cho_a_to_g" />
+
+    <ImageView
+        android:layout_width="11dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="76dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.49"
+        app:srcCompat="@drawable/cinema_cho_a_to_g" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B3"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B4"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B5"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B6"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B7"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A3"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A4"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A5"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A6"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A7"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C3"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C4"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C5"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C6"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C7"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D3"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D4"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D5"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D6"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D7"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E3"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E4"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E5"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E6"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E7"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F3"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F4"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F5"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F6"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F7"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G3"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G4"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G5"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G6"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G7"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_btn_setting" />
+
+    <!---->
+
+    <ImageButton
+        android:id="@+id/set_btn_B1c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B2c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B3c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B4c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B5c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B6c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_B7c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.380"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A1c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A2c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A3c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A4c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A5c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A6c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_A7c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C1c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C2c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C3c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C4c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C5c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C6c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_C7c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D1c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D2c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D3c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D4c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D5c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D6c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_D7c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E1c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E2c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E3c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E4c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E5c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E6c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_E7c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.572"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F1c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F2c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F3c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F4c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F5c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F6c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_F7c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G1c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.350"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G2c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G3c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G4c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G5c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G6c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/set_btn_G7c"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.700"
+        app:srcCompat="@drawable/cinema_cho_seat_select" />
+
+    <ImageButton
+        android:id="@+id/pay_btn"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:srcCompat="@drawable/cinema_pay_select_2" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        app:layout_constraintVertical_bias="0.484"
+        app:srcCompat="@drawable/cinema_cho_underbar2" />
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="356dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        app:layout_constraintVertical_bias="0.346"
+        app:srcCompat="@drawable/cinema_cho_underbar3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

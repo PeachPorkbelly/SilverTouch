@@ -18,7 +18,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <ImageButton
-        android:id="@+id/hint"
+        android:id="@+id/m000_hint"
         android:layout_width="136dp"
         android:layout_height="48dp"
         android:layout_marginTop="10dp"
@@ -168,7 +168,7 @@
         android:src="@drawable/mission_bg_line1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hint" />
+        app:layout_constraintTop_toBottomOf="@+id/m000_hint" />
     <ImageView
         android:id="@+id/line2"
         android:layout_width="350dp"

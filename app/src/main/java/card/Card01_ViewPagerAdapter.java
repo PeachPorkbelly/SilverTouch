@@ -81,6 +81,8 @@ public class Card01_ViewPagerAdapter extends RecyclerView.Adapter<Card01_ViewPag
             itemIamges[5] = itemView.findViewById(R.id.card_01_grid_img_btn_6);
 
 
+
+
         }
 
         public void onBind(Integer[] position){

@@ -2,6 +2,8 @@ package school;
 
 import android.provider.MediaStore;
 
+import com.example.silvertouch.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +30,17 @@ public class EngList {
             kioskBook.add("어니언(Onion)\n양파");
             kioskBook.add("제로음료수(ZeroDrink)\n설탕이 없는 음료수");
             kioskBook.add("드링크(Drink)\n음료수");
+
+            kioskAudio.add(R.raw.kiosk_eng_menu);
+            kioskAudio.add(R.raw.kiosk_eng_wing);
+            kioskAudio.add(R.raw.kiosk_eng_drumstick);
+            kioskAudio.add(R.raw.kiosk_eng_frenchfries);
+            kioskAudio.add(R.raw.kiosk_eng_potato);
+            kioskAudio.add(R.raw.kiosk_eng_pickle);
+            kioskAudio.add(R.raw.kiosk_eng_decoffeine);
+            kioskAudio.add(R.raw.kiosk_eng_onion);
+            kioskAudio.add(R.raw.kiosk_eng_zerodrink);
+            kioskAudio.add(R.raw.kiosk_eng_drink);
 
         }else if(bookName.equals("it")){
             itBook.add("와이파이(Wifi) : 무료\n인터넷");

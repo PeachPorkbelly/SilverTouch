@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/cm_main_exit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misson_exit" />
+
+    <ImageButton
+        android:id="@+id/cm_main_hint"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="168dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cm_main_exit"
+        app:srcCompat="@drawable/mission_hint" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/cm_main_title_1"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_1" />
+
+        <ImageView
+            android:id="@+id/cm_main_title_2"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_2" />
+
+        <ImageView
+            android:id="@+id/cm_main_title_3"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/mission_map_icon_misson_3"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/cm_mission"
+        android:layout_width="252dp"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cm_main_exit"
+        app:layout_constraintVertical_bias="0.145"
+        app:srcCompat="@drawable/cinema_misson" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="136dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cm_mission"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cinema_cgvback1" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cinema_adv" />
+
+    <ImageButton
+        android:id="@+id/cm_ticketbuy"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="52dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cinema_ticketbuy" />
+
+    <ImageButton
+        android:id="@+id/cm_time"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+        app:layout_constraintStart_toEndOf="@+id/cm_ticketbuy"
+        app:layout_constraintTop_toTopOf="@+id/imageView19"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cinema_time" />
+
+    <ImageButton
+        android:id="@+id/cm_ticket"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+        app:layout_constraintStart_toEndOf="@+id/cm_time"
+        app:srcCompat="@drawable/cinema_ticket" />
+
+    <ImageView
+        android:layout_width="93dp"
+        android:layout_height="22dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/cm_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView19"
+        app:srcCompat="@drawable/cinema_times" />
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView19"
+        app:srcCompat="@drawable/cinema_lang" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

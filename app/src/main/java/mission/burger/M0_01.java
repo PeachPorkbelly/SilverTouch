@@ -3,6 +3,7 @@ package mission.burger;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -18,8 +19,9 @@ public class M0_01 extends AppCompatActivity {
 
     MissionMethods missionMethods = new MissionMethods();
     Intent i;
-    ImageButton card, cash, di, exit;
+    ImageButton card, cash, di, exit, hint;
     View.OnClickListener cl;
+    MediaPlayer mp;
     int data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class M0_01 extends AppCompatActivity {
         card=(ImageButton) findViewById(R.id.card);
         cash=(ImageButton) findViewById(R.id.cash);
         exit=(ImageButton) findViewById(R.id.bg0_x1);
+        hint = (ImageButton) findViewById(R.id.m001_hint);
 
         //몇번째 미션인지
         missionMethods.set_missionOrder(M0,missionOrder1,missionOrder2,missionOrder3);
@@ -70,6 +73,14 @@ public class M0_01 extends AppCompatActivity {
         di.setOnClickListener(cl);
         card.setOnClickListener(cl);
         cash.setOnClickListener(cl);
+
+        hint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(getApplicationContext(),R.raw.seburger_2);
+                mp.start();
+            }
+        });
     }
     /*
 뒤로가기 버튼 눌렀을 때
@@ -79,5 +90,15 @@ public class M0_01 extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), MainActivity.class); //합칠 때 수정필요
         startActivity(i);
         super.onBackPressed();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // MediaPlayer 해지
+        if(mp != null) {
+            mp.release();
+            mp = null;
+        }
     }
 }

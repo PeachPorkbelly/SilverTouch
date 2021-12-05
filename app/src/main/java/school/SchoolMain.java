@@ -23,6 +23,8 @@ public class SchoolMain extends AppCompatActivity {
     ImageButton exit;
     String selectedBook;
     ArrayList<String> engBook = new ArrayList<>();
+    ArrayList<Integer> engAudio = new ArrayList<>();
+    MediaPlayer mp;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,7 +41,7 @@ public class SchoolMain extends AppCompatActivity {
         if(selectedBook.equals("kiosk")){
             engList = new EngList("kiosk");
             engBook = engList.kioskBook;
-            //engAudio = engList.kioskAudio;
+            engAudio = engList.kioskAudio;
 
         }else if(selectedBook.equals("it")){
             engList = new EngList("it");
@@ -57,10 +59,22 @@ public class SchoolMain extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //AUDIO 리스트의 POSITION 인덱스에 있는 미디어를 플레이
-                //MediaPlayer mp =
+                mp = MediaPlayer.create(getApplicationContext(), engAudio.get(position));
+                mp.start();
             }
         });
 
 
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // MediaPlayer 해지
+        if(mp != null) {
+            mp.release();
+            mp = null;
+        }
     }
 }

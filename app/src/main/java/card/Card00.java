@@ -42,9 +42,9 @@ public class Card00 extends AppCompatActivity {
         // 상단 슬라이드 이미지
         //카드 이미지들을 리스트에 넣어서 다시 넣기 => 이미지뷰 리턴타입 int
         List<Card00_sliderItem> sliderItems = new ArrayList<>();
-        sliderItems.add(new Card00_sliderItem(R.drawable.card_test));
+        sliderItems.add(new Card00_sliderItem(R.drawable.card0));
         sliderItems.add(new Card00_sliderItem(R.drawable.card1));
-        sliderItems.add(new Card00_sliderItem(R.drawable.mission_bg_card2));
+        sliderItems.add(new Card00_sliderItem(R.drawable.card2));
         sliderItems.add(new Card00_sliderItem(R.drawable.card3));
         sliderItems.add(new Card00_sliderItem(R.drawable.card4));
         sliderItems.add(new Card00_sliderItem(R.drawable.card5));

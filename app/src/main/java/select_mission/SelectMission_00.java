@@ -59,6 +59,14 @@ public class SelectMission_00 extends AppCompatActivity {
             }
         });
 
+        theater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(),SelectMission_main.class);
+                intent.putExtra("selectedPlace","theater");
+                startActivity(intent);
+            }
+        });
 
 
         //닫기

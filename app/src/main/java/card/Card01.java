@@ -73,6 +73,7 @@ public class Card01 extends AppCompatActivity {
             decoItems.add(R.drawable.card_deco_03);
             decoItems.add(R.drawable.card_deco_04);
             decoItems.add(R.drawable.card_deco_05);
+            decoItems.add(R.drawable.deco18);
         }
         // ----
 

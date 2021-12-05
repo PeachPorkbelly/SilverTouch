@@ -94,6 +94,15 @@
         <activity android:name="card.Card01" /><!-- Card Maker -->
         <activity android:name="card_maker.card_main" /> <!-- 인싸테스트 -->
         <activity android:name="inssa_test.InsiderTestStart" /> <!-- 미션들 -->
+        <!-- 영화관 -->
+        <activity android:name="mission.cinema.Theater_map"/>
+        <activity android:name="mission.cinema.Theater_main"/>
+        <activity android:name="mission.cinema.Theater_pay"/>
+        <activity android:name="mission.cinema.Theater_pay_select"/>
+        <activity android:name="mission.cinema.Theater_pay_select_2"/>
+        <activity android:name="mission.cinema.Theater_select"/>
+        <activity android:name="mission.cinema.Theater_tickebuy"/>
+
         <activity android:name="mission.mission_0" />
         <activity android:name="mission.mission_1" />
         <activity android:name="mission.mission_2" />

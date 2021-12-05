@@ -19,6 +19,9 @@ public class MissionList {
     public ArrayList<Class> missionListCF = new ArrayList<>();
     public ArrayList<String> missionTitleCF = new ArrayList<>();
 
+    public ArrayList<Class> missionListTH = new ArrayList<>();
+    public ArrayList<String> missionTitleTH = new ArrayList<>();
+
     //미션이 추가될 때 마다 여기에 add 시켜주세요(클래스 이름과 미션 타이틀)
     public MissionList(){
         missionList.add(mission.hangjeong.M0_00.class);
@@ -40,6 +43,13 @@ public class MissionList {
         missionList.add(mission.cafe.M0_00.class);
         missionListCF.add(mission.cafe.M0_00.class);
         missionTitleCF.add("따뜻한 카페라떼 한 잔을 마시고 싶어요");
+
+        missionList.add(mission.cinema.Theater_map.class);
+        missionListTH.add(mission.cinema.Theater_map.class);
+        missionTitleTH.add("토끼의 여행을 예매해주세요");
+
+
+
 
     }
 }
